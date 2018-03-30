@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer () {
   var videoElem = document.createElement ('VIDEO');
-  videoElem.setAttribute ('src', './assets/video/HDFC-original-Edited.mp4');
+  videoElem.setAttribute ('src', 'https://storage.googleapis.com/dynamic-video-hdfc/HDFC-original-Edited-compess.mp4');
   videoElem.setAttribute ('class', 'video-js vjs-fluid');
   videoElem.setAttribute ('controls', true);
   videoElem.setAttribute ('id', 'js--video-player');
