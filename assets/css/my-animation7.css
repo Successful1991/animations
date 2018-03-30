@@ -4,14 +4,14 @@
     10%{
         -webkit-transform: translate(0,0)}
     85%{
+        opacity: 1;
         -webkit-transform: translate(0,-31.25%)}
-    88%{
+    89%,to{
+        opacity: 0;
         -webkit-animation-timing-function: ease-in;
         -webkit-transform: translate(0,31.25%)}
-    92.4%, to {
-        -webkit-transform: translate(0,-1714%) ;
-    }
 }
+
 
 @keyframes textAnimate7__block1__Letter {
     from{
@@ -19,14 +19,14 @@
     10%{
         transform: translate(0,0)}
     85%{
+        opacity: 1;
         transform: translate(0,-31.25%)}
-    89%{
+    89%,to{
+        opacity: 0;
         animation-timing-function: ease-in;
         transform: translate(0,31.25%)}
-    92.4%, to {
-        transform: translate(0,-1714%) ;
-    }
 }
+
 .textAnimate7__block1__Letter {
     -webkit-animation-name: textAnimate7__block1__Letter;
     animation-name: textAnimate7__block1__Letter;
@@ -43,13 +43,15 @@
     10%{
         -webkit-transform: translate(0,0)}
     84.8%{
+        opacity: 1;
         -webkit-transform: translate(0,-14.705%)}
-    88.99%{
+    88.99%,to {
+        opacity: 0;
         -webkit-animation-timing-function: ease-in;
         -webkit-transform: translate(0,14.705%)}
-    92.13%, to {
-        -webkit-transform: translate(0,-872%)  }
 }
+
+
 
 @keyframes textAnimate7__block1__amount {
     from{
@@ -57,13 +59,14 @@
     10%{
         transform: translate(0,0)}
     84.8%{
+        opacity: 1;
         transform: translate(0,-14.705%)}
-    88.99%{
+    88.99%, to{
+        opacity: 0;
         animation-timing-function: ease-in;
         transform: translate(0,14.705%)}
-    92.13%, to {
-        transform: translate(0,-872%)  }
 }
+
 .textAnimate7__block1__amount {
     -webkit-animation-name: textAnimate7__block1__amount;
     animation-name: textAnimate7__block1__amount;
@@ -82,14 +85,15 @@
     10%{
         -webkit-transform: translate(0,0)}
     73.6%{
+        opacity: 1;
         -webkit-transform: translate(0,-31.25%)}
-    80%{
+    80%,to{
+        opacity: 0;
         -webkit-animation-timing-function: ease-in;
         -webkit-transform: translate(0,31.25%)}
-    86.4%, to {
-        -webkit-transform: translate(0,-1714%) ;
-    }
 }
+
+
 
 @keyframes textAnimate7__block2__Letter {
     from{
@@ -97,14 +101,14 @@
     10%{
         transform: translate(0,0)}
     73.6%{
+        opacity: 1;
         transform: translate(0,-31.25%)}
-    80%{
+    80%,to {
+        opacity: 0;
         animation-timing-function: ease-in;
         transform: translate(0,31.25%)}
-    86.4%, to {
-        transform: translate(0,-1714%) ;
-    }
 }
+
 .textAnimate7__block2__Letter {
     -webkit-animation-name: textAnimate7__block2__Letter;
     animation-name: textAnimate7__block2__Letter;
@@ -120,13 +124,15 @@
     10%{
         -webkit-transform: translate(0,0)}
     72.45%{
+        opacity: 1;
         -webkit-transform: translate(0,-14.705%)}
-    80%{
+    80%, to{
+        opacity: 0;
         -webkit-animation-timing-function: ease-in;
         -webkit-transform: translate(0,14.705%)}
-    86.12%, to {
-        -webkit-transform: translate(0,-872%)  }
 }
+
+
 
 @keyframes textAnimate7__block2__amount {
     from{
@@ -134,13 +140,14 @@
     10%{
         transform: translate(0,0)}
     72.45%{
+        opacity: 1;
         transform: translate(0,-14.705%)}
-    80%{
+    80%,to{
+        opacity: 0;
         animation-timing-function: ease-in;
         transform: translate(0,14.705%)}
-    86.12%, to {
-        transform: translate(0,-872%)  }
 }
+
 .textAnimate7__block2__amount {
     -webkit-animation-name: textAnimate7__block2__amount;
     animation-name: textAnimate7__block2__amount;

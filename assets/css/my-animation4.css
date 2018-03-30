@@ -4,11 +4,8 @@
     }
     10%,40%{
         -webkit-transform: translateY(20.83%) scale(1);}
-    50%,81.67%{
+    50%,96%{
         -webkit-transform: translateY(70%) scale(1);
-    }
-    87.5%{
-        -webkit-transform: translateY(80%) scale(1);
     }
     to {
         -webkit-transform: translateY(-250%) scale(1); }
@@ -20,9 +17,6 @@
     }
     10%,40%{
         transform: translateY(20.83%) scale(1);}
-    /*50%,81.67%{*/
-        /*transform: translateY(70%) scale(1);*/
-    /*}*/
     50%,96%{
         opacity: 1;
         transform: translateY(70%) scale(1);
@@ -43,14 +37,13 @@
     from {
         -webkit-transform: translateY(0) ;
     }
-    10%,68.57%{
+    10%,92%{
+        opacity: 1;
         -webkit-transform: translateY(40%)
     }
-    78.57%{
-        -webkit-transform: translateY(68%) scale(1);
-    }
     to {
-        -webkit-transform: translateY(-676%) ;
+        opacity: 0;
+        -webkit-transform: translateY(40%) ;
     }
 }
 
@@ -58,9 +51,6 @@
     from {
         transform: translateY(0) ;
     }
-    /*10%,68.57%{*/
-        /*transform: translateY(40%)*/
-    /*}*/
     10%,92%{
         opacity: 1;
         transform: translateY(40%)
@@ -107,26 +97,16 @@
 
 @-webkit-keyframes textAnimate4LetterOut {
     from {
-        -webkit-transform: translateY(0); }
-    38.9%{
-        -webkit-transform: translateY(80%);
-    }
+        opacity: 1; }
     to {
-        -webkit-transform: translateY(-1920%); }
+        opacity: 0; }
 }
 
 @keyframes textAnimate4LetterOut {
     from {
-        opacity: 1;
-        /*transform: translateY(0); */
-}
-    /*38.9%{*/
-        /*transform: translateY(80%);*/
-    /*}*/
+        opacity: 1;  }
     to {
-        opacity: 0;
-        /*transform: translateY(80%); */
-    }
+        opacity: 0;  }
 }
 
 .textAnimate4LetterOut {

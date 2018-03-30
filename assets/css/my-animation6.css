@@ -2,96 +2,85 @@
     from {
         -webkit-transform: translateY(100px) scale(0);
     }
-    10%,71.4%{
+    10%,84.8%{
+        opacity: 1;
         -webkit-transform: translateY(60%) scale(1);}
-    82%{
-        -webkit-transform: translateY(70%) scale(1);}
-    90.28%, to {
-        -webkit-transform: translateY(-800px) scale(1); }
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(60%) scale(1); }
  }
 
 @keyframes textAnimate6__calendar {
     from {
         transform: translateY(100px) scale(0);
     }
-    10%,71.4%{
+    10%,84.8%{
+        opacity: 1;
         transform: translateY(60%) scale(1);}
-    82%{
-        transform: translateY(70%) scale(1);}
-    90.28%, to {
-        transform: translateY(-800px) scale(1); }
+    to {
+        transform: translateY(60%) scale(1);
+        opacity: 0 }
 }
+
+
 .textAnimate6__calendar {
     -webkit-animation-name: textAnimate6__calendar;
     animation-name: textAnimate6__calendar;
-    -webkit-animation-duration: 3.5s;
-    animation-duration: 3.5s;
+    -webkit-animation-duration: 2.8s;
+    animation-duration: 2.8s;
 }
 
 @-webkit-keyframes textAnimate6__amount {
     from {
         -webkit-transform: translateY(0) ;
     }
-    10%,73.3%{
+    10%,92%{
+        opacity: 1;
         -webkit-transform: translateY(40%)
     }
-    78.26%{
-        -webkit-transform: translateY(67.8%)
-    }
-    82.13%, to {
-        -webkit-transform: translateY(-800px) ;
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(40%) ;
     }
 }
+
 
 @keyframes textAnimate6__amount {
     from {
         transform: translateY(0) ;
     }
-    10%,73.3%{
+    10%,92%{
+        opacity: 1;
         transform: translateY(40%)
     }
-    78.26%{
-        transform: translateY(67.8%)
-    }
-    82.13%, to {
-        transform: translateY(-800px) ;
+    to {
+        opacity: 0;
+        transform: translateY(40%) ;
     }
 }
+
 .textAnimate6__amount {
     -webkit-animation-name: textAnimate6__amount;
     animation-name: textAnimate6__amount;
-    -webkit-animation-duration: 7.5s;
-    animation-duration: 7.5s;
+    -webkit-animation-duration: 5.8s;
+    animation-duration: 5.8s;
 }
 
 
 
-@-webkit-keyframes textAnimate6Letter {
-    from ,87.5%{
-        -webkit-transform: translateY(0) ;
-    }
-    92.125%{
-        -webkit-transform: translateY(67.5%)
-    }
-    95.75%, to {
-        -webkit-transform: translateY(-800px) ;
-    }
-}
 
 @keyframes textAnimate6Letter {
-    from ,87.5%{
-        transform: translateY(0) ;
+    from ,92.125%{
+        opacity: 1;
     }
-    92.125%{
-        transform: translateY(67.5%)
-    }
-    95.75%, to {
-        transform: translateY(-800px) ;
+    to {
+        opacity: 0;
     }
 }
+
 .textAnimate6Letter {
     -webkit-animation-name: textAnimate6Letter;
     animation-name: textAnimate6Letter;
-    -webkit-animation-duration: 8s;
-    animation-duration: 8s;
+    -webkit-animation-duration: 7.3s;
+    animation-duration: 7.3s;
 }

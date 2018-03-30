@@ -91,6 +91,9 @@ h1 {
     transform: skewX(5deg);
     transform-origin: 50%;
 }
+/*.b-text-animation > *:not(#textAnimate1){*/
+    /*transform: skewX(5deg);*/
+/*}*/
 
 .b-text-animation.is-ready {
     z-index: 99;
@@ -182,6 +185,8 @@ h1 {
     font-family: "Segoe UI";
     font-weight: 900;
     display: inline-block;
+    transform: skewX(-5deg);
+    transform-origin: 50%;
 }
 @media(max-width: 854px){
     #textAnimate1 {

@@ -13,19 +13,23 @@
 @keyframes textAnimate2 {
     from {
         transform: translateY(0); }
-    70%{
-        transform: translateY(0);}
-    74.5%{
-        animation-timing-function: ease-in;
-        transform: translateY(12%) translateX(0); }
-    84.25%, to {
-        transform: translateY(-600%) translateX(7%); }
+    /*70%{*/
+        /*transform: translateY(0);}*/
+    84.5%{
+        opacity: 1;
+        /*animation-timing-function: ease-in;*/
+        /*transform: translateY(12%) translateX(0); */
+    }
+    to {
+        opacity: 0;
+        /*transform: translateY(-600%) translateX(7%);*/
+    }
 }
 .textAnimate2 {
     -webkit-animation-name: textAnimate2;
     animation-name: textAnimate2;
-    -webkit-animation-duration: 5.2s;
-    animation-duration: 5.2s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
 }
 
 
