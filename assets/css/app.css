@@ -477,7 +477,7 @@ h1 {
     right: 10%;
     width: 38%;
     height: 71%;
-    font-size: 32px;
+    font-size: 28px;
     color: #000048;
 }
 @media (max-width: 854px) {
@@ -486,7 +486,7 @@ h1 {
     }
 }
 .vjs-fullscreen .textAnimate7{
-    font-size: 3.75vw;
+    font-size: 3.2vw;
 }
 .textAnimate7__block1{
     display: flex;
@@ -495,7 +495,6 @@ h1 {
 }
 .textAnimate7__block1 > div{
     text-align: left;
-    font-size: 28px;
 }
 .textAnimate7__block2{
     display: flex;
@@ -504,7 +503,6 @@ h1 {
 }
 .textAnimate7__block2 > div{
     text-align: right;
-    font-size: 28px;
 }
 #textAnimate7__amount1, #textAnimate7__amount2{
     font-size: 56px;
