@@ -8,6 +8,7 @@ function VideoPlayer () {
   videoElem.setAttribute ('controls', true);
   videoElem.setAttribute ('id', 'js--video-player');
   this.video = videoElem;
+  console.log(videoElem);
 }
 
 VideoPlayer.prototype.animationStart = (function (el) {

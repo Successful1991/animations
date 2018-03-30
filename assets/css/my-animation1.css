@@ -4,9 +4,11 @@
     8%,30%{
         -webkit-transform: translateY(0);}
     35%,95%{
+        opacity: 1;
         -webkit-transform: translateY(-207%);  }
     to {
-        -webkit-transform: translateY(-1000%);  }
+        opacity: 0;
+        -webkit-transform: translateY(-207%);  }
 }
 
 @keyframes textAnimate1 {
@@ -15,9 +17,11 @@
     8%,25% {
         transform: translateY(0);}
     30%,95% {
+        opacity: 1;
         transform: translateY(-207%); }
     to {
-        transform: translateY(-1000%); }
+        opacity: 0;
+        transform: translateY(-207%); }
 }
 .textAnimate1 {
     -webkit-animation-name: textAnimate1;
