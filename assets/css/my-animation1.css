@@ -3,7 +3,7 @@
         -webkit-transform: translateY(500%);  }
     8%,30%{
         -webkit-transform: translateY(0);}
-    35%,95%{
+    35%,88%{
         opacity: 1;
         -webkit-transform: translateY(-207%);  }
     to {
@@ -16,7 +16,7 @@
         transform: translateY(500%); }
     8%,25% {
         transform: translateY(0);}
-    30%,95% {
+    30%,88% {
         opacity: 1;
         transform: translateY(-207%); }
     to {

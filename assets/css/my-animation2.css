@@ -1,28 +1,21 @@
 @-webkit-keyframes textAnimate2 {
     from {
         -webkit-transform: translateY(0); }
-    71%{
-        -webkit-transform: translateY(0);}
-    74%{
-        -webkit-animation-timing-function: ease-in;
-        -webkit-transform: translateY(12%);}
-    84.25%, to {
-        -webkit-transform: translateY(-600%); }
-}
+    84.5%{
+        opacity: 1;
+    }
+    to {
+        opacity: 0 }
+    }
 
 @keyframes textAnimate2 {
     from {
         transform: translateY(0); }
-    /*70%{*/
-        /*transform: translateY(0);}*/
-    84.5%{
+    85%{
         opacity: 1;
-        /*animation-timing-function: ease-in;*/
-        /*transform: translateY(12%) translateX(0); */
     }
     to {
         opacity: 0;
-        /*transform: translateY(-600%) translateX(7%);*/
     }
 }
 .textAnimate2 {
