@@ -158,10 +158,10 @@ VideoPlayer.prototype.divideWordIntoLetters = function (month) {
     // идем по массиву
     $ ('#textAnimate2').append (
       '<span class="charlie" data-animations="textAnimateLetter" data-times="3.' +
-        index +
-        '">' +
-        (this == ' ' ? '&nbsp;' : this) +
-        '</span>'
+      index +
+      '">' +
+      (this == ' ' ? '&nbsp;' : this) +
+      '</span>'
     );
   });
 };
