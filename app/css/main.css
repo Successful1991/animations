@@ -307,6 +307,18 @@ h1 {
     height: 10vh;
     width: 20vw; }
 
+#animate_finish {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: url("../img/finish-fon.png") center no-repeat;
+  background-size: contain;
+  opacity: 0;
+  z-index: 10; }
+
 @-webkit-keyframes textAnimate1 {
   from, 3% {
     opacity: 0;
@@ -491,7 +503,7 @@ h1 {
   to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    opacity: 0; } }
+    opacity: 1; } }
 
 @keyframes animate5__line1 {
   from {
@@ -505,7 +517,7 @@ h1 {
   to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    opacity: 0; } }
+    opacity: 1; } }
 
 .animate5__line1 {
   -webkit-animation: animate5__line1 3s;
@@ -513,31 +525,55 @@ h1 {
 
 @-webkit-keyframes animate5__line2 {
   from {
+    display: none;
+    opacity: 0;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw); }
+  1% {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
     opacity: 0;
     -webkit-transform: translateX(100vw);
             transform: translateX(100vw); }
   10%, 84.8% {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    opacity: 0; } }
+    opacity: 1; } }
 
 @keyframes animate5__line2 {
   from {
+    display: none;
+    opacity: 0;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw); }
+  1% {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     opacity: 0;
     -webkit-transform: translateX(100vw);
             transform: translateX(100vw); }
   10%, 84.8% {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   to {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    opacity: 0; } }
+    opacity: 1; } }
 
 .animate5__line2 {
   -webkit-animation: animate5__line2 3s;

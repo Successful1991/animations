@@ -33,7 +33,6 @@ VideoPlayer.prototype.animationEnd = (function (el) {
     MozAnimation: 'mozAnimationEnd',
     WebkitAnimation: 'webkitAnimationEnd',
   };
-
   for (var t in animations) {
     if (el.style[t] !== undefined) {
       return animations[t];
