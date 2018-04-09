@@ -281,9 +281,7 @@ h1 {
   }
 }
 
-.vjs-fullscreen .animate5{
-  font-size: 3.04vw;
-}
+
 
 
 .button{
@@ -304,10 +302,12 @@ h1 {
   width: 100%;
   height: 100%;
 }
-
-.vjs-fullscreen .button{
-  height: 10vh;
-  width: 20vw;
+.vjs-fullscreen .animate5{
+  font-size: 3.04vw;
+  .button{
+    height: 10vh;
+    width: 20vw;
+  }
 }
 
 //animate

@@ -277,9 +277,6 @@ h1 {
   .animate5 {
     font-size: 2.04vw; } }
 
-.vjs-fullscreen .animate5 {
-  font-size: 3.04vw; }
-
 .button {
   display: -webkit-box;
   display: -webkit-flex;
@@ -304,9 +301,11 @@ h1 {
   width: 100%;
   height: 100%; }
 
-.vjs-fullscreen .button {
-  height: 10vh;
-  width: 20vw; }
+.vjs-fullscreen .animate5 {
+  font-size: 3.04vw; }
+  .vjs-fullscreen .animate5 .button {
+    height: 10vh;
+    width: 20vw; }
 
 @-webkit-keyframes textAnimate1 {
   from, 3% {
