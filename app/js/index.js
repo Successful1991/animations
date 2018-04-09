@@ -58,13 +58,12 @@ VideoPlayer.prototype.init = function () {
   var self = this;
   var video = self.video;
   this.fetchData ('data.json', function callback () {
-    console.log(self.data);
     $ ('.js-name').text (self.data.Sequence1);
     $ ('.js-month').text (self.data.Sequence6 );
+
     $ ('#animate3 .animate3__line2').append(
       self.data.Sequence7
     );
-
     CHARLIE.setup (video);
     return;
   });
@@ -123,12 +122,14 @@ var vPlayer = new VideoPlayer (),
   video = vPlayer.video,
   textAnimationBlock = document.getElementById ('textAnimationBlock');
 
-$ (document).ready (function () {
+$(document).ready (function () {
+
   video.addEventListener ('loadedmetadata', function () {
     vPlayer.init ();
 
     var videoParent = video.parentElement;
-    videoParent.insertBefore(textAnimationBlock, video);
+    console.log(videoParent);
+    videoParent.insertBefore(textAnimationBlock, vPlayer.video);
   });
   // divideWordIntoLetters ();
   textAnimationBlock.classList.add ('is-ready');
