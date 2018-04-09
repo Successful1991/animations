@@ -247,6 +247,9 @@ h1 {
   height: 50px;
   width: 200px; }
 
+.button-opacity {
+  opacity: 1; }
+
 .button__left {
   background: url("../img/arrow-right.png") center no-repeat;
   background-size: contain; }
