@@ -278,10 +278,6 @@ h1 {
     font-size: 2.04vw; } }
 
 .button {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   height: 50px;
   width: 200px; }
 
@@ -317,7 +313,7 @@ h1 {
   background: url("../img/finish-fon.png") center no-repeat;
   background-size: contain;
   opacity: 0;
-  z-index: 10; }
+  z-index: 100; }
 
 @-webkit-keyframes textAnimate1 {
   from, 3% {
@@ -493,28 +489,34 @@ h1 {
 
 @-webkit-keyframes animate5__line1 {
   from {
+    z-index: 0;
     opacity: 0;
     -webkit-transform: translateX(-100vw);
             transform: translateX(-100vw); }
   10%, 84.8% {
+    z-index: 200;
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   to {
+    z-index: 200;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1; } }
 
 @keyframes animate5__line1 {
   from {
+    z-index: 0;
     opacity: 0;
     -webkit-transform: translateX(-100vw);
             transform: translateX(-100vw); }
   10%, 84.8% {
+    z-index: 200;
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   to {
+    z-index: 200;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1; } }
@@ -525,52 +527,34 @@ h1 {
 
 @-webkit-keyframes animate5__line2 {
   from {
-    display: none;
-    opacity: 0;
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw); }
-  1% {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
+    z-index: 0;
     opacity: 0;
     -webkit-transform: translateX(100vw);
             transform: translateX(100vw); }
   10%, 84.8% {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
+    z-index: 200;
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   to {
+    z-index: 200;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1; } }
 
 @keyframes animate5__line2 {
   from {
-    display: none;
-    opacity: 0;
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw); }
-  1% {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    z-index: 0;
     opacity: 0;
     -webkit-transform: translateX(100vw);
             transform: translateX(100vw); }
   10%, 84.8% {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    z-index: 200;
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   to {
+    z-index: 200;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1; } }

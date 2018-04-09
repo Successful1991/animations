@@ -38,6 +38,7 @@ VideoPlayer.prototype.animationEnd = (function (el) {
       return animations[t];
     }
   }
+  animateFinish();
 }) (document.createElement ('div'));
 
 VideoPlayer.prototype.fetchData = function (uri, callback) {
@@ -51,7 +52,10 @@ VideoPlayer.prototype.fetchData = function (uri, callback) {
       callback ();
     });
 };
-
+function animateFinish() {
+  console.log("$('#animate_finish').css(\"opacity\",\"1\");");
+  $('#animate_finish').css("opacity","1");
+}
 VideoPlayer.prototype.init = function () {
   var self = this;
   var video = self.video;
@@ -117,4 +121,34 @@ $ (document).ready (function () {
   });
   // divideWordIntoLetters ();
   textAnimationBlock.classList.add ('is-ready');
+});
+
+
+var video_player;
+
+$(document).ready(function()
+{
+  // 'videoplayer' is the ID of our <video> tag
+  videojs("my-video", {}, function()
+  {
+    video_player = this;
+
+    video_player.on('ended', function()
+    {
+      video_player.posterImage.show();
+      $(this.posterImage.contentEl()).show();
+      $(this.bigPlayButton.contentEl()).show();
+      video_player.currentTime(0);
+      video_player.controlBar.hide();
+      video_player.bigPlayButton.show();
+      video_player.cancelFullScreen();
+    });
+
+    video_player.on('play', function()
+    {
+      video_player.posterImage.hide();
+      video_player.controlBar.show();
+      video_player.bigPlayButton.hide();
+    });
+  });
 });
