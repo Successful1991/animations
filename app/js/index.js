@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer () {
   var videoElem = document.createElement ('VIDEO');
-  videoElem.setAttribute ('src', './app/img/Sequence.mp4');
+  videoElem.setAttribute ('src', './app/img/sequence1.mp4');
   videoElem.setAttribute ('class', 'video-js vjs-fluid');
   videoElem.setAttribute ('controls', true);
   videoElem.setAttribute ('id', 'js--video-player');
@@ -65,9 +65,6 @@ VideoPlayer.prototype.init = function () {
       self.data.Sequence7
     );
 
-    $ ('#animate4 .animate4__line2').text (
-      self.data.Sequence8
-    );
     CHARLIE.setup (video);
     return;
   });
@@ -137,4 +134,3 @@ $ (document).ready (function () {
   textAnimationBlock.classList.add ('is-ready');
 
 });
-
