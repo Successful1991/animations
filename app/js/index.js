@@ -100,7 +100,7 @@ VideoPlayer.prototype.init = function () {
 
   self.myPlayer.on('ended', function()
   {
-    $(".button").css("opacity","1");
+    $(".button").css({"opacity":"1","z-index":"200"});
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
     $(this.bigPlayButton.contentEl()).show();
@@ -112,7 +112,7 @@ VideoPlayer.prototype.init = function () {
   });
   self.myPlayer.on('play', function()
   {
-    $(".button").css("opacity","0");
+    $(".button").css({"opacity":"0","z-index":"0"});
     self.myPlayer.posterImage.hide();
     self.myPlayer.controlBar.show();
     self.myPlayer.bigPlayButton.hide();

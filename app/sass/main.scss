@@ -190,8 +190,8 @@ h1 {
 #textAnimate2{
   position: absolute;
   display: flex;
-  top: 97%;
-  left: 12%;
+  top: 54%;
+  left: 23%;
   font-size: 45px;
   font-weight: 500;
   color: #fff;
@@ -356,23 +356,23 @@ h1 {
 @keyframes textAnimate2 {
   from, 6%{
     opacity: 0;
-    transform: rotate(-34deg) translate(0 , 0 );
+    transform: rotate(-33deg);
   }
   8%{
     opacity: 1;
-    transform: rotate(-34deg) translate(0 , 0 );
+    transform: rotate(-33deg);
   }
   98%{
     opacity: 1;
-    transform: rotate(-34deg) translate( 770%, 85% );
+    transform: rotate(-34deg) ;
   }
   to {
     opacity: 0;
-    transform: rotate(-34deg) translate( 850%, 85% );
+    transform: rotate(-34deg) ;
   }
 }
 .textAnimate2 {
-  animation: textAnimate2 3.5s cubic-bezier(1,0.8,0.8,1.2);
+  animation: textAnimate2 2.5s cubic-bezier(1,0.8,0.8,1.2);
 }
 
 
