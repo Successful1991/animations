@@ -76,12 +76,7 @@ VideoPlayer.prototype.init = function () {
     $ ('#animate4 .animate4__line2').text (
       self.data.animate4.line2
     );
-    $ ('.animate5 .line1').text (
-      self.data.animate5.line1
-    );
-    $ ('.animate5 .line2').text (
-      self.data.animate5.line2
-    );
+
 
 
 
