@@ -128,7 +128,7 @@ $ (document).ready (function () {
     vPlayer.init ();
 
     var videoParent = video.parentElement;
-    videoParent.insertBefore (textAnimationBlock, video);
+    videoParent.insertBefore(textAnimationBlock, video);
   });
   // divideWordIntoLetters ();
   textAnimationBlock.classList.add ('is-ready');
