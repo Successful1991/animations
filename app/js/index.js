@@ -7,7 +7,7 @@ function VideoPlayer () {
   videoElem.setAttribute ('class', 'video-js vjs-fluid');
   videoElem.setAttribute ('controls', true);
   videoElem.setAttribute ('id', 'js--video-player');
-  videoElem.setAttribute("poster", "./app/img/end-image.png");
+  videoElem.setAttribute("poster", "./app/img/finish-fon.png");
   this.video = videoElem;
   console.log(videoElem);
 }
