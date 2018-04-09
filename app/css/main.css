@@ -377,14 +377,14 @@ h1 {
     opacity: 1;
     -webkit-transform: rotate(-33deg) translate(0, 0);
             transform: rotate(-33deg) translate(0, 0); }
-  98% {
+  90% {
     opacity: 1;
-    -webkit-transform: rotate(-34deg) translate(-200%, 0);
-            transform: rotate(-34deg) translate(-200%, 0); }
+    -webkit-transform: rotate(-34deg) translate(0, 40%);
+            transform: rotate(-34deg) translate(0, 40%); }
   to {
     opacity: 0;
-    -webkit-transform: rotate(-34deg) translate(-200%, 0);
-            transform: rotate(-34deg) translate(-200%, 0); } }
+    -webkit-transform: rotate(-34deg) translate(0, 40%);
+            transform: rotate(-34deg) translate(0, 40%); } }
 
 @keyframes textAnimate2 {
   from, 6% {
@@ -395,18 +395,18 @@ h1 {
     opacity: 1;
     -webkit-transform: rotate(-33deg) translate(0, 0);
             transform: rotate(-33deg) translate(0, 0); }
-  98% {
+  90% {
     opacity: 1;
-    -webkit-transform: rotate(-34deg) translate(-200%, 0);
-            transform: rotate(-34deg) translate(-200%, 0); }
+    -webkit-transform: rotate(-34deg) translate(0, 40%);
+            transform: rotate(-34deg) translate(0, 40%); }
   to {
     opacity: 0;
-    -webkit-transform: rotate(-34deg) translate(-200%, 0);
-            transform: rotate(-34deg) translate(-200%, 0); } }
+    -webkit-transform: rotate(-34deg) translate(0, 40%);
+            transform: rotate(-34deg) translate(0, 40%); } }
 
 .textAnimate2 {
-  -webkit-animation: textAnimate2 2.5s cubic-bezier(1, 0.8, 0.8, 1.2);
-          animation: textAnimate2 2.5s cubic-bezier(1, 0.8, 0.8, 1.2); }
+  -webkit-animation: textAnimate2 2.3s cubic-bezier(1, 0.8, 0.8, 1.2);
+          animation: textAnimate2 2.3s cubic-bezier(1, 0.8, 0.8, 1.2); }
 
 @-webkit-keyframes textAnimate3 {
   from, 15% {
