@@ -238,9 +238,9 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top:20%;
-  left: 30%;
-  width: 40%;
+  top:23%;
+  left: 25%;
+  width: 50%;
   height: 40%;
   font-size: 26px;
   line-height: 1.2em;
@@ -283,6 +283,7 @@ h1 {
 
 
 .button{
+  //opacity: 1;
   height: 50px;
   width: 200px;
 }
@@ -318,6 +319,10 @@ h1 {
   z-index: 100;
 }
 
+
+.video-js.vjs-has-ended .vjs-poster {
+  display: block;
+}
 //animate
 
 

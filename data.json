@@ -1,14 +1,7 @@
 {
     "id": "hdfc_01",
-    "name": "HELLO AMIT",
-    "month": "Artem",
-    "animate3":{
-        "line1": "Your Loan Amount for",
-        "line2": "₹9,84,438 ",
-        "line3": "is Approved "
-    },
-    "animate4":{
-        "line1": "Get Your Toyota Yaris Experience Now:",
-        "line2": "@EMI of ₹24,139 p.m"
-    }
+    "Sequence1": "HELLO AMIT",
+    "Sequence6": "Artem",
+    "Sequence7":"735897",
+    "Sequence8":"@EMI of Rs 12264 p.m."
 }

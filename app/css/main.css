@@ -231,9 +231,9 @@ h1 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 20%;
-  left: 30%;
-  width: 40%;
+  top: 23%;
+  left: 25%;
+  width: 50%;
   height: 40%;
   font-size: 26px;
   line-height: 1.2em;
@@ -314,6 +314,9 @@ h1 {
   background-size: contain;
   opacity: 0;
   z-index: 100; }
+
+.video-js.vjs-has-ended .vjs-poster {
+  display: block; }
 
 @-webkit-keyframes textAnimate1 {
   from, 3% {
