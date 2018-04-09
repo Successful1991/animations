@@ -203,7 +203,7 @@ h1 {
   }
 }
 .vjs-fullscreen #textAnimate2{
-  font-size: 7.0257vw;
+  font-size: 5vw;
 }
 
 
@@ -229,7 +229,6 @@ h1 {
 }
 
 .vjs-fullscreen #animate3{
-  top: 8.08vw;
   font-size: 3.04vw;
 }
 
@@ -255,7 +254,7 @@ h1 {
 }
 
 .vjs-fullscreen #animate4{
-  top: 8.08vw;
+  //top: 8.08vw;
   font-size: 3.04vw;
 }
 
@@ -305,7 +304,7 @@ h1 {
   height: 100%;
 }
 .vjs-fullscreen .animate5{
-  font-size: 3.04vw;
+  font-size: 2.04vw;
   .button{
     height: 10vh;
     width: 20vw;
@@ -360,11 +359,11 @@ h1 {
 @keyframes textAnimate2 {
   from, 6%{
     opacity: 0;
-    transform: rotate(-33deg) translate(0,0);
+    transform: rotate(-32deg) translate(0,0);
   }
   8%{
     opacity: 1;
-    transform: rotate(-33deg) translate(0,0);
+    transform: rotate(-32deg) translate(0,0);
   }
   90%{
     opacity: 1;
