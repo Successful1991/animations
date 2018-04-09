@@ -304,6 +304,10 @@ h1 {
   width: 100%;
   height: 100%; }
 
+.vjs-fullscreen .button {
+  height: 10vh;
+  width: 20vw; }
+
 @-webkit-keyframes textAnimate1 {
   from, 3% {
     opacity: 0;

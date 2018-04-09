@@ -305,6 +305,11 @@ h1 {
   height: 100%;
 }
 
+.vjs-fullscreen .button{
+  height: 10vh;
+  width: 20vw;
+}
+
 //animate
 
 
@@ -356,22 +361,6 @@ h1 {
 .textAnimate2 {
   animation: textAnimate2 3.5s cubic-bezier(1,0.8,0.8,1.2);
 }
-
-
-//@keyframes textAnimateLetter {
-//  from,15% {
-//    transform: translateX(-250px); }
-//  19%{
-//    transform: translateX(0);}
-//  to {
-//    transform: translateX(0); }
-//}
-//.textAnimateLetter {
-//  -webkit-animation-name: textAnimateLetter;
-//  animation-name: textAnimateLetter;
-//  -webkit-animation-duration: 8.7s;
-//  animation-duration: 8.7s;
-//}
 
 
 @keyframes textAnimate3 {
