@@ -322,15 +322,16 @@ h1 {
   opacity: 0;
   z-index: 100;
 }
-
-
+.vjs-fullscreen #animate6 {
+  font-size: 2.04vw;
+}
 #animate6{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 35px;
-  font-size: 24px;
+  font-size: 1.2em;
   color: #ffffff;
   position: absolute;
   bottom: 0;
