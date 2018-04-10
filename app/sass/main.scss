@@ -316,6 +316,7 @@ h1 {
   from, 3% {
     opacity: 0;
     transform: translate(0,50%);
+    transform-origin: 50% 50%;
   }
   6%, 10% {
     opacity: 1;
