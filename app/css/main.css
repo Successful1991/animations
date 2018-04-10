@@ -351,6 +351,10 @@ h1 {
   left: 0;
   text-decoration: none; }
 
+@media (min-width: 854px) {
+  #animate6 {
+    font-size: 22px; } }
+
 .video-js.vjs-has-ended .vjs-poster {
   display: block; }
 
