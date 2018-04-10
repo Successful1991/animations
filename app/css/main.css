@@ -619,3 +619,8 @@ h1 {
 .animate6 {
   -webkit-animation: animate6 60s;
           animation: animate6 60s; }
+
+/* JS helper classes */
+.js-pause-animation {
+  -webkit-animation: none !important;
+  animation: none !important; }

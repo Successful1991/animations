@@ -503,3 +503,11 @@ h1 {
 .animate6{
   animation: animate6 60s;
 }
+
+
+/* JS helper classes */
+
+.js-pause-animation {
+    -webkit-animation: none !important;
+    animation: none !important;
+}

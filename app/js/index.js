@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
     var videoElem = document.createElement('VIDEO');
-    videoElem.setAttribute('src', './app/img/Sequence.mp4');
+    videoElem.setAttribute('src', './app/img/sequence.mp4');
     videoElem.setAttribute('class', 'video-js vjs-fluid');
     videoElem.setAttribute('webkit-playsinline', '');
     videoElem.setAttribute('playsinline', '');
@@ -112,6 +112,7 @@ VideoPlayer.prototype.init = function() {
     self.myPlayer.el_.addEventListener(
         'webkitfullscreenchange',
         function() {
+            console.log(self.myPlayer);
             self.handleFullScreen.call(this, event)
         }
     );
@@ -121,17 +122,17 @@ VideoPlayer.prototype.init = function() {
     //To disable all seeking replace the if statements from the next
     //two functions with myPlayer.currentTime(currentTime);
 
-    // self.myPlayer.on('seeking', function(event) {
-    //     if (currentTime < self.myPlayer.currentTime()) {
-    //         self.myPlayer.currentTime(currentTime);
-    //     }
-    // });
-    //
-    // self.myPlayer.on('seeked', function(event) {
-    //     if (currentTime < self.myPlayer.currentTime()) {
-    //         self.myPlayer.currentTime(currentTime);
-    //     }
-    // });
+    self.myPlayer.on('seeking', function(event) {
+        if (currentTime < self.myPlayer.currentTime()) {
+            self.myPlayer.currentTime(currentTime);
+        }
+    });
+
+    self.myPlayer.on('seeked', function(event) {
+        if (currentTime < self.myPlayer.currentTime()) {
+            self.myPlayer.currentTime(currentTime);
+        }
+    });
     self.myPlayer.on('ended', function() {
         $(".button").addClass("button-opacity");
         self.myPlayer.posterImage.show();
