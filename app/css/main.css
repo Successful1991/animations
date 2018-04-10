@@ -349,6 +349,8 @@ h1 {
           animation-name: textAnimate1;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
