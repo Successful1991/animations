@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
     var videoElem = document.createElement('VIDEO');
-    videoElem.setAttribute('src', './app/img/sequence.mp4');
+    videoElem.setAttribute('src', './app/img/Sequence.mp4');
     videoElem.setAttribute('class', 'video-js vjs-fluid');
     videoElem.setAttribute('webkit-playsinline', '');
     videoElem.setAttribute('playsinline', '');
