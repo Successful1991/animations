@@ -94,8 +94,7 @@ VideoPlayer.prototype.init = function () {
   });
 
 
-  self.myPlayer.on('ended', function()
-  {
+  self.myPlayer.on('ended', function() {
     $(".button").addClass("button-opacity");
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
@@ -106,8 +105,7 @@ VideoPlayer.prototype.init = function () {
     self.myPlayer.cancelFullScreen();
 
   });
-  self.myPlayer.on('play', function()
-  {
+  self.myPlayer.on('play', function(){
     $(".button").removeClass('button-opacity');
     self.myPlayer.posterImage.hide();
     self.myPlayer.controlBar.show();
