@@ -172,7 +172,8 @@ h1 {
   color: #0C267B;
   font-weight: 500;
   display: inline-block;
-}#textAnimate1.1{
+}
+#textAnimate1.1{
    position: absolute;
    top: 46%;
    font-size: 49px;
@@ -330,7 +331,8 @@ h1 {
   }
 }
 .textAnimate1 {
-  animation: textAnimate1 3s linear;
+  opacity: 0;
+  animation: textAnimate1 3s linear forwards;
 }
 
 

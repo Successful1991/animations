@@ -341,8 +341,9 @@ h1 {
             transform: translate(0, 0); } }
 
 .textAnimate1 {
-  -webkit-animation: textAnimate1 3s linear;
-          animation: textAnimate1 3s linear; }
+  opacity: 0;
+  -webkit-animation: textAnimate1 3s linear forwards;
+          animation: textAnimate1 3s linear forwards; }
 
 @-webkit-keyframes textAnimate2 {
   from, 6% {
