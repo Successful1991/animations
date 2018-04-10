@@ -72,7 +72,7 @@ h1 {
   z-index: 99; }
 
 .video-js .vjs-big-play-button {
-  z-index: 99;
+  z-index: 999999;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -147,7 +147,8 @@ h1 {
   font-size: 49px;
   color: #0C267B;
   font-weight: 500;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
 
 @media (max-width: 854px) {
   #textAnimate1 {
@@ -169,8 +170,8 @@ h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 54%;
-  left: 23%;
+  top: 50%;
+  left: 25%;
   font-size: 45px;
   font-weight: 500;
   color: #fff;
@@ -199,7 +200,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   top: 50%;
-  left: 15%;
+  left: 8%;
   width: 40%;
   height: auto;
   font-size: 18px;
@@ -213,6 +214,38 @@ h1 {
     font-size: 3.04vw; } }
 
 .vjs-fullscreen #animate3 {
+  font-size: 3.04vw; }
+
+#animate4 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 23%;
+  left: 25%;
+  width: 50%;
+  height: 40%;
+  font-size: 26px;
+  line-height: 1.2em;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 10px; }
+
+@media (max-width: 854px) {
+  #animate4 {
+    font-size: 3.04vw; } }
+
+.vjs-fullscreen #animate4 {
   font-size: 3.04vw; }
 
 .animate5 {
@@ -293,6 +326,28 @@ h1 {
   opacity: 0;
   z-index: 100; }
 
+#animate6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 35px;
+  font-size: 24px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-decoration: none; }
+
 .video-js.vjs-has-ended .vjs-poster {
   display: block; }
 
@@ -321,7 +376,7 @@ h1 {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
-  97% {
+  94% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
@@ -355,7 +410,7 @@ h1 {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
-  97% {
+  94% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
@@ -377,7 +432,7 @@ h1 {
           animation-fill-mode: forwards; }
 
 @-webkit-keyframes textAnimate2 {
-  from, 6% {
+  from, 2% {
     opacity: 0;
     -webkit-transform: rotate(-32deg) translate(0, 0);
             transform: rotate(-32deg) translate(0, 0); }
@@ -395,7 +450,7 @@ h1 {
             transform: rotate(-34deg) translate(0, 40%); } }
 
 @keyframes textAnimate2 {
-  from, 6% {
+  from, 2% {
     opacity: 0;
     -webkit-transform: rotate(-32deg) translate(0, 0);
             transform: rotate(-32deg) translate(0, 0); }
@@ -413,70 +468,54 @@ h1 {
             transform: rotate(-34deg) translate(0, 40%); } }
 
 .textAnimate2 {
-  -webkit-animation: textAnimate2 2.3s cubic-bezier(1, 0.8, 0.8, 1.2);
-          animation: textAnimate2 2.3s cubic-bezier(1, 0.8, 0.8, 1.2); }
+  -webkit-animation: textAnimate2 3.7s cubic-bezier(1, 0.8, 0.8, 1.2);
+          animation: textAnimate2 3.7s cubic-bezier(1, 0.8, 0.8, 1.2); }
 
 @-webkit-keyframes textAnimate3 {
-  from, 15% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  5%, 95% {
+    opacity: 1; }
   to {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%); } }
+    -webkit-transform: translate(40%, 10%);
+            transform: translate(40%, 10%); } }
 
 @keyframes textAnimate3 {
-  from, 15% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  5%, 95% {
+    opacity: 1; }
   to {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%); } }
+    -webkit-transform: translate(40%, 10%);
+            transform: translate(40%, 10%); } }
 
 .textAnimate3 {
-  -webkit-animation: textAnimate3 3s;
-          animation: textAnimate3 3s; }
+  -webkit-animation: textAnimate3 3.6s cubic-bezier(0.4, 0.7, 0.9, 1);
+          animation: textAnimate3 3.6s cubic-bezier(0.4, 0.7, 0.9, 1); }
 
-@-webkit-keyframes textAnimate3Letter {
+@-webkit-keyframes animate4 {
   from {
-    -webkit-transform: translateY(10.42%);
-            transform: translateY(10.42%); }
-  10%, 20% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-
-@keyframes textAnimate3Letter {
-  from {
-    -webkit-transform: translateY(10.42%);
-            transform: translateY(10.42%); }
-  10%, 20% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-
-.textAnimate3Letter {
-  -webkit-animation: textAnimate3Letter 2s;
-          animation: textAnimate3Letter 2s; }
-
-@-webkit-keyframes textAnimate3LetterOut {
-  from {
+    opacity: 0; }
+  10%, 84.8% {
     opacity: 1; }
-  to {
+  95%, to {
     opacity: 0; } }
 
-@keyframes textAnimate3LetterOut {
+@keyframes animate4 {
   from {
+    opacity: 0; }
+  10%, 84.8% {
     opacity: 1; }
-  to {
+  95%, to {
     opacity: 0; } }
 
-.textAnimate3LetterOut {
-  -webkit-animation: textAnimate3LetterOut 0.2s;
-          animation: textAnimate3LetterOut 0.2s; }
+.animate4 {
+  -webkit-animation: animate4 5s;
+          animation: animate4 5s; }
 
 @-webkit-keyframes animate5__line1 {
   from {
@@ -553,3 +592,23 @@ h1 {
 .animate5__line2 {
   -webkit-animation: animate5__line2 3s;
           animation: animate5__line2 3s; }
+
+@-webkit-keyframes animate6 {
+  from {
+    z-index: 200;
+    opacity: 0; }
+  5%, to {
+    z-index: 200;
+    opacity: 1; } }
+
+@keyframes animate6 {
+  from {
+    z-index: 200;
+    opacity: 0; }
+  5%, to {
+    z-index: 200;
+    opacity: 1; } }
+
+.animate6 {
+  -webkit-animation: animate6 60s;
+          animation: animate6 60s; }
