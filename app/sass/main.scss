@@ -332,8 +332,10 @@ h1 {
   }
 }
 .textAnimate1 {
-  opacity: 0;
-  animation: textAnimate1 3s linear forwards;
+  animation-name: textAnimate1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 
