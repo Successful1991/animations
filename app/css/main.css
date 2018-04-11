@@ -371,8 +371,11 @@ h1 {
       top: 12.5%;
       left: 83%; }
   .animate5__block2 {
-    height: 10%;
-    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    height: 20%;
+    width: 80%;
     border-radius: 50px;
     background: #ff993a; }
   .animate5__block3 {
