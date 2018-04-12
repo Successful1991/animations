@@ -395,12 +395,10 @@ h1 {
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center;
-      height: 29%;
-      width: 80%;
+      height: 100%;
+      width: 100%;
       border-radius: 50px;
-      background: #ffc335;
-      -webkit-animation: psevdo 3s linear 2s;
-              animation: psevdo 3s linear 2s; }
+      background: #ffc335; }
   .animate5__block3 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -932,23 +930,3 @@ h1 {
 .amountAnimate5-block3 {
   -webkit-animation: amountAnimate5-block3 3.3s;
           animation: amountAnimate5-block3 3.3s; }
-
-@-webkit-keyframes psevdo {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  60%, to {
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%); } }
-
-@keyframes psevdo {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  60%, to {
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%); } }
-
-.psevdo {
-  -webkit-animation: psevdo 5.8s;
-          animation: psevdo 5.8s; }

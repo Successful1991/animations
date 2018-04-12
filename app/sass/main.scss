@@ -359,11 +359,10 @@ h1 {
       content: " ";
       display: block;
       align-self: center;
-      height: 29%;
-      width: 80%;
+      height: 100%;
+      width: 100%;
       border-radius: 50px;
       background: #ffc335;
-      animation: psevdo 3s linear 2s;
     }
   }
   &__block3{
@@ -730,15 +729,4 @@ h1 {
 }
 .amountAnimate5-block3{
   animation: amountAnimate5-block3 3.3s;
-}
-@keyframes psevdo{
-  from {
-    transform: translateX(0);
-  }
-  60%,to {
-    transform: translateX(10%);
-  }
-}
-.psevdo{
-  animation: psevdo 5.8s;
 }
