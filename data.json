@@ -1,28 +1,19 @@
 {
     "id": "hdfc_01",
-    "name": "RAJENDAR",
-    "month": "Artem",
-    "total_charges": "48313",
-    "recent_pmt_amt": "5798",
-    "recent_pmt_date": {
-        "date": "2",
-        "month": "MARCH",
-        "year": "2017"
-    },
-    "overall_balance": "92018",
-    "min_payment": "2416",
-    "due_date": {
-        "date": "5",
-        "month": "MARCH",
-        "year": "2017"
-    },
-    "points_earned_month": "24156",
-    "total_points_earned": "483120",
-    "expense_distribution": {
-        "food": "7562",
-        "entertainment": "1740",
-        "automobile": "10594",
-        "healthcare": "9405",
-        "merchandise": "19012"
-    }
+    "text1": "Your brand name",
+    "text2": "Hi,Tonya",
+    "text3":"2,000 points as of May 17th = ₹ 200",
+    "amount1":"₹600",
+    "amount11":"₹2200",
+    "amount2":"₹700",
+    "amount21":"₹1900",
+    "amount3":"₹300",
+    "amount31":"₹2600",
+    "amount4":"₹2300 = 180 points",
+    "amount1regular":"₹2800",
+    "amount2regular":"₹2600",
+    "amount3regular":"₹2900"
+
+
+
 }

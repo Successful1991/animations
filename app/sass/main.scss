@@ -89,7 +89,7 @@ h1 {
 }
 
 .video-js .vjs-big-play-button {
-  z-index: 99;
+  z-index: 999999;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -180,6 +180,7 @@ h1 {
   color: #0C267B;
   font-family: "Segoe UI";
   font-weight: 500;
+  white-space: nowrap;
 }
 @media(max-width: 854px){
   #textAnimate1 {
@@ -199,12 +200,12 @@ h1 {
   position: absolute;
   display: flex;
   top: 41.2%;
-  left: 15%;
+  left: 6.5%;
   font-size: 50px;
   font-family: "Arial Black";
   font-weight: 500;
   color: #000000;
-  overflow: hidden;
+  white-space: nowrap;
 }
 @media(max-width: 854px){
   #textAnimate2{
@@ -218,48 +219,54 @@ h1 {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 60%;
   height: 17.4%;
   top: 7.5%;
   left: 21%;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Arimo-Bold", Serif;
   color: #000000;
-  .line1{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    &__animate1{
-      color: #172d7b;
-    }
-    &__animate2{
-      color: #3e63e7;
-    }
-  }
-  .line2{
-    font-size: 24px;
-    position: absolute;
-    top:70%;
-    left: 46%;
-  }
+  //.line1{
+  //  display: flex;
+  //  justify-content: space-between;
+  //  width: 100%;
+  //  height: auto;
+  //  &__animate1{
+  //    color: #172d7b;
+  //  }
+  //  &__animate2{
+  //    color: #5b7fff;
+  //  }
+  //}
+  //.line2{
+  //  font-size: 24px;
+  //  position: absolute;
+  //  top:70%;
+  //  left: 46%;
+  //}
 }
+//@media(max-width: 854px){
+//  #textAnimate3{
+//    font-size: 6.0257vw;
+//    .line2{
+//      font-size: 2.9vw;
+//    }
+//  }
+//}
 @media(max-width: 854px){
   #textAnimate3{
-    font-size: 6.0257vw;
-    .line2{
-      font-size: 2.9vw;
-    }
+    top:15.5%;
+    font-size: 3.5vw;
   }
 }
 
 .vjs-fullscreen #textAnimate3{
   font-size: 6.3vw;
   top: 3.93vw;
-  .line2{
-    font-size: 3.1vw;
-  }
+  //.line2{
+  //  font-size: 3.1vw;
+  //}
 }
 
 .animate4{
@@ -283,18 +290,22 @@ h1 {
 }
 .animate4__block1-text1,.animate4__block2-text1,.animate4__block3-text1{
   position: relative;
-  top:6%;
-  left: 31%;
+  top:8.5%;
+  left: 28%;
 }
 .animate4__block1-text2,.animate4__block2-text2,.animate4__block3-text2{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 11%;
-  width: 20%;
+  height: 15%;
+  width: 40%;
   color: #000;
   font-size: 32px;
-
+  &__regular{
+    font-size: 10px;
+    text-decoration: line-through;
+  }
 }
 @media(max-width: 854px){
   .animate4{
@@ -423,56 +434,68 @@ h1 {
   animation: textAnimateLetter 8.7s;
 }
 
-
-@keyframes textAnimate3-1 {
-  from {
-    transform: translateX(80%);
-    opacity: 0; }
-  5%,25%{
-    transform: translateX(80%);
-    opacity: 1;
-  }
-  28%,99%{
-    transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 0;
-  }
-}
-.textAnimate3-1 {
-  animation: textAnimate3-1 8.7s;
-}
-
-
-@keyframes textAnimate3-2 {
+@keyframes textAnimate3 {
   from {
     opacity: 0; }
-  28%,99%{
+  5%,99%{
     opacity: 1;
   }
   to {
     opacity: 0;
   }
 }
-.textAnimate3-2 {
-  animation: textAnimate3-2 6.2s;
+.textAnimate3 {
+  animation: textAnimate3 8.7s;
 }
-
-@keyframes textAnimate3-3 {
-  from {
-    opacity: 0; }
-  28%,99%{
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-.textAnimate3-3 {
-  animation: textAnimate3-3 7.7s;
-}
+//@keyframes textAnimate3-1 {
+//  from {
+//    transform: translateX(80%);
+//    opacity: 0; }
+//  5%,25%{
+//    transform: translateX(80%);
+//    opacity: 1;
+//  }
+//  28%,99%{
+//    transform: translateX(0);
+//    opacity: 1;
+//  }
+//  to {
+//    transform: translateX(0);
+//    opacity: 0;
+//  }
+//}
+//.textAnimate3-1 {
+//  animation: textAnimate3-1 8.7s;
+//}
+//
+//
+//@keyframes textAnimate3-2 {
+//  from {
+//    opacity: 0; }
+//  28%,99%{
+//    opacity: 1;
+//  }
+//  to {
+//    opacity: 0;
+//  }
+//}
+//.textAnimate3-2 {
+//  animation: textAnimate3-2 6.2s;
+//}
+//
+//@keyframes textAnimate3-3 {
+//  from {
+//    opacity: 0; }
+//  28%,99%{
+//    opacity: 1;
+//  }
+//  to {
+//    opacity: 0;
+//  }
+//}
+//.textAnimate3-3 {
+//  animation: textAnimate3-3 7.7s;
+//}
 
 
 
@@ -604,12 +627,12 @@ h1 {
 @keyframes amountAnimate5-block1__amount1 {
   from {
     opacity: 0;
-    transform: translateX(-110%);}
+    transform: translateX(-10%);}
   5%{
     opacity: 1;
-    transform: translateX(-110%);}
+    transform: translateX(-10%);}
   27%{
-    transform: translateX(-110%);
+    transform: translateX(-10%);
   }
   42%,to {
     opacity: 1;
@@ -664,7 +687,7 @@ h1 {
   }
 }
 .amountAnimate5-block2{
-  animation: amountAnimate5-block2 4.8s;
+  animation: amountAnimate5-block2 5.8s;
 }
 
 @keyframes amountAnimate5-block3{
