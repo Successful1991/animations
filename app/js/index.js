@@ -80,8 +80,14 @@ VideoPlayer.prototype.init = function() {
     $('.js-name').text(self.data.text1);
     $('.js-month').text(self.data.text2);
 
-    $('#textAnimate3').text(
+    $('#textAnimate3_1').text(
       self.data.text3
+    );
+    // $('#textAnimate3_2').text(
+    //   self.data.text4
+    // );
+    $('#textAnimate3_3').text(
+      self.data.text5
     );
     $('.animate4__block1-text1').text (
       self.data.amount1
@@ -110,10 +116,12 @@ VideoPlayer.prototype.init = function() {
     $('.animate4__block3-text2__regular').append (
       self.data.amount3regular
     );
-    $('.animate5__block1').text (
-      self.data.amount4
-    );
-
+    // $('.animate5__block1').text (
+    //   self.data.amount4
+    // );
+    self.divideWordIntoLetters (self.data.text4,"#textAnimate3_2",18);
+    self.divideWordIntoLetters (self.data.amount4,".animate5__block1__amount1",40);
+    self.divideWordIntoLetters (self.data.amount5,".animate5__block1__amount2",41);
 
     // $('#animate6').text (
     //   self.data.special
@@ -261,6 +269,46 @@ VideoPlayer.prototype.handleFullScreen = function(event) {
 // var vPlayer = new VideoPlayer (),
 //   video = vPlayer.video,
 //   textAnimationBlock = document.getElementById ('textAnimationBlock');
+
+//проходим по массиву разбиваем данные по буквам в отдельный span
+// VideoPlayer.prototype.divideWordIntoLetters = function (month) {
+//   var word = month;
+//   var str = word.split ('');
+//   $.each (str, function (index) {
+//     // идем по массиву
+//     $ ('#textAnimate3_2').append (
+//       '<span class="charlie" data-animations="textAnimateLetter" data-times="18.' +
+//       index +
+//       '">' +
+//       (this == ' ' ? '&nbsp;' : this) +
+//       '</span>'
+//     );
+//   });
+// };
+VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time) {
+  var word = month;
+  var str = word.split ('');
+  var i = 0;
+  $.each (str, function (index) {
+    // идем по массиву
+    if(i === 10){
+      time++;
+      i=0;
+    };
+    $(id).append (
+      '<span class="charlie" data-animations="textAnimateLetter" data-times=" '+ time + '.' +
+      index +
+      '">' +
+      (this == ' ' ? '&nbsp;' : this) +
+      '</span>'
+    );
+    i++;
+  });
+};
+
+
+
+
 
 $(document).ready(function() {
 

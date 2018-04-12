@@ -168,14 +168,15 @@ h1 {
 }
 
 #textAnimate1{
-  position: absolute;
-  top: 46%;
-  left: 35.7%;
+  //position: absolute;
+  //top: 46%;
+  //left: 35.7%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   height: 10%;
-  width: 29%;
+  width: auto;
+  //width: 29%;
   font-size: 50px;
   color: #0C267B;
   font-family: "Segoe UI";
@@ -227,24 +228,28 @@ h1 {
   font-size: 40px;
   font-family: "Arimo-Bold", Serif;
   color: #000000;
-  //.line1{
-  //  display: flex;
-  //  justify-content: space-between;
-  //  width: 100%;
-  //  height: auto;
-  //  &__animate1{
-  //    color: #172d7b;
-  //  }
-  //  &__animate2{
-  //    color: #5b7fff;
-  //  }
-  //}
-  //.line2{
-  //  font-size: 24px;
-  //  position: absolute;
-  //  top:70%;
-  //  left: 46%;
-  //}
+  .line1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    &__animate1{
+      color: #172d7b;
+    }
+    &__animate2{
+      color: #5b7fff;
+    }
+  }
+  .line2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    //position: absolute;
+    //top:70%;
+    //left: 46%;
+  }
 }
 //@media(max-width: 854px){
 //  #textAnimate3{
@@ -329,7 +334,7 @@ h1 {
   top:22.5%;
   left: 21%;
   height: 55%;
-  width: 50%;
+  width: 48%;
   &__block1{
     height: 15%;
     width: 100%;
@@ -344,13 +349,22 @@ h1 {
     }
   }
   &__block2{
-    position: absolute;
-    top:40%;
-    left: 10%;
-    height: 20%;
+    display: block;
+    align-self: center;
+    height: 29%;
     width: 80%;
     border-radius: 50px;
-    background: #ff993a;
+    background: #ffc335;
+    &:after{
+      content: " ";
+      display: block;
+      align-self: center;
+      height: 29%;
+      width: 80%;
+      border-radius: 50px;
+      background: #ffc335;
+      animation: psevdo 3s linear 2s;
+    }
   }
   &__block3{
     display: flex;
@@ -390,16 +404,28 @@ h1 {
 @keyframes textAnimate1 {
   from, 3% {
     opacity: 0;
-    transform: translate(0,0); }
+    //transform: translate(0,0);
+    transform: translateY(0);
+    margin:0 auto;
+  }
   6%, 10% {
     opacity: 1;
-    transform: translate(0,0);}
+    //transform: translate(0,0);
+    transform: translateY(0);
+    margin:0 auto;
+  }
   13%,98% {
     opacity: 1;
-    transform: translate(-102% , -150%); }
+    //transform: translate(-102% , -150%);
+    transform: translateY(-150%);
+    margin:0 auto 0 6.5%;
+  }
   to {
     opacity: 0;
-    transform: translate(-102% , -150%); }
+    //transform: translate(-102% , -150%);
+    transform: translateY(-150%);
+    margin:0 auto 0 6.5%;
+  }
 }
 .textAnimate1 {
   animation: textAnimate1 9.4s;
@@ -433,69 +459,71 @@ h1 {
 .textAnimateLetter {
   animation: textAnimateLetter 8.7s;
 }
-
-@keyframes textAnimate3 {
+//
+//@keyframes textAnimate3 {
+//  from {
+//    opacity: 0; }
+//  5%,99%{
+//    opacity: 1;
+//  }
+//  to {
+//    opacity: 0;
+//  }
+//}
+//.textAnimate3 {
+//  animation: textAnimate3 8.7s;
+//}
+@keyframes textAnimate3__1 {
   from {
+    transform: translate(25%,-25%);
     opacity: 0; }
-  5%,99%{
+  5%,25%{
+    transform: translate(25%, 0);
+    opacity: 1;
+  }
+  28%,99%{
+    transform: translate(-3%,0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-3%,0);
+    opacity: 0;
+  }
+}
+.textAnimate3__1 {
+  animation: textAnimate3__1 8.7s;
+}
+
+
+@keyframes textAnimate3__2 {
+  from {
+    display: none;
+    opacity: 0; }
+  28%,99%{
+    display: flex;
     opacity: 1;
   }
   to {
     opacity: 0;
   }
 }
-.textAnimate3 {
-  animation: textAnimate3 8.7s;
+.textAnimate3__2 {
+  animation: textAnimate3__2 6.2s;
 }
-//@keyframes textAnimate3-1 {
-//  from {
-//    transform: translateX(80%);
-//    opacity: 0; }
-//  5%,25%{
-//    transform: translateX(80%);
-//    opacity: 1;
-//  }
-//  28%,99%{
-//    transform: translateX(0);
-//    opacity: 1;
-//  }
-//  to {
-//    transform: translateX(0);
-//    opacity: 0;
-//  }
-//}
-//.textAnimate3-1 {
-//  animation: textAnimate3-1 8.7s;
-//}
-//
-//
-//@keyframes textAnimate3-2 {
-//  from {
-//    opacity: 0; }
-//  28%,99%{
-//    opacity: 1;
-//  }
-//  to {
-//    opacity: 0;
-//  }
-//}
-//.textAnimate3-2 {
-//  animation: textAnimate3-2 6.2s;
-//}
-//
-//@keyframes textAnimate3-3 {
-//  from {
-//    opacity: 0; }
-//  28%,99%{
-//    opacity: 1;
-//  }
-//  to {
-//    opacity: 0;
-//  }
-//}
-//.textAnimate3-3 {
-//  animation: textAnimate3-3 7.7s;
-//}
+
+@keyframes textAnimate3__3 {
+  from {
+    opacity: 0; }
+  28%,99%{
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.textAnimate3__3 {
+  animation: textAnimate3__3 7.7s;
+}
 
 
 
@@ -702,4 +730,15 @@ h1 {
 }
 .amountAnimate5-block3{
   animation: amountAnimate5-block3 3.3s;
+}
+@keyframes psevdo{
+  from {
+    transform: translateX(0);
+  }
+  60%,to {
+    transform: translateX(10%);
+  }
+}
+.psevdo{
+  animation: psevdo 5.8s;
 }
