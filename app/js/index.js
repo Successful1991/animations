@@ -121,7 +121,7 @@ VideoPlayer.prototype.init = function() {
     // );
     self.divideWordIntoLetters (self.data.text4,"#textAnimate3_2",18);
     self.divideWordIntoLetters (self.data.amount4,".animate5__block1__amount1",40);
-    self.divideWordIntoLetters (self.data.amount5,".animate5__block1__amount2",41);
+    self.divideWordIntoLetters(self.data.amount5,".animate5__block1__amount2",41);
 
     // $('#animate6').text (
     //   self.data.special
@@ -305,8 +305,6 @@ VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time) {
     i++;
   });
 };
-
-
 
 
 

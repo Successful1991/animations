@@ -58,7 +58,7 @@ h1 {
 
 .b-video-player-wrapper {
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
   display: inline-block;
   width: 100%;
   max-width: 854px;
@@ -220,9 +220,9 @@ h1 {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 60%;
-  height: 17.4%;
+  height: 14%;
   top: 7.5%;
   left: 21%;
   font-size: 40px;
@@ -251,27 +251,23 @@ h1 {
     //left: 46%;
   }
 }
-//@media(max-width: 854px){
-//  #textAnimate3{
-//    font-size: 6.0257vw;
-//    .line2{
-//      font-size: 2.9vw;
-//    }
-//  }
-//}
 @media(max-width: 854px){
   #textAnimate3{
-    top:15.5%;
+    height: 12%;
     font-size: 3.5vw;
+    .line2{
+      font-size: 2.9vw;
+    }
   }
 }
+
 
 .vjs-fullscreen #textAnimate3{
   font-size: 6.3vw;
   top: 3.93vw;
-  //.line2{
-  //  font-size: 3.1vw;
-  //}
+  .line2{
+    font-size: 3.1vw;
+  }
 }
 
 .animate4{
@@ -280,7 +276,7 @@ h1 {
   font-size: 22px;
   position: absolute;
   top:20%;
-  height: 70%;
+  height: 72%;
   width: 100%;
   color: #fff;
   font-family: Arial;
@@ -304,12 +300,19 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 15%;
-  width: 40%;
+  width: 100%;
   color: #000;
   font-size: 32px;
   &__regular{
     font-size: 10px;
     text-decoration: line-through;
+    padding: 3px;
+    margin: 3px;
+    border: 1px solid #000000;
+  }
+  &__discount{
+    padding: 3px;
+    border: 1px solid #000000;
   }
 }
 @media(max-width: 854px){
@@ -317,8 +320,17 @@ h1 {
     font-size: 2.6vw;
   }
   .animate4__block1-text2,.animate4__block2-text2,.animate4__block3-text2{
-    font-size: 1.2em;
-
+    font-size: 4vw;
+    //&__regular{
+    //  font-size: 2.8vw;
+    //}
+  }
+}
+@media(max-width: 450px){
+  .animate4__block1-text2,.animate4__block2-text2,.animate4__block3-text2{
+    &__regular{
+      font-size: 2.8vw;
+    }
   }
 }
 .vjs-fullscreen .animate4{
@@ -342,27 +354,32 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    &__amount2{
-      position: absolute;
-      top:12.5%;
-      left:83%;
-    }
+    //&__amount2{
+    //  position: absolute;
+    //  top:12.5%;
+    //  right: 0;
+    //}
   }
+  //&__block2{
+  //  display: block;
+  //  align-self: center;
+  //  height: 29%;
+  //  width: 80%;
+  //  border-radius: 50px;
+  //  background: #ffc335;
+  //}
   &__block2{
+    position: absolute;
+    top:35%;
     display: block;
     align-self: center;
     height: 29%;
     width: 80%;
     border-radius: 50px;
     background: #ffc335;
-    &:after{
-      content: " ";
-      display: block;
-      align-self: center;
-      height: 100%;
-      width: 100%;
-      border-radius: 50px;
-      background: #ffc335;
+    &-yellow{
+      background: #ff932b;
+      z-index: -1;
     }
   }
   &__block3{
@@ -371,22 +388,27 @@ h1 {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    width: 30%;
-    font-size: 12px;
+    width: 50%;
     font-family: Arial;
-    font-weight: 600;
+    &__text1{
+      font-size: 30px;
+      font-weight: 400;
+    }
     &__text2{
-      font-size: 32px;
+      font-size: 50px;
+      font-weight: 800;
     }
   }
 }
 @media(max-width: 854px){
   .animate5{
-    font-size: 2vw;
+    font-size: 3.5vw;
     &__block3{
-      font-size: 2vw;
+      &__text1{
+        font-size: 3.5vw;
+      }
       &__text2{
-        font-size: 2vw;
+        font-size: 6vw;
       }
     }
 
@@ -674,12 +696,12 @@ h1 {
 @keyframes amountAnimate5-block1__amount2 {
   from {
     opacity: 0;
-    transform: translateX(-150%);}
+    transform: translateX(-10%);}
   5%{
     opacity: 1;
-    transform: translateX(-150%);}
+    transform: translateX(-10%);}
   17%{
-    transform: translateX(-150%);
+    transform: translateX(-10%);
   }
   30%,to {
     opacity: 1;
@@ -706,7 +728,7 @@ h1 {
 @keyframes amountAnimate5-block2{
   from {
     opacity: 0;  }
-  5%,95%{
+  5%,99%{
     opacity: 1;
   }
   to {
@@ -715,6 +737,37 @@ h1 {
 }
 .amountAnimate5-block2{
   animation: amountAnimate5-block2 5.8s;
+}
+
+@keyframes amountAnimate5-block2-1{
+  from {
+    opacity: 0;  }
+  5%,50%{
+    background: #ff932b;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  60%,72%{
+    background: #ff932b;
+    transform: translateX(20%);
+  }
+  85%{
+    background: #ffc335;
+    transform: translateX(20%);
+  }
+  99%{
+    opacity: 1;
+    transform: translateX(20%);
+    background: #ffc335;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20%);
+    background: #ffc335;
+  }
+}
+.amountAnimate5-block2-1{
+  animation: amountAnimate5-block2-1 5.8s;
 }
 
 @keyframes amountAnimate5-block3{
