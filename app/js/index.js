@@ -116,9 +116,12 @@ VideoPlayer.prototype.init = function() {
     $('.animate4__block3-text2__regular').append (
       self.data.amount3regular
     );
-    // $('.animate5__block1').text (
-    //   self.data.amount4
-    // );
+    $('.animate5__block3__text1').text (
+      self.data.text6
+    );
+    $('.animate5__block3__text2').text (
+      self.data.text7
+    );
     self.divideWordIntoLetters (self.data.text4,"#textAnimate3_2",18);
     self.divideWordIntoLetters (self.data.amount4,".animate5__block1__amount1",39);
     self.divideWordIntoLetters(self.data.amount5,".animate5__block1__amount2",40);

@@ -43,8 +43,8 @@
     margin: 0 auto 0 6.5%; } }
 
 .textAnimate1 {
-  -webkit-animation: textAnimate1 9.4s;
-          animation: textAnimate1 9.4s; }
+  -webkit-animation: textAnimate1 9s;
+          animation: textAnimate1 9s; }
 
 @-webkit-keyframes textAnimate2 {
   from {
@@ -63,8 +63,8 @@
     opacity: 0; } }
 
 .textAnimate2 {
-  -webkit-animation: textAnimate2 8.28s;
-          animation: textAnimate2 8.28s; }
+  -webkit-animation: textAnimate2 8.08s;
+          animation: textAnimate2 8.08s; }
 
 @-webkit-keyframes textAnimateLetter {
   from, 15% {
@@ -190,11 +190,11 @@
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
-  10.5%, 28% {
+  11%, 28% {
     opacity: 1;
-    -webkit-transform: translate(0, -360%) scale(1.3);
-            transform: translate(0, -360%) scale(1.3); }
-  30%, 74% {
+    -webkit-transform: translate(0, -360%);
+            transform: translate(0, -360%); }
+  31%, 74% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
@@ -212,11 +212,11 @@
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
-  10.5%, 28% {
+  11%, 28% {
     opacity: 1;
-    -webkit-transform: translate(0, -360%) scale(1.3);
-            transform: translate(0, -360%) scale(1.3); }
-  30%, 74% {
+    -webkit-transform: translate(0, -360%);
+            transform: translate(0, -360%); }
+  31%, 74% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
@@ -234,11 +234,11 @@
     opacity: 0;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
-  8%, 30% {
+  8%, 29% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
-  33%, 49% {
+  33%, 49.5% {
     opacity: 1;
     -webkit-transform: translate(0, -360%) scale(1.2);
             transform: translate(0, -360%) scale(1.2); }
@@ -256,11 +256,11 @@
     opacity: 0;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
-  8%, 30% {
+  8%, 29% {
     opacity: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
-  33%, 49% {
+  33%, 49.5% {
     opacity: 1;
     -webkit-transform: translate(0, -360%) scale(1.2);
             transform: translate(0, -360%) scale(1.2); }
