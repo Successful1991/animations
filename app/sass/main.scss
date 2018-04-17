@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "Arimo";
+  src: url(../font/Arimo-Regular.ttf);
+}
+@font-face {
+  font-family: "Arimo-bold";
+  src: url(../font/Arimo-Bold.ttf);
+}
+$color-border:#402a20;
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+
+/* Sections
+       ========================================================================== */
+
+
+/**
+     * Remove the margin in all browsers (opinionated).
+     */
+
+body {
+  margin: 0;
+}
+
+
+/**
+     * Add the correct display in IE 9-.
+     */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+
+/**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+.b-video-player-wrapper {
+  position: relative;
+  //overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  max-width: 854px;
+}
+
+.b-text-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000000;
+  z-index: 0;
+}
+
+
+.b-text-animation.is-ready {
+  z-index: 99;
+}
+
+.video-js .vjs-big-play-button {
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.vjs-control-bar {
+  z-index: 100;
+}
+.video-js.vjs-fullscreen {
+  height: 0 !important;
+  padding-top: 56.25% !important;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.show {
+  -webkit-animation-name: show;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: show;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.charlie {
+  opacity: 0;
+}
+.charlie.animated {
+  opacity: 1;
+}
+
+#animate1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:28%;
+  height: 10%;
+  width: 100%;
+  font-size: 22px;
+  color: #ffe9ba;
+  font-family: Arial;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.vjs-fullscreen #animate1{
+  font-size: 4.5vw;
+}
+#animate2{
+  position: absolute;
+  display: flex;
+  top: 35%;
+  right: 0;
+  height: 10%;
+  width: 37%;
+  font-size: 20px;
+  font-family: "Arial Black";
+  font-weight: 500;
+  color: #6d4439;
+  white-space: nowrap;
+}
+.animate20{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  right:0;
+  top:40%;
+  height: 20%;
+  width: 37%;
+  font-size: 15px;
+  color: #6d4439;
+  font-family: "Arial";
+  letter-spacing: 2px;
+  line-height: 1.2em;
+}
+.vjs-fullscreen #animate2{
+  font-size: 2.5vw;
+}
+
+#animate3{
+  position: absolute;
+  top:50%;
+  font-size: 32px;
+  color: rgba(73,34,34,0.9);
+}
+
+.vjs-fullscreen #animate3{
+  font-size: 3.7vw;
+}
+#animate4{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left:0;
+  top:0;
+  height: 10%;
+  width: 100%;
+  font-size: 18px;
+  color: #4f352a;
+  font-family: "Arial";
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  padding-left: 30px;
+  font-weight: 800;
+}
+#animate4button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:18%;
+  left:53%;
+  height: 12%;
+  width: 37%;
+  font-size: 22px;
+  color: #2d0b0d;
+  font-family:"Arial Black";
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  border-left: 2px solid $color-border;
+  border-right: 2px solid $color-border;
+  text-transform: uppercase;
+}
+
+#animate41{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 22px;
+  color: #4f352a;
+  position: absolute;
+  bottom:5%;
+  left: 5%;
+  font-family: Arial;
+  font-weight: 600;
+}
+
+//media max-width: 854px //
+
+@media(max-width: 854px) {
+
+  #animate1 {
+    font-size: 3.76vw;
+  }
+
+  #animate2 {
+    font-size: 2.7vw;
+  }
+  .animate20{
+    font-size: 2.5vw;
+    letter-spacing: normal;
+  }
+  #animate3{
+    font-size: 3.7vw;
+  }
+}

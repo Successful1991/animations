@@ -1,0 +1,227 @@
+@-webkit-keyframes animate1 {
+  from, 3% {
+    opacity: 0;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%); }
+  40% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  68%, 98% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes animate1 {
+  from, 3% {
+    opacity: 0;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%); }
+  40% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  68%, 98% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.animate1 {
+  -webkit-animation: animate1 6.2s;
+          animation: animate1 6.2s; }
+
+@-webkit-keyframes animate2 {
+  from {
+    opacity: 0; }
+  8%, 97% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes animate2 {
+  from {
+    opacity: 0; }
+  8%, 97% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.animate2 {
+  -webkit-animation: animate2 4s;
+          animation: animate2 4s; }
+
+@-webkit-keyframes animateLetter {
+  from, 15% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px); }
+  19% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes animateLetter {
+  from, 15% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px); }
+  19% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+.animateLetter {
+  -webkit-animation: animateLetter 8s;
+          animation: animateLetter 8s; }
+
+@-webkit-keyframes animateLetter2 {
+  from, 7% {
+    opacity: 0; }
+  8%, 99% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes animateLetter2 {
+  from, 7% {
+    opacity: 0; }
+  8%, 99% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.animateLetter2 {
+  -webkit-animation: animateLetter2 8s;
+          animation: animateLetter2 8s; }
+
+@-webkit-keyframes animate3 {
+  from {
+    opacity: 0; }
+  5%, 98% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes animate3 {
+  from {
+    opacity: 0; }
+  5%, 98% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.animate3 {
+  -webkit-animation: animate3 4.2s;
+          animation: animate3 4.2s; }
+
+@-webkit-keyframes animate4 {
+  from, 17% {
+    opacity: 0; }
+  19%, 95% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes animate4 {
+  from, 17% {
+    opacity: 0; }
+  19%, 95% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.animate4 {
+  -webkit-animation: animate4 8.7s;
+          animation: animate4 8.7s; }
+
+@-webkit-keyframes animate4button {
+  from, 17% {
+    opacity: 0;
+    -webkit-transform: scale(5);
+            transform: scale(5); }
+  19%, 95% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes animate4button {
+  from, 17% {
+    opacity: 0;
+    -webkit-transform: scale(5);
+            transform: scale(5); }
+  19%, 95% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+.animate4button {
+  -webkit-animation: animate4button 8.7s;
+          animation: animate4button 8.7s; }
+
+@-webkit-keyframes animate-start {
+  from {
+    opacity: 0; }
+  8%, to {
+    opacity: 1; } }
+
+@keyframes animate-start {
+  from {
+    opacity: 0; }
+  8%, to {
+    opacity: 1; } }
+
+.animate-start {
+  -webkit-animation: animate-start 6s;
+          animation: animate-start 6s; }
+
+@-webkit-keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.animate-finish {
+  -webkit-animation: animate-finish .2s;
+          animation: animate-finish .2s; }
+
+@-webkit-keyframes animate41 {
+  from, 7% {
+    opacity: 0; }
+  19%, 98% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes animate41 {
+  from, 7% {
+    opacity: 0; }
+  19%, 98% {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.animate41 {
+  -webkit-animation: animate41 4.1s;
+          animation: animate41 4.1s; }
