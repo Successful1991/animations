@@ -252,6 +252,9 @@ h1 {
   padding-left: 30px;
   font-weight: 800; }
 
+.vjs-fullscreen #animate4 {
+  font-size: 2.5vw; }
+
 #animate4button {
   display: -webkit-box;
   display: -webkit-flex;
@@ -279,6 +282,9 @@ h1 {
   border-right: 2px solid #402a20;
   text-transform: uppercase; }
 
+.vjs-fullscreen #animate4button {
+  font-size: 2.5vw; }
+
 #animate41 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -305,6 +311,9 @@ h1 {
   font-family: Arial;
   font-weight: 600; }
 
+.vjs-fullscreen #animate41 {
+  font-size: 3vw; }
+
 @media (max-width: 854px) {
   #animate1 {
     font-size: 3.76vw; }
@@ -314,4 +323,10 @@ h1 {
     font-size: 2.5vw;
     letter-spacing: normal; }
   #animate3 {
-    font-size: 3.7vw; } }
+    font-size: 3.7vw; }
+  #animate4 {
+    font-size: 2.5vw; }
+  #animate4button {
+    font-size: 2.5vw; }
+  #animate41 {
+    font-size: 3vw; } }
