@@ -1,0 +1,561 @@
+@font-face {
+  font-family: "GenevaCY";
+  src: url(../font/genevaCY.ttf); }
+
+@font-face {
+  font-family: "RainTungsten";
+  src: url(../font/RainTungsten-Medium.ttf); }
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+       ========================================================================== */
+/**
+     * Remove the margin in all browsers (opinionated).
+     */
+body {
+  margin: 0; }
+
+/**
+     * Add the correct display in IE 9-.
+     */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+.b-video-player-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 854px; }
+
+.b-text-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: #000000;
+  z-index: 0;
+  overflow: hidden; }
+
+.b-text-animation.is-ready {
+  z-index: 99; }
+
+.video-js .vjs-big-play-button {
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.vjs-control-bar {
+  z-index: 100; }
+
+.video-js.vjs-fullscreen {
+  height: 0 !important;
+  padding-top: 56.25% !important; }
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+.show {
+  -webkit-animation-name: show;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: show;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  opacity: 1 !important; }
+
+@-webkit-keyframes grow {
+  0% {
+    width: 5px;
+    height: 5px; }
+  100% {
+    width: 50px;
+    height: 50px; } }
+
+@keyframes grow {
+  0% {
+    width: 5px;
+    height: 5px; }
+  100% {
+    width: 50px;
+    height: 50px; } }
+
+.charlie {
+  opacity: 0; }
+
+.charlie.animated {
+  opacity: 1; }
+
+#animate1-img1 {
+  position: absolute;
+  height: 20%;
+  width: 33%;
+  border: 2px solid red; }
+
+#animate1-text1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 40%;
+  left: auto;
+  height: 30%;
+  width: auto;
+  font-size: 190px;
+  font-family: "RainTungsten";
+  font-weight: 500;
+  color: #ffe9ba;
+  white-space: nowrap;
+  text-transform: uppercase; }
+
+.vjs-fullscreen #animate1-text1 {
+  font-size: 23vw; }
+
+#animate1-text2 {
+  position: absolute;
+  bottom: 7%;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: rgba(73, 34, 34, 0.9); }
+
+.vjs-fullscreen #animate1-text2 {
+  font-size: 3.8vw; }
+
+#animate1-img2 {
+  position: absolute;
+  left: auto;
+  bottom: 7%;
+  height: 42%;
+  width: 58%;
+  border: 1px solid green; }
+
+#animate2-text1 {
+  position: absolute;
+  top: 43%;
+  left: auto;
+  color: #fff;
+  font-size: 32px;
+  font-family: "RainTungsten";
+  height: 10%;
+  width: 40%; }
+
+.vjs-fullscreen #animate2-text1 {
+  font-size: 4vw; }
+
+#animate2-img1 {
+  position: absolute;
+  top: 51%;
+  left: auto;
+  height: 40%;
+  width: 53%;
+  border: 2px solid red; }
+
+#animate2-text2 {
+  position: absolute;
+  top: 68%;
+  right: 0;
+  height: 20%;
+  width: 17%;
+  border: 2px solid red;
+  font-size: 24px;
+  color: #ffffff; }
+
+.vjs-fullscreen #animate2-text2 {
+  font-size: 3vw; }
+
+#animate3 {
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  height: 42%;
+  width: 58%;
+  border: 1px solid green; }
+  #animate3-img1 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600; }
+  #animate3-text1 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 11%;
+    left: 80%; }
+  #animate3-img2 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 32%;
+    left: 77%; }
+  #animate3-text2 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 33%;
+    left: 59%; }
+  #animate3-img3 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 52%;
+    left: 60.5%;
+    height: 31%;
+    width: 19%; }
+  #animate3-text3 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 59%;
+    left: 80%; }
+
+#animate4 {
+  position: absolute;
+  top: 36.5%;
+  left: 22%;
+  height: 42%;
+  width: 58%;
+  border: 1px solid green; }
+  #animate4-img1 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 17.5%;
+    left: 8%; }
+  #animate4-text1 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 21%;
+    left: 25%; }
+  #animate4-img2 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 41%;
+    left: 23%;
+    height: 27%;
+    width: 22%; }
+  #animate4-text2 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 43%;
+    left: 8%;
+    height: 20%;
+    width: 14%; }
+  #animate4-img3 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 63%;
+    left: 7.5%;
+    height: 30%;
+    width: 19%; }
+  #animate4-text3 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 70%;
+    left: 27%; }
+
+.vjs-fullscreen #animate3 > * {
+  font-size: 3.5vw; }
+
+.vjs-fullscreen #animate4 > * {
+  font-size: 3.5vw; }
+
+.vjs-fullscreen #animate5 > * {
+  font-size: 3.5vw; }
+
+#animate5 {
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  height: 42%;
+  width: 58%;
+  border: 1px solid green; }
+  #animate5-img1 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 17%;
+    height: 28%; }
+  #animate5-text1 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 23%;
+    left: 79%;
+    height: 14%;
+    width: 17%; }
+  #animate5-img2 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 45%;
+    left: 77%; }
+  #animate5-text2 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 46%;
+    left: 60%;
+    height: 19%;
+    width: 15%; }
+  #animate5-img3 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 65%;
+    left: 60.5%;
+    height: 31%;
+    width: 19%; }
+  #animate5-text3 {
+    position: absolute;
+    top: 7%;
+    left: 61%;
+    height: 25%;
+    width: 17%;
+    border: 1px solid red;
+    font-size: 36px;
+    font-weight: 600;
+    top: 73%;
+    left: 79%; }
+
+#animate6-img1 {
+  position: absolute;
+  top: 43%;
+  left: auto;
+  height: 50%;
+  width: 60%;
+  border: 2px solid red; }
+
+#animate6-img2 {
+  position: absolute;
+  top: 9%;
+  left: auto;
+  height: 30%;
+  width: 27%;
+  border: 2px solid red; }
+
+#animate7-img1 {
+  position: absolute;
+  top: 7%;
+  left: 31%;
+  height: 15%;
+  width: 17%;
+  border: 1px solid red;
+  font-size: 36px;
+  font-weight: 600;
+  top: 29%;
+  left: 6%;
+  height: 45%;
+  width: 32%; }
+
+#animate7-img2 {
+  position: absolute;
+  top: 7%;
+  left: 31%;
+  height: 15%;
+  width: 17%;
+  border: 1px solid red;
+  font-size: 36px;
+  font-weight: 600;
+  top: 29%;
+  left: 36%;
+  height: 45%;
+  width: 32%; }
+
+#animate7-img3 {
+  position: absolute;
+  top: 7%;
+  left: 31%;
+  height: 15%;
+  width: 17%;
+  border: 1px solid red;
+  font-size: 36px;
+  font-weight: 600;
+  top: 26%;
+  left: 67%;
+  height: 50%;
+  width: 23%; }
+
+#animate7-img4 {
+  position: absolute;
+  top: 7%;
+  left: 31%;
+  height: 15%;
+  width: 17%;
+  border: 1px solid red;
+  font-size: 36px;
+  font-weight: 600;
+  top: 76%;
+  left: 33%;
+  height: 22%;
+  width: 50%; }
+
+@media (max-width: 854px) {
+  #animate1-text1 {
+    font-size: 23vw; }
+  #animate1-text2 {
+    font-size: 3.7vw; }
+  #animate2-3 {
+    font-size: 3vw; }
+  #animate2-text1 {
+    font-size: 4vw; }
+  #animate2-text2 {
+    font-size: 3vw; }
+  #animate3 > * {
+    font-size: 3.5vw; }
+  #animate4 > * {
+    font-size: 3.5vw; }
+  #animate5 > * {
+    font-size: 3.5vw; } }

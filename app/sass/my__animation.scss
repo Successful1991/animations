@@ -1,0 +1,415 @@
+@keyframes animate1-1 {
+  from, 3% {
+    opacity: 0;
+    top:40%;
+  }
+  5%{
+    opacity: 1;
+  }
+  30%{
+    top:5%;
+  }
+  68%,98% {
+    opacity: 1;
+    top:5%;
+  }
+  to {
+    opacity: 0;
+    top:5%;
+  }
+}
+
+.animate1-1 {
+  animation: animate1-1 3.5s;
+}
+
+@keyframes animate1-2 {
+  from {
+    top:40%;
+    //font-size: 190px;
+    transform: translateX(250%) scale(1);;
+    opacity: 0; }
+  8%,45%{
+    top:40%;
+    //font-size: 190px;
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  65%{
+    top:25%;
+    //font-size: 142px;
+    transform: translateX(0) scale(0.8);;
+    opacity: 1;
+  }
+  97%{
+    top:25%;
+    //font-size: 142px;
+    transform: translateX(0) scale(0.8);;
+    opacity: 1;
+  }
+  to {
+    top:25%;
+    //font-size: 142px;
+    transform: translateX(0) scale(0.8);;
+    opacity: 0;
+  }
+}
+.animate1-2 {
+  animation: animate1-2 2.8s;
+}
+
+
+@keyframes animate1-3 {
+  from {
+    transform: translate(250%, 0);
+    opacity: 0;
+  }
+  7%,98%{
+    transform: translate(0 , 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, 250%);
+    opacity: 0;
+  }
+}
+.animate1-3 {
+  animation: animate1-3 1.4s;
+}
+
+@keyframes animate1-4 {
+   from {
+     transform: translateY(-250%) rotate(4deg);
+     opacity: 0;
+   }
+  5%{
+    opacity: 1;
+  }
+   35%{
+     transform: translateY(16%)rotate(4deg);
+   }
+  45%{
+    transform: translateY(0)rotate(0deg);
+  }
+   95%{
+     transform: translateY(0);
+     opacity: 1;
+   }
+   to {
+     transform: translateY(0);
+     opacity: 0;
+   }
+ }
+.animate1-4 {
+  animation: animate1-4 1.5s;
+}
+
+@keyframes animate2-1 {
+  from {
+    transform: translate(-20%, 285%);
+    opacity: 0;
+  }
+  5%{
+    transform: translate(-20%, 285%);
+    opacity: 1;
+  }
+  20%{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  98%{
+    transform: translate(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0);
+    opacity: 0;
+  }
+}
+.animate2-1 {
+  animation: animate2-1 3s;
+}
+
+@keyframes animate2-2 {
+  from {
+    transform: translate(250%, 250%);
+    opacity: 0;
+  }
+  32%,98%{
+    transform: translate(0 , 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, 250%);
+    opacity: 0;
+  }
+}
+.animate2-2 {
+  animation: animate2-2 3s;
+}
+
+@keyframes animate2-3 {
+  from {
+    transform: translate(250%, 0);
+    opacity: 0;
+  }
+  32%,98%{
+    transform: translate(0 , 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, 250%);
+    opacity: 0;
+  }
+}
+.animate2-3 {
+  animation: animate2-3 2.8s;
+}
+
+@keyframes animate-start {
+  from {
+    opacity: 0; }
+  8%,to {
+    opacity: 1;
+  }
+}
+
+@keyframes animate3 {
+  from {
+    transform: translate(0,250%);
+    opacity: 0;
+  }
+  1%{
+    opacity: 1;
+  }
+  3%{
+    opacity: 1;
+    transform: translate(0,-1%);
+  }
+  4%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  5%{
+    transform: translate(0,-1%);
+    opacity: 1;
+  }
+  6%,29%{
+    height: 42%;
+    width: 58%;
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  36%,99%{
+    height: 32%;
+    width: 44%;
+    transform: translate(-24% ,56%);
+    opacity: 1;
+  }
+  to {
+    height: 32%;
+    width: 44%;
+    transform: translate(-24% ,56%);
+    opacity: 0;
+  }
+}
+.animate3 {
+  animation: animate3 8s;
+}
+
+@keyframes animate4 {
+  from {
+    transform: translate(0,250%);
+    opacity: 0;
+  }
+  1%{
+    opacity: 1;
+  }
+  3%{
+    opacity: 1;
+    transform: translate(0,-1%);
+  }
+  4%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  5%{
+    transform: translate(0,-1%);
+    opacity: 1;
+  }
+  6%,29%{
+    height: 42%;
+    width: 58%;
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  36%,99%{
+    height: 32%;
+    width: 44%;
+    transform: translate(52% ,56%);
+    opacity: 1;
+  }
+  to {
+    height: 32%;
+    width: 44%;
+    transform: translate(52% ,56%);
+    opacity: 0;
+  }
+}
+.animate4 {
+  animation: animate4 8s;
+}
+
+
+@keyframes animate5 {
+  from {
+    transform: translate(0,250%);
+    opacity: 0;
+  }
+  1%{
+    opacity: 1;
+  }
+  3%{
+    opacity: 1;
+    transform: translate(0,-1%);
+  }
+  4%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  5%{
+    transform: translate(0,-1%);
+    opacity: 1;
+  }
+  6%,29%{
+    height: 42%;
+    width: 58%;
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  36%,99%{
+    height: 32%;
+    width: 44%;
+    transform: translate(-24% ,56%);
+    opacity: 1;
+  }
+  to {
+    height: 32%;
+    width: 44%;
+    transform: translate(-24% ,56%);
+    opacity: 0;
+  }
+}
+.animate5 {
+  animation: animate5 8s;
+}
+
+@keyframes animate6 {
+  from {
+    transform: translate(0,250%);
+    opacity: 0;
+  }
+  1%{
+    opacity: 1;
+  }
+  3%{
+    opacity: 1;
+    transform: translate(0,-1%);
+  }
+  4%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  5%{
+    transform: translate(0,-1%);
+    opacity: 1;
+  }
+  6%,99%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.animate6 {
+  animation: animate6 2.8s;
+}
+
+.animate-start {
+  animation: animate-start 6s;
+}
+@keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+  }
+}
+.animate-finish {
+  animation: animate-finish .2s;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  5%,to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fadeInUp {
+  animation: fadeInUp 12s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  5%,to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation: fadeIn 12s;
+}
+
+@keyframes fadeInRight {
+   from {
+     transform: translateX(100vw);
+     opacity: 0; }
+   5%,to {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+.fadeInRight {
+  animation: fadeInRight 12s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0; }
+  5%,to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  animation: fadeInLeft 12s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+  }
+}
+.fadeOut {
+  animation: fadeOut 0.5s;
+}
