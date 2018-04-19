@@ -143,17 +143,17 @@ VideoPlayer.prototype.init = function() {
   //To disable all seeking replace the if statements from the next
   //two functions with myPlayer.currentTime(currentTime);
 
-  // self.myPlayer.on('seeking', function(event) {
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
-  //
-  // self.myPlayer.on('seeked', function(event) {
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
+  self.myPlayer.on('seeking', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
+
+  self.myPlayer.on('seeked', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
   self.myPlayer.on('ended', function() {
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
@@ -261,21 +261,6 @@ VideoPlayer.prototype.handleFullScreen = function(event) {
 //   video = vPlayer.video,
 //   textAnimationBlock = document.getElementById ('textAnimationBlock');
 
-//проходим по массиву разбиваем данные по буквам в отдельный span
-// VideoPlayer.prototype.divideWordIntoLetters = function (month) {
-//   var word = month;
-//   var str = word.split ('');
-//   $.each (str, function (index) {
-//     // идем по массиву
-//     $ ('#textAnimate3_2').append (
-//       '<span class="charlie" data-animations="textAnimateLetter" data-times="18.' +
-//       index +
-//       '">' +
-//       (this == ' ' ? '&nbsp;' : this) +
-//       '</span>'
-//     );
-//   });
-// };
 VideoPlayer.prototype.divideWordIntoLettersMs = function (month,id,time,animateClass) {
   var word = month;
   var str = word.split ('');
