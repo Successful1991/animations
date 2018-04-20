@@ -10,8 +10,16 @@
 
     "text41":"Paneer Parantha",
     "text42":"Chichen Wrag",
+    "text4img1":"15% off",
+    "text4img2":"20% off",
 
     "text51":"Ami, Also",
     "text52":"Rajma Masala",
-    "text53":"Flat 20% OFF"
+    "text53":"Flat 20% OFF",
+
+    "img31":"./app/img/divan.png",
+    "img32":"./app/img/divan.png",
+    "img41":"./app/img/divan.png",
+    "img42":"./app/img/divan.png",
+    "img51":"./app/img/divan.png"
 }

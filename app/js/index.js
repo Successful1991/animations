@@ -85,10 +85,22 @@ VideoPlayer.prototype.init = function() {
 
     $('#animate4-text3').text(self.data.text41);
     $('#animate4-text4').text(self.data.text42);
+    $('#animate4-img1text').text(self.data.text4img1);
+    $('#animate4-img2text').text(self.data.text4img2);
+
 
     $('#animate5-text1').text(self.data.text51);
     $('#animate5-text3').text(self.data.text52);
     $('#animate5-text4').text(self.data.text53);
+
+    $('#animate3-img1').css({"background": "url("+ self.data.image31 +") center no-repeat","background-size": "cover"});
+    $('#animate3-img3').css({"background": "url("+ self.data.image32 +") center no-repeat","background-size": "cover"});
+
+    $('#animate4-img1').css({"background": "url("+ self.data.image41 +") center no-repeat","background-size": "cover"});
+    $('#animate4-img2').css({"background": "url("+ self.data.image42 +") center no-repeat","background-size": "cover"});
+
+    $('#animate5-img1').css({"background": "url("+ self.data.image51 +") center no-repeat","background-size": "cover"});
+
     // retargeting video element
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);

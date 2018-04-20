@@ -84,7 +84,7 @@ h1 {
 
 .b-video-player-wrapper {
   position: relative;
-  //overflow: hidden;
+  overflow: hidden;
   display: inline-block;
   width: 100%;
   max-width: 854px;
@@ -420,6 +420,28 @@ h1 {
   height: 40%;
   border: 1px solid red;
 }
+@mixin animate4-img-sale{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #000000;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 1.5px solid #979797;
+  font-family: "SourceSansPro-Regular";
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#animate4-img1text{
+@include animate4-img-sale;
+  left: 12%;
+  top: 36%;
+}
 #animate4-img2{
   position: absolute;
   left: 62%;
@@ -427,6 +449,11 @@ h1 {
   width: 21%;
   height: 40%;
   border: 1px solid red;
+}
+#animate4-img2text{
+  @include animate4-img-sale;
+  left: 78%;
+  top: 36%;
 }
 
 @mixin animate5{
