@@ -84,7 +84,7 @@ h1 {
 
 .b-video-player-wrapper {
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
   display: inline-block;
   width: 100%;
   max-width: 854px;
@@ -504,12 +504,12 @@ h1 {
 #animate5-text4{
   @include animate5;
   top: 70%;
-  left:66%;
+  left:63%;
   font-family: "Pacifico";
   color: #ffffff;
   font-size: 22px;
   font-weight: 500;
-  width: 21%;
+  width: 26%;
 }
 .vjs-fullscreen #animate5-text4{
   font-size: 2.2vw;
@@ -604,10 +604,15 @@ h1 {
     font-size: 4vw;
   }
   #animate5-text4{
-    font-size: 2.2vw;
+    font-size: 3.2vw;
   }
   #animate6-text1{
     font-size: 5vw;
+  }
+  #animate4-img2text,#animate4-img1text{
+    width: 10vw;
+    height: 10vw;
+    font-size: 3.5vw;
   }
 
 
