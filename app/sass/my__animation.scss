@@ -97,7 +97,7 @@
   }
 }
 .fadeOut {
-  animation: fadeOut 0.5s;
+  animation: fadeOut 0.2s;
 }
 @keyframes fadeOutDown {
   from {
@@ -122,7 +122,7 @@
   }
 }
 .fadeOutUp{
-  animation: fadeOutUp 0.7s linear;
+  animation: fadeOutUp 0.2s linear;
 }
 
 @keyframes fadeOutRight {
@@ -135,7 +135,7 @@
   }
 }
 .fadeOutRight{
-  animation: fadeOutRight 0.7s linear;
+  animation: fadeOutRight 0.7s ;
 }
 
 

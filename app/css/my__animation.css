@@ -155,8 +155,8 @@
     opacity: 0; } }
 
 .fadeOut {
-  -webkit-animation: fadeOut 0.5s;
-          animation: fadeOut 0.5s; }
+  -webkit-animation: fadeOut 0.2s;
+          animation: fadeOut 0.2s; }
 
 @-webkit-keyframes fadeOutDown {
   from {
@@ -203,8 +203,8 @@
     opacity: 0; } }
 
 .fadeOutUp {
-  -webkit-animation: fadeOutUp 0.7s linear;
-          animation: fadeOutUp 0.7s linear; }
+  -webkit-animation: fadeOutUp 0.2s linear;
+          animation: fadeOutUp 0.2s linear; }
 
 @-webkit-keyframes fadeOutRight {
   from {
@@ -227,8 +227,8 @@
     opacity: 0; } }
 
 .fadeOutRight {
-  -webkit-animation: fadeOutRight 0.7s linear;
-          animation: fadeOutRight 0.7s linear; }
+  -webkit-animation: fadeOutRight 0.7s;
+          animation: fadeOutRight 0.7s; }
 
 @-webkit-keyframes animate-finish {
   from {
