@@ -1,0 +1,151 @@
+@keyframes animate-start {
+  from {
+    opacity: 0; }
+  3%,to {
+    opacity: 1;
+  }
+}
+.animate-start {
+  animation: animate-start 6s;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  5%,to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fadeInUp {
+  animation: fadeInUp 12s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  5%,to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation: fadeIn 12s;
+}
+
+@keyframes fadeInRight {
+   from {
+     transform: translateX(100vw);
+     opacity: 0; }
+   5%,to {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+.fadeInRight {
+  animation: fadeInRight 12s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0; }
+  5%,to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  animation: fadeInLeft 12s;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  5%,to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation: zoomIn 12s;
+}
+
+
+@keyframes textAnimateLetter {
+  from {
+    opacity: 0 }
+  25%,to {
+    opacity: 1  }
+}
+.textAnimateLetter {
+  animation: textAnimateLetter 10s;
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+  }
+}
+.fadeOut {
+  animation: fadeOut 0.5s;
+}
+@keyframes fadeOutDown {
+  from {
+    transform: translateY(0);
+    opacity: 1; }
+  to {
+    transform: translateY(100vw);
+    opacity: 0;
+  }
+}
+.fadeOutDown{
+  animation: fadeOutDown 0.7s linear;
+}
+
+@keyframes fadeOutUp {
+  from {
+    transform: translateY(0);
+    opacity: 1; }
+  to {
+    transform: translateY(-100vw);
+    opacity: 0;
+  }
+}
+.fadeOutUp{
+  animation: fadeOutUp 0.7s linear;
+}
+
+@keyframes fadeOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1; }
+  to {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+.fadeOutRight{
+  animation: fadeOutRight 0.7s linear;
+}
+
+
+@keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+  }
+}
+.animate-finish {
+  animation: animate-finish .2s;
+}
