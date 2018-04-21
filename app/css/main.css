@@ -302,16 +302,14 @@ h1 {
   left: 15%;
   top: 34%;
   width: 25%;
-  height: 42%;
-  border: 1px solid red; }
+  height: 42%; }
 
 #animate3-img2 {
   position: absolute;
   left: 60%;
   top: 34%;
   width: 25%;
-  height: 42%;
-  border: 1px solid red; }
+  height: 42%; }
 
 #animate4-text1 {
   position: absolute;
@@ -375,8 +373,7 @@ h1 {
   left: 17%;
   top: 41%;
   width: 21%;
-  height: 40%;
-  border: 1px solid red; }
+  height: 40%; }
 
 #animate4-img1text {
   display: -webkit-box;
@@ -412,8 +409,7 @@ h1 {
   left: 62%;
   top: 41%;
   width: 21%;
-  height: 40%;
-  border: 1px solid red; }
+  height: 40%; }
 
 #animate4-img2text {
   display: -webkit-box;
@@ -555,8 +551,7 @@ h1 {
   left: 66%;
   top: 27%;
   width: 21%;
-  height: 40%;
-  border: 1px solid red; }
+  height: 40%; }
 
 #animate6-text1 {
   display: -webkit-box;
@@ -589,8 +584,7 @@ h1 {
   left: 39%;
   top: 40%;
   width: 21%;
-  height: 40%;
-  border: 1px solid red; }
+  height: 40%; }
 
 @media (max-width: 854px) {
   #animate1-text1 {
@@ -609,7 +603,8 @@ h1 {
   #animate2-text3 {
     font-size: 4.5vw; }
   #animate3-text1 {
-    font-size: 2.5vw; }
+    font-size: 2.5vw;
+    letter-spacing: -0.5px; }
   #animate3-text2 {
     font-size: 2.5vw; }
   #animate3-text3 {

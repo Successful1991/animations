@@ -93,13 +93,13 @@ VideoPlayer.prototype.init = function() {
     $('#animate5-text3').text(self.data.text52);
     $('#animate5-text4').text(self.data.text53);
 
-    $('#animate3-img1').css({"background": "url("+ self.data.image31 +") center no-repeat","background-size": "cover"});
-    $('#animate3-img3').css({"background": "url("+ self.data.image32 +") center no-repeat","background-size": "cover"});
+    $('#animate3-img1').css({"background": "url("+ self.data.img31 +") center no-repeat","background-size": "contain"});
+    $('#animate3-img2').css({"background": "url("+ self.data.img32 +") center no-repeat","background-size": "contain"});
 
-    $('#animate4-img1').css({"background": "url("+ self.data.image41 +") center no-repeat","background-size": "cover"});
-    $('#animate4-img2').css({"background": "url("+ self.data.image42 +") center no-repeat","background-size": "cover"});
+    $('#animate4-img1').css({"background": "url("+ self.data.img41 +") center no-repeat","background-size": "contain"});
+    $('#animate4-img2').css({"background": "url("+ self.data.img42 +") center no-repeat","background-size": "contain"});
 
-    $('#animate5-img1').css({"background": "url("+ self.data.image51 +") center no-repeat","background-size": "cover"});
+    $('#animate5-img1').css({"background": "url("+ self.data.img51 +") center no-repeat","background-size": "contain"});
 
     // retargeting video element
     video = document.getElementsByClassName('vjs-tech')[0];
@@ -127,17 +127,17 @@ VideoPlayer.prototype.init = function() {
   //To disable all seeking replace the if statements from the next
   //two functions with myPlayer.currentTime(currentTime);
 
-  // self.myPlayer.on('seeking', function(event) {
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
-  //
-  // self.myPlayer.on('seeked', function(event) {
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
+  self.myPlayer.on('seeking', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
+
+  self.myPlayer.on('seeked', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
   self.myPlayer.on('ended', function() {
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
