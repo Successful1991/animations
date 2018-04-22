@@ -77,9 +77,9 @@ VideoPlayer.prototype.init = function() {
   var video = self.video;
   this.fetchData('data.json', function callback() {
     $('#animate1-text1').text(self.data.text11);
-    $('#animate1-text2').text(self.data.text12);
 
     $('#animate2-text1').text(self.data.text21);
+
     $('#animate3-text2').text(self.data.text31);
     $('#animate3-text3').text(self.data.text32);
 
