@@ -1,0 +1,29 @@
+{
+    "id": "hdfc_01",
+
+    "text11": "Hi,Amit",
+    "text12": "Thank you for ordering",
+    "text13": "from 1mg",
+
+    "text21": "And voila, you just saved 20% on this purchase!",
+    "text211": "1. Himalaya Wellness Ayurslim Tea Pack of 4",
+    "amount211": "₹350",
+    "amount212": "₹280",
+
+    "text221": "2.IME-9 Tablet 60 TAB",
+    "amount221": "₹300",
+    "amount222": "₹240",
+
+    "text231": "3.Zincovit 15 TAB",
+    "amount231": "₹200",
+    "amount232": "₹160",
+
+    "text3":"And Amit with 1mg, you con do more",
+
+    "text41":"Loyalty is what matters and that's why we have rewarded your wallet with Rs 100 for your next purchase.",
+    "amount41":"100",
+
+    "text5":"OFFER 20% OFF",
+
+    "img1":"./app/img/profile.png"
+}
