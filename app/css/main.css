@@ -343,7 +343,7 @@ h1 {
   font-size: 26px;
   font-weight: 500;
   text-transform: uppercase;
-  left: 78%;
+  left: 80%;
   top: 36%; }
 
 #animate5-text1 {
@@ -433,10 +433,10 @@ h1 {
   width: 21%;
   height: 40%; }
 
-#animate4-img2text, #animate4-img1text {
-  width: 10vw;
-  height: 10vw;
-  font-size: 3vw; }
+.vjs-fullscreen #animate4-img2text, .vjs-fullscreen #animate4-img1text {
+  width: 8vw;
+  height: 8vw;
+  font-size: 2.7vw; }
 
 @media (max-width: 854px) {
   #animate1-text1 {
@@ -458,6 +458,6 @@ h1 {
   #animate5-text4 {
     font-size: 3.2vw; }
   #animate4-img2text, #animate4-img1text {
-    width: 10vw;
-    height: 10vw;
-    font-size: 3.5vw; } }
+    width: 8vw;
+    height: 8vw;
+    font-size: 3.2vw; } }
