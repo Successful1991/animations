@@ -4,21 +4,21 @@
 
     "text21":"Thank you Amit",
 
-    "text31":"Buffer Chichen",
-    "text32":"Paneer Rice Bowl",
+    "text31":"Chicken Medley",
+    "text32":"High on Thai(Chicken)",
 
-    "text41":"Paneer Parantha",
-    "text42":"Chichen Wrag",
-    "text4img1":"15% off",
-    "text4img2":"20% off",
+    "text41":"Chicken Mushroom Pasta",
+    "text42":"Tofu with Black Rice",
+    "text4img1":"25% off",
+    "text4img2":"25% off",
 
     "text51":"Ami, Also",
-    "text52":"Rajma Masala",
-    "text53":"Flat 20% OFF",
+    "text52":"Tofu Medly",
+    "text53":"Flat 60% off",
 
-    "img31":"./app/img/Butter_chicken.png",
-    "img32":"./app/img/Dahi_Kachori.png",
-    "img41":"./app/img/Akcaabatkofte.png",
-    "img42":"./app/img/Paneer_Manchurian_Gravy.png",
-    "img51":"./app/img/Rogan_josh.png"
+    "img31":"./app/img/chicken_medley.png",
+    "img32":"./app/img/diy-gourmet_high_on_thai_-_chicken_.png",
+    "img41":"./app/img/chicken_mushroom_pasta_s.png",
+    "img42":"./app/img/tofu_and_zucchini_with_black_rice_s.png",
+    "img51":"./app/img/tofumedly_s.png"
 }
