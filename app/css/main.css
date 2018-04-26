@@ -153,6 +153,9 @@ h1 {
   font-size: 46px;
   font-family: "Montserat-Bold"; }
 
+.vjs-fullscreen #animate1-text1 {
+  font-size: 5.5vw; }
+
 #animate1-text2 {
   position: absolute;
   top: 52%;
@@ -161,8 +164,8 @@ h1 {
   line-height: 1.2em;
   font-family: "Montserat-Bold"; }
 
-.vjs-fullscreen #animate1 {
-  font-size: 9.5vw; }
+.vjs-fullscreen #animate1-text2 {
+  font-size: 3.8vw; }
 
 #animate2-text1 {
   display: -webkit-box;
@@ -190,12 +193,19 @@ h1 {
   top: 18%;
   left: 15%; }
 
+.vjs-fullscreen #animate2-text1 {
+  font-size: 1.5vw; }
+
 .animate2-img {
   height: 85px;
   width: 85px;
   border-radius: 50%;
   border: 1px solid red;
   margin-bottom: 7px; }
+
+.vjs-fullscreen .animate2-img {
+  height: 10vw;
+  width: 10vw; }
 
 #animate2-text2 {
   display: -webkit-box;
@@ -223,6 +233,9 @@ h1 {
   top: 46%;
   left: 10%; }
 
+.vjs-fullscreen #animate2-text2 {
+  font-size: 1.5vw; }
+
 #animate2-text3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -248,6 +261,9 @@ h1 {
           box-sizing: border-box;
   top: 67%;
   left: 22%; }
+
+.vjs-fullscreen #animate2-text3 {
+  font-size: 1.5vw; }
 
 #animate2-text4 {
   display: -webkit-box;
@@ -275,6 +291,9 @@ h1 {
   top: 17%;
   left: 75%; }
 
+.vjs-fullscreen #animate2-text4 {
+  font-size: 1.5vw; }
+
 #animate2-text5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -300,6 +319,9 @@ h1 {
           box-sizing: border-box;
   top: 46%;
   left: 79%; }
+
+.vjs-fullscreen #animate2-text5 {
+  font-size: 1.5vw; }
 
 #animate2-text6 {
   display: -webkit-box;
@@ -327,6 +349,9 @@ h1 {
   top: 66%;
   left: 69%; }
 
+.vjs-fullscreen #animate2-text6 {
+  font-size: 1.5vw; }
+
 #animate3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -350,6 +375,9 @@ h1 {
   font-size: 21px;
   text-decoration: none;
   visibility: hidden; }
+
+.vjs-fullscreen #animate3 {
+  font-size: 2.5vw; }
 
 .animate4 {
   position: absolute;
@@ -375,22 +403,13 @@ h1 {
   font-weight: 500;
   margin-bottom: 10px; }
 
-@media (max-width: 854px) {
-  .animate4 {
-    font-size: 2.04vw; } }
+.vjs-fullscreen .animate4 {
+  font-size: 3vw; }
 
 .button {
   height: 50px;
   width: 200px;
   visibility: hidden; }
-
-.button__left {
-  background: url("../img/arrow-right.png") center no-repeat;
-  background-size: contain; }
-
-.button__right {
-  background: url("../img/arrow-left.png") center no-repeat;
-  background-size: contain; }
 
 .button__left > a, .button__right > a {
   display: -webkit-box;
@@ -405,7 +424,7 @@ h1 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ffffff;
+  color: transparent;
   text-decoration: none;
   width: 100%;
   height: 100%; }
@@ -444,6 +463,32 @@ h1 {
   line-height: 2em;
   text-align: center; }
 
+.vjs-fullscreen #animate4-text {
+  font-size: 3vw; }
+
 @media (max-width: 854px) {
-  #animate1 {
-    font-size: 9.5vw; } }
+  #animate1-text1 {
+    font-size: 5.5vw; }
+  #animate1-text2 {
+    font-size: 3.8vw; }
+  #animate2-text1 {
+    font-size: 1.5vw; }
+  .animate2-img {
+    height: 10vw;
+    width: 10vw; }
+  #animate2-text2 {
+    font-size: 1.5vw; }
+  #animate2-text3 {
+    font-size: 1.5vw; }
+  #animate2-text4 {
+    font-size: 1.5vw; }
+  #animate2-text5 {
+    font-size: 1.5vw; }
+  #animate2-text6 {
+    font-size: 1.5vw; }
+  #animate3 {
+    font-size: 2.5vw; }
+  .animate4 {
+    font-size: 3vw; }
+  #animate4-text {
+    font-size: 3vw; } }
