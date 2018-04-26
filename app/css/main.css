@@ -188,6 +188,7 @@ h1 {
 
 #animate3 {
   position: absolute;
+  left: 0;
   bottom: 0;
   height: 9%;
   width: 100%;
@@ -209,7 +210,7 @@ h1 {
   text-decoration: none; }
 
 .vjs-fullscreen #animate3 {
-  font-size: 3vw; }
+  font-size: 2.8vw; }
 
 #animate4 {
   position: absolute;
@@ -228,4 +229,4 @@ h1 {
   #animate2 {
     font-size: 9.5vw; }
   #animate3 {
-    font-size: 3vw; } }
+    font-size: 2.8vw; } }
