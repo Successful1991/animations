@@ -250,14 +250,12 @@ VideoPlayer.prototype.handleFullScreen = function(event) {
 VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time) {
   var word = month;
   var str = word.split(" ");
-  console.log(str);
+
   var i = 0;
   $.each (str, function (index) {
     // идем по массиву
-    if(i*2 >= 10){
-      var x =("" + time).split(".")[1];
-      if(+x === 9){
-        time += 0.1;
+      if(i === 9){
+        time += 1;
         i=0;
         time = +time.toFixed(2);
       }else{
@@ -265,11 +263,8 @@ VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time) {
         i=0;
         time = +time.toFixed(2);
       }
-    };
-
     $(id).append (
       '<span class="charlie" data-animations="textAnimateLetter" data-times=" '+ time +
-      (i*2) +
       '">' +
       (this == ' ' ? '&nbsp;' : this) +
       '</span>' + '&nbsp;'
