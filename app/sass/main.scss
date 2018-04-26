@@ -1,0 +1,341 @@
+
+@font-face{
+  font-family: "Montserat-Medium";
+  src: url(../font/Montserrat-Medium.ttf);
+}
+@font-face{
+  font-family: "Montserat-Bold";
+  src: url(../font/Montserrat-Bold.ttf);
+}
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+
+/* Sections
+       ========================================================================== */
+
+
+/**
+     * Remove the margin in all browsers (opinionated).
+     */
+
+body {
+  margin: 0;
+}
+
+
+/**
+     * Add the correct display in IE 9-.
+     */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+
+/**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+.b-video-player-wrapper {
+  position: relative;
+  //overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  max-width: 854px;
+}
+
+.b-text-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000000;
+  z-index: 0;
+  overflow: hidden;
+  font-family: "Montserat-Medium";
+}
+
+
+.b-text-animation.is-ready {
+  z-index: 99;
+}
+
+.video-js .vjs-big-play-button {
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.vjs-control-bar {
+  z-index: 100;
+}
+.video-js.vjs-fullscreen {
+  height: 0 !important;
+  padding-top: 56.25% !important;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.show {
+  -webkit-animation-name: show;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: show;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.charlie {
+  opacity: 0;
+}
+.charlie.animated {
+  visibility: visible!important;
+  opacity: 1;
+}
+
+//----------------------------//
+#animate1-text1{
+  position: absolute;
+  top: 35%;
+  left: auto;
+  font-size: 46px;
+  font-family: "Montserat-Bold";
+}
+#animate1-text2{
+  position: absolute;
+  top: 52%;
+  left: auto;
+  font-size: 32px;
+  line-height: 1.2em;
+  font-family: "Montserat-Bold";
+}
+
+.vjs-fullscreen #animate1{
+  font-size: 9.5vw;
+}
+@mixin animate2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  font-size: 16px;
+  font-family: "Montserat-Medium";
+  box-sizing: border-box;
+}
+#animate2-text1{
+  @include animate2;
+  top: 18%;
+  left: 15%;
+}
+.animate2-img{
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  border: 1px solid red;
+  margin-bottom: 7px;
+}
+#animate2-text2{
+  @include animate2;
+  top: 46%;
+  left: 10%;
+}
+#animate2-text3{
+  @include animate2;
+  top: 67%;
+  left: 22%;
+}
+#animate2-text4{
+  @include animate2;
+  top: 17%;
+  left: 75%;
+}
+#animate2-text5{
+  @include animate2;
+  top: 46%;
+  left: 79%;
+}
+#animate2-text6{
+  @include animate2;
+  top: 66%;
+  left: 69%;
+}
+#animate3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: "Montserat-Bold";
+  font-size: 21px;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+
+.animate4{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top:76%;
+  left: 17%;
+  width: 66%;
+  height: 12%;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media(max-width: 854px){
+  .animate4{
+    font-size: 2.04vw;
+  }
+}
+
+
+.button{
+  height: 50px;
+  width: 200px;
+  visibility: hidden;
+}
+.button__left{
+  background: url("../img/arrow-right.png") center no-repeat;
+  background-size: contain;
+}
+.button__right{
+  background: url("../img/arrow-left.png") center no-repeat;
+  background-size: contain;
+}
+.button__left > a, .button__right > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.vjs-fullscreen .animate4{
+  font-size: 2.04vw;
+  .button{
+    height: 10vh;
+    width: 20vw;
+  }
+}
+#animate4-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 54%;
+  height: 30%;
+  font-size: 27px;
+  text-align: center;
+  position: absolute;
+  top:34%;
+  left: 40%;
+  line-height: 2em;
+  text-align: center;
+}
+
+
+
+
+
+//media max-width: 854px //
+
+@media(max-width: 854px) {
+  #animate1 {
+     font-size: 9.5vw;
+   }
+}
