@@ -76,7 +76,7 @@ VideoPlayer.prototype.init = function() {
   var video = self.video;
   this.fetchData('data.json', function callback() {
     $('#animate1-text1').text(self.data.text11);
-    $('#animate1-text2').text(self.data.text12);
+    //$('#animate1-text2').text(self.data.text12);
 
     $('.animate2-text1').text(self.data.text21);
     $('.animate2-text2').text(self.data.text22);
@@ -95,7 +95,7 @@ VideoPlayer.prototype.init = function() {
     $('#animate2-img5').css({"background": "url("+ self.data.img25 +") center no-repeat","background-size": "contain"});
     $('#animate2-img6').css({"background": "url("+ self.data.img26 +") center no-repeat","background-size": "contain"});
 
-
+      self.divideWordIntoLetters (self.data.text12,"#animate1-text2",3.5);
     // retargeting video element
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);
@@ -244,6 +244,42 @@ VideoPlayer.prototype.handleFullScreen = function(event) {
 // var vPlayer = new VideoPlayer (),
 //   video = vPlayer.video,
 //   textAnimationBlock = document.getElementById ('textAnimationBlock');
+
+
+
+VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time) {
+  var word = month;
+  var str = word.split(" ");
+  console.log(str);
+  var i = 0;
+  $.each (str, function (index) {
+    // идем по массиву
+    if(i*2 >= 10){
+      var x =("" + time).split(".")[1];
+      if(+x === 9){
+        time += 0.1;
+        i=0;
+        time = +time.toFixed(2);
+      }else{
+        time += 0.1;
+        i=0;
+        time = +time.toFixed(2);
+      }
+    };
+
+    $(id).append (
+      '<span class="charlie" data-animations="textAnimateLetter" data-times=" '+ time +
+      (i*2) +
+      '">' +
+      (this == ' ' ? '&nbsp;' : this) +
+      '</span>' + '&nbsp;'
+    );
+    i++;
+  });
+};
+
+
+
 
 
 $(document).ready(function() {

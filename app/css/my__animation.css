@@ -70,6 +70,22 @@
   -webkit-animation: animate4__button 16s;
           animation: animate4__button 16s; }
 
+@-webkit-keyframes textAnimateLetter {
+  from {
+    opacity: 0; }
+  25%, to {
+    opacity: 1; } }
+
+@keyframes textAnimateLetter {
+  from {
+    opacity: 0; }
+  25%, to {
+    opacity: 1; } }
+
+.textAnimateLetter {
+  -webkit-animation: textAnimateLetter 10s;
+          animation: textAnimateLetter 10s; }
+
 @-webkit-keyframes animate-finish {
   from {
     opacity: 1; }

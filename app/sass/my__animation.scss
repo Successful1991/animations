@@ -42,6 +42,18 @@
   animation: animate4__button 16s;
 }
 
+
+@keyframes textAnimateLetter {
+  from {
+    opacity: 0 }
+  25%,to {
+    opacity: 1  }
+}
+.textAnimateLetter {
+  animation: textAnimateLetter 10s;
+}
+
+
 @keyframes animate-finish {
   from {
     opacity: 1; }

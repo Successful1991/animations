@@ -184,9 +184,12 @@ h1 {
 }
 
 #animate1-text2{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   position: absolute;
   top: 52%;
-  left: auto;
+  left: 0;
   font-size: 32px;
   line-height: 1.2em;
   font-family: "Montserat-Bold";
@@ -217,7 +220,6 @@ h1 {
   height: 85px;
   width: 85px;
   border-radius: 50%;
-  border: 1px solid red;
   margin-bottom: 7px;
 }
 .vjs-fullscreen .animate2-img{

@@ -157,9 +157,20 @@ h1 {
   font-size: 5.5vw; }
 
 #animate1-text2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   position: absolute;
   top: 52%;
-  left: auto;
+  left: 0;
   font-size: 32px;
   line-height: 1.2em;
   font-family: "Montserat-Bold"; }
@@ -200,7 +211,6 @@ h1 {
   height: 85px;
   width: 85px;
   border-radius: 50%;
-  border: 1px solid red;
   margin-bottom: 7px; }
 
 .vjs-fullscreen .animate2-img {
