@@ -177,10 +177,8 @@ h1 {
   left: 28.5%;
   color: #FEFEFE;
   font-size: 81px;
-  -webkit-transform: perspective(20vw);
-          transform: perspective(20vw);
-  -webkit-transform: rotateX(50deg);
-          transform: rotateX(50deg);
+  -webkit-transform: perspective(30vw) rotateX(45deg);
+          transform: perspective(30vw) rotateX(45deg);
   text-shadow: 0 4vw 13px #000000; }
 
 .vjs-fullscreen #animate2 {
