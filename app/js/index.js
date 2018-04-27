@@ -77,7 +77,7 @@ VideoPlayer.prototype.init = function() {
   this.fetchData('data.json', function callback() {
     $('#animate1').text(self.data.text1);
     $('#fon-animate1').text(self.data.text1);
-    $('#animate2').text(self.data.text2);
+    //$('#animate2').text(self.data.text2);
     $('#animate3').text(self.data.text3).attr("href" ,self.data.urlButton);
     $('#animate4').attr("href" ,self.data.urlButton);
 
@@ -86,6 +86,16 @@ VideoPlayer.prototype.init = function() {
     CHARLIE.setup(video);
     return;
   });
+
+
+  $ ('.charlie').on (self.animationStart, function (el) {
+    console.log(this.id);
+    if (this.id === 'animate2') {
+      console.log(this);
+      self.numberAnimation (self.data.text2, 0, 50, this);
+    }
+  });
+
 
 
   $('#videoPlayerWrapper').append(video);
@@ -222,7 +232,37 @@ VideoPlayer.prototype.handleFullScreen = function(event) {
     );
   }
 };
-
+VideoPlayer.prototype.numberAnimation = function (
+  amount,
+  delay,
+  duration,
+  parent
+) {
+  var options = {
+    amount: amount,
+    delay: delay,
+    duration: duration,
+  };
+  var amount = options.amount;
+  var time = amount / options.duration;
+  var number = 0;
+  var fixed = 0;
+  if (amount.toString ().split ('.')[1]) {
+    fixed = amount.toString ().split ('.')[1].length;
+  }
+  requestAnimationFrame (function interval () {
+    number += time;
+    parent.querySelector ('.number').innerHTML =
+      // Math.round(number * 100) / 100;
+      number.toFixed (fixed);
+    if (number >= amount) {
+      document.querySelector ('.number').innerHTML = amount;
+      cancelAnimationFrame (interval);
+    } else {
+      requestAnimationFrame (interval);
+    }
+  });
+};
 
 
 // };
