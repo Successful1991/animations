@@ -1,13 +1,4 @@
 
-@font-face{
-  font-family: "Montserrat-SemiBold";
-  src: url(../font/Montserrat-SemiBold.ttf);
-}
-@font-face{
-  font-family: "Montserrat-SemiBold-italic";
-  src: url(../font/Montserrat-SemiBoldItalic.ttf);
-}
-
 html {
   font-family: sans-serif;
   /* 1 */
@@ -182,16 +173,11 @@ h1 {
 }
 #animate1-img2{
   position: absolute;
-
   top: 0;
   left: 0;
   width: 40%;
   height: 100%;
   z-index: 100;
-  //top: 28.5%;
-  //left: 10%;
-  //width: 72%;
-  //height: 32.5%;
 }
 .vjs-fullscreen #animate1{
   font-size: 4.3vw;

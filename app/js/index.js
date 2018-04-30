@@ -53,23 +53,6 @@ VideoPlayer.prototype.fetchData = function(uri, callback) {
     });
 };
 
-// VideoPlayer.prototype.init = function() {
-//     var self = this;
-//     var video = self.video;
-//     let params = (new URL(document.location)).searchParams;
-//     let name = params.get("id");
-
-//     //this.fetchData ('data.json', function callback () {
-//     this.fetchData('http://35.200.136.182:8083/video/' + name, function callback() {
-//         console.log(self.data);
-//         $('.js-name').text(self.data.text1);
-//         $('.js-month').text(self.data.text2);
-//         $('#animate3 .animate3__line2').append(
-//             self.data.text3
-//         );
-//         CHARLIE.setup(video);
-//         return;
-//     });
 
 VideoPlayer.prototype.init = function() {
   var self = this;
