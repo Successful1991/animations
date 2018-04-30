@@ -176,15 +176,22 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
+  width: 40.5%;
   height: 100%;
+  z-index: 102;
 }
 #animate1-img2{
   position: absolute;
-  top: 28.5%;
-  left: 10%;
-  width: 72%;
-  height: 32.5%;
+
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  z-index: 100;
+  //top: 28.5%;
+  //left: 10%;
+  //width: 72%;
+  //height: 32.5%;
 }
 .vjs-fullscreen #animate1{
   font-size: 4.3vw;

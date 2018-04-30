@@ -116,17 +116,17 @@ VideoPlayer.prototype.init = function() {
   //To disable all seeking replace the if statements from the next
   //two functions with myPlayer.currentTime(currentTime);
 
-  // self.myPlayer.on('seeking', function(event) {
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
-  //
-  // self.myPlayer.on('seeked', function(event) {
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
+  self.myPlayer.on('seeking', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
+
+  self.myPlayer.on('seeked', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
   self.myPlayer.on('ended', function() {
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
