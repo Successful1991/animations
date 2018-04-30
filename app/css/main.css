@@ -179,10 +179,11 @@ h1 {
   font-size: 70px;
   -webkit-transform: perspective(30vw) rotateX(45deg);
           transform: perspective(30vw) rotateX(45deg);
-  text-shadow: 0 3.5vw 13px #000000; }
+  text-shadow: 0 42px 13px #000000; }
 
 .vjs-fullscreen #animate2 {
-  font-size: 9.5vw; }
+  font-size: 9.5vw;
+  text-shadow: 0 3.5vw 13px #000000; }
 
 #animate3 {
   position: absolute;
@@ -238,7 +239,8 @@ h1 {
   #fon-animate1 {
     font-size: 4.3vw; }
   #animate2 {
-    font-size: 9.5vw; }
+    font-size: 9.5vw;
+    text-shadow: 0 3.5vw 13px #000000; }
   #animate3 {
     font-size: 2.8vw; }
   #animate4 {
