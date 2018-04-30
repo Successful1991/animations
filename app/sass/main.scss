@@ -198,12 +198,12 @@ h1 {
 
 #animate2{
   position: absolute;
-  top: 77%;
+  top: 71%;
   left: 28.5%;
   color: #FEFEFE;
-  font-size: 81px;
+  font-size: 70px;
   transform: perspective(30vw) rotateX(45deg);
-  text-shadow: 0 4vw 13px #000000 ;
+  text-shadow: 0 3.5vw 13px #000000 ;
 }
 
 .vjs-fullscreen #animate2{
@@ -226,8 +226,17 @@ h1 {
 .vjs-fullscreen #animate3{
   font-size: 2.8vw;
 }
-
 #animate4{
+  position: absolute;
+  top: 58%;
+  left:auto;
+  right: auto;
+  height: 14%;
+  width: 100%;
+  font-size: 28px;
+  color: #011f7b;
+}
+#animate5{
   position: absolute;
   top: 78%;
   left:auto;

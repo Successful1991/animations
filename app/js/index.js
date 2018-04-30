@@ -79,7 +79,8 @@ VideoPlayer.prototype.init = function() {
     $('#fon-animate1').text(self.data.text1);
     //$('#animate2').text(self.data.text2);
     $('#animate3').text(self.data.text3).attr("href" ,self.data.urlButton);
-    $('#animate4').attr("href" ,self.data.urlButton);
+    $('#animate4').text(self.data.text4);
+    $('#animate5').attr("href" ,self.data.urlButton);
 
       // retargeting video element
     video = document.getElementsByClassName('vjs-tech')[0];
