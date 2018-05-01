@@ -60,6 +60,7 @@ VideoPlayer.prototype.init = function() {
   this.fetchData('data.json', function callback() {
     $('#animate1-img1').css({"background": "url("+ self.data.img11 +") center no-repeat","background-size": "contain"});
     $('#animate1-img2').css({"background": "url("+ self.data.img12 +") center no-repeat","background-size": "contain"});
+    $('#animate1-text1').text(self.data.text1);
     $('#animate2').text(self.data.text1);
     $('#animate3').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "contain"});
 
