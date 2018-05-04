@@ -200,7 +200,7 @@ h1 {
 @media(max-width: 854px) {
   #animate2{
     font-size: 4.5vw;
-    letter-spacing: -2px;
+    letter-spacing: -0.5vw;
   }
 }
 
@@ -209,7 +209,7 @@ h1 {
     opacity: 0;
     transform: translateY(100%);
   }
-  3%,to {
+  5%,to {
     transform: translateY(0);
     opacity: 1;
   }
@@ -221,15 +221,12 @@ h1 {
 @keyframes animate-zoom {
   from {
     transform: scale(3);
-    opacity: 0;
   }
   45%,55%{
-    opacity: 1;
     transform: scale(1);
   }
 
   to {
-    opacity: 1;
     transform: scale(0);
   }
 }
