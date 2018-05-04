@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
-  videoElem.setAttribute('src', './app/img/BJP_video_final_with_profile_pic.mp4');
+  videoElem.setAttribute('src', './app/img/bjp_white.mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
@@ -60,7 +60,7 @@ VideoPlayer.prototype.init = function() {
   var self = this;
   var video = self.video;
   this.fetchData('data.json', function callback() {
-    $('#animate1-img1').css({"background": "url("+ self.data.img11 +") center no-repeat","background-size": "contain"});
+    $('#animate1-img1').css({"background": "url("+ self.data.img11 +") center no-repeat","background-size": "cover"});
     $('#animate1-img2').css({"background": "url("+ self.data.img12 +") center no-repeat","background-size": "contain"});
 
     $('#animate1-img31').css({"background": "url("+ self.data.img11 +") center no-repeat","background-size": "cover"});
