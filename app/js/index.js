@@ -3,11 +3,12 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
-  videoElem.setAttribute('src', './app/img/forex.mp4');
+  videoElem.setAttribute('src', './app/img/Social_Regalia_Forex_Empty.mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
   videoElem.setAttribute('id', 'js--video-player');
+  videoElem.setAttribute("poster", "./app/img/end_screen_forex_video.png");
   this.video = videoElem;
 }
 
