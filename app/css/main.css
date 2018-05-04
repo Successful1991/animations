@@ -183,7 +183,8 @@ h1 {
 
 @media (max-width: 854px) {
   #animate2 {
-    font-size: 4.5vw; } }
+    font-size: 4.5vw;
+    letter-spacing: -2px; } }
 
 @-webkit-keyframes fadeInUp {
   from {
