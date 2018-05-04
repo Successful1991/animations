@@ -195,6 +195,46 @@ h1 {
   font-size: 4.5vw;
 }
 
+.button5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27.5%;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  visibility: hidden;
+}
+.vjs-fullscreen .button5{
+  font-size: 1.7vw;
+  width: 27vw;
+  height: 3vw;
+}
+#buttonLeft{
+  position: absolute;
+  top: 76.5%;
+  left: 20%;
+  display: flex;
+  height: 12%;
+  width: 18%;
+}
+#buttonRight{
+  position: absolute;
+  top: 76.5%;
+  right: 19%;
+  display: flex;
+  height: 12%;
+  width: 18%;
+}
+
+
+.endScreen{
+  visibility: visible;
+  opacity: 1;
+}
 //media max-width: 854px //
 
 @media(max-width: 854px) {

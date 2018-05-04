@@ -110,6 +110,8 @@ VideoPlayer.prototype.init = function() {
     }
   });
   self.myPlayer.on('ended', function() {
+    $("#buttonLeft").addClass("endScreen");
+    $("#buttonRight").addClass("endScreen");
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
     $(this.bigPlayButton.contentEl()).show();
