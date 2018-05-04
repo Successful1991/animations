@@ -8,7 +8,7 @@ function VideoPlayer() {
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
   videoElem.setAttribute('id', 'js--video-player');
-  videoElem.setAttribute('poster', './app/img/bjp-poster.jpg');
+
 
   this.video = videoElem;
 }
