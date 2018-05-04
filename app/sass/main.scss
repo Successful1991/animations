@@ -169,7 +169,7 @@ h1 {
   left: 0;
   width: 27.7%;
   height: 100%;
-  z-index: 102;
+  z-index: 105;
 }
 #animate1-img2{
   position: absolute;
@@ -177,25 +177,7 @@ h1 {
   left: 0;
   width: 27.7%;
   height: 100%;
-  z-index: 105;
-}
-#animate1-img31{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 27.7%;
-  height: 100%;
-  opacity: 0;
-  z-index: 106;
-}
-#animate1-img32{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 27.7%;
-  height: 100%;
-  opacity: 0;
-  z-index: 105;
+  z-index: 102;
 }
 #animate1-img4{
   position: absolute;
@@ -206,36 +188,6 @@ h1 {
   z-index: 100;
   opacity: 0;
 }
-
-#animate-end-text{
-  position: absolute;
-  top: 70%;
-  left: 0;
-  width: 27.5%;
-  height: 10%;
-  color: #000000;
-  font-size: 30px;
-  opacity: 0;
-  z-index: 105;
-}
-.vjs-fullscreen #animate-end-text{
-  font-size: 3.3vw;
-}
-#animate-end-img{
-  position: absolute;
-  top: 20%;
-  left: 1%;
-  height: 220px;
-  width: 220px;
-  border-radius: 50%;
-  opacity: 0;
-  z-index: 105;
-}
-.vjs-fullscreen #animate-end-img{
-  height: 26vw;
-  width: 26vw;
-}
-
 
 #animate1-text12{
   position: absolute;
@@ -288,6 +240,34 @@ h1 {
   height: 26vw;
   width: 26vw;
 }
+#animate-end-text{
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 27.5%;
+  height: 10%;
+  color: #000000;
+  font-size: 30px;
+  opacity: 0;
+  z-index: 105;
+}
+.vjs-fullscreen #animate-end-text{
+  font-size: 3.3vw;
+}
+#animate-end-img{
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 105;
+}
+.vjs-fullscreen #animate-end-img{
+  height: 26vw;
+  width: 26vw;
+}
 
 .endScreen{
   visibility: visible!important;
@@ -306,12 +286,5 @@ h1 {
   #animate3{
     height: 26vw;
     width: 26vw;
-  }
-  #animate-end-img{
-    height: 26vw;
-    width: 26vw;
-  }
-  #animate-end-text{
-    font-size: 3.3vw;
   }
 }
