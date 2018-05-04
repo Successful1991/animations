@@ -8,51 +8,6 @@
 .animate-start {
   animation: animate-start 6s;
 }
-@keyframes animate-start2 {
-  from {
-    opacity: 0; }
-  1%,to {
-    opacity: 1;
-  }
-}
-.animate-start2 {
-  animation: animate-start2 30s;
-}
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-  5%,to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.zoomIn {
-  animation: zoomIn 12s;
-}
-@keyframes animate4__button {
-  from {
-    opacity: 0; }
-  3%,to {
-    opacity: 1;
-  }
-}
-.animate4__button {
-  animation: animate4__button 16s;
-}
-
-
-@keyframes textAnimateLetter {
-  from {
-    opacity: 0 }
-  25%,to {
-    opacity: 1  }
-}
-.textAnimateLetter {
-  animation: textAnimateLetter 10s;
-}
-
 
 @keyframes animate-finish {
   from {
@@ -62,5 +17,5 @@
   }
 }
 .animate-finish {
-  animation: animate-finish .2s;
+  animation: animate-finish 1s;
 }

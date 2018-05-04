@@ -8,6 +8,8 @@ function VideoPlayer() {
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
   videoElem.setAttribute('id', 'js--video-player');
+  videoElem.setAttribute('poster', './app/img/bjp-poster.jpg');
+
   this.video = videoElem;
 }
 
@@ -60,6 +62,8 @@ VideoPlayer.prototype.init = function() {
   this.fetchData('data.json', function callback() {
     $('#animate1-img1').css({"background": "url("+ self.data.img11 +") center no-repeat","background-size": "contain"});
     $('#animate1-img2').css({"background": "url("+ self.data.img12 +") center no-repeat","background-size": "contain"});
+    $('#animate1-img3').css({"background": "url("+ self.data.img12 +") center no-repeat","background-size": "contain"});
+    $('#animate1-img4').css({"background": "url("+ self.data.img14 +") center no-repeat","background-size": "contain"});
     $('#animate1-text1').text(self.data.text1);
     $('#animate2').text(self.data.text1);
     $('#animate3').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "contain"});
@@ -72,9 +76,7 @@ VideoPlayer.prototype.init = function() {
 
 
   $ ('.charlie').on (self.animationStart, function (el) {
-    console.log(this.id);
     if (this.id === 'animate2') {
-      console.log(this);
       self.numberAnimation (self.data.text2, 0, 50, this);
     }
   });
@@ -112,6 +114,9 @@ VideoPlayer.prototype.init = function() {
     }
   });
   self.myPlayer.on('ended', function() {
+    //$("#animate1-img1").addClass("endScreen");
+    $("#animate1-img3").addClass("endScreen");
+    $("#animate1-img4").addClass("endScreen");
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
     $(this.bigPlayButton.contentEl()).show();
@@ -122,6 +127,9 @@ VideoPlayer.prototype.init = function() {
 
   });
   self.myPlayer.on('play', function() {
+    //$("#animate1-img1").removeClass("endScreen");
+    $("#animate1-img3").removeClass("endScreen");
+    $("#animate1-img4").removeClass("endScreen");
     self.myPlayer.posterImage.hide();
     self.myPlayer.controlBar.show();
     self.myPlayer.bigPlayButton.hide();
