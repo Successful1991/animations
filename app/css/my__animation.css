@@ -11,8 +11,8 @@
     opacity: 1; } }
 
 .animate-start {
-  -webkit-animation: animate-start 6s;
-          animation: animate-start 6s; }
+  -webkit-animation: animate-start 8s;
+          animation: animate-start 8s; }
 
 @-webkit-keyframes animate-finish {
   from {
