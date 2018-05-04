@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
-  videoElem.setAttribute('src', './app/img/bjp_white.mp4');
+  videoElem.setAttribute('src', './app/img/BJP_video_final_with_profile_pic.mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
@@ -60,15 +60,15 @@ VideoPlayer.prototype.init = function() {
   var self = this;
   var video = self.video;
   this.fetchData('data.json', function callback() {
-    $('#animate1-img1').css({"background": "url("+ self.data.img11 +") center no-repeat","background-size": "contain"});
-    $('#animate1-img2').css({"background": "url("+ self.data.img12 +") center no-repeat","background-size": "contain"});
-    $('#animate1-img4').css({"background": "url("+ self.data.img14 +") center no-repeat","background-size": "contain"});
+    $('#animate1-img1').css({"background": "url("+ self.data.img11 +") center no-repeat","background-size": "cover"});
+    $('#animate1-img2').css({"background": "url("+ self.data.img12 +") center no-repeat","background-size": "cover"});
+    $('#animate1-img4').css({"background": "url("+ self.data.img14 +") center no-repeat","background-size": "cover"});
     $('#animate1-text1').text(self.data.text1);
     $('#animate1-text12').text(self.data.text1);
     $('#animate2').text(self.data.text1);
-    $('#animate3').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "contain"});
-    $('#animate31').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "contain"});
-    $('#animate-end-img').css({"background": "url("+ self.data.img3 +") center no-repeat","background-size": "contain"});
+    $('#animate3').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "cover"});
+    $('#animate31').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "cover"});
+    $('#animate-end-img').css({"background": "url("+ self.data.img3 +") center no-repeat","background-size": "cover"});
     // $('#animate-end-text').text(self.data.text1);
       // retargeting video element
     video = document.getElementsByClassName('vjs-tech')[0];
