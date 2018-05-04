@@ -1,0 +1,31 @@
+@-webkit-keyframes animate-start {
+  from {
+    opacity: 0; }
+  3%, to {
+    opacity: 1; } }
+
+@keyframes animate-start {
+  from {
+    opacity: 0; }
+  3%, to {
+    opacity: 1; } }
+
+.animate-start {
+  -webkit-animation: animate-start 6s;
+          animation: animate-start 6s; }
+
+@-webkit-keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.animate-finish {
+  -webkit-animation: animate-finish 1s;
+          animation: animate-finish 1s; }

@@ -1,0 +1,21 @@
+@keyframes animate-start {
+  from {
+    opacity: 0; }
+  3%,to {
+    opacity: 1;
+  }
+}
+.animate-start {
+  animation: animate-start 6s;
+}
+
+@keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+  }
+}
+.animate-finish {
+  animation: animate-finish 1s;
+}
