@@ -132,7 +132,6 @@ VideoPlayer.prototype.init = function() {
 };
 
 
-
 var vPlayer = new VideoPlayer(),
   video = vPlayer.video,
   textAnimationBlock = document.getElementById('textAnimationBlock');
