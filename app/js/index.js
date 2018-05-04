@@ -67,8 +67,9 @@ VideoPlayer.prototype.init = function() {
     $('#animate1-text12').text(self.data.text1);
     $('#animate2').text(self.data.text1);
     $('#animate3').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "contain"});
-    $('#animate-end-img').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "contain"});
-    $('#animate-end-text').text(self.data.text1);
+    $('#animate31').css({"background": "url("+ self.data.img2 +") center no-repeat","background-size": "contain"});
+    $('#animate-end-img').css({"background": "url("+ self.data.img3 +") center no-repeat","background-size": "contain"});
+    // $('#animate-end-text').text(self.data.text1);
       // retargeting video element
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);
@@ -115,9 +116,13 @@ VideoPlayer.prototype.init = function() {
     }
   });
   self.myPlayer.on('ended', function() {
+    // $("#animate-end-img").addClass("endScreen");
+    // $("#animate-end-text").addClass("endScreen");
+    // $("#animate1-img4").addClass("endScreen");
     $("#animate-end-img").addClass("endScreen");
-    $("#animate-end-text").addClass("endScreen");
-    $("#animate1-img4").addClass("endScreen");
+    $("#animate2").addClass("endScreen");
+    $("#animate31").addClass("endScreen");
+
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
     $(this.bigPlayButton.contentEl()).show();
@@ -132,8 +137,10 @@ VideoPlayer.prototype.init = function() {
     $("#animate1-img2").removeClass("endScreen");
     $("#animate1-img4").removeClass("endScreen");
     $("#animate1-text12").removeClass("endScreen");
+
     $("#animate-end-img").removeClass("endScreen");
-    $("#animate-end-text").removeClass("endScreen");
+    $("#animate2").removeClass("endScreen");
+    $("#animate31").removeClass("endScreen");
     self.myPlayer.posterImage.hide();
     self.myPlayer.controlBar.show();
     self.myPlayer.bigPlayButton.hide();
