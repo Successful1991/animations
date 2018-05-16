@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
-  videoElem.setAttribute('src', './app/img/FD_HDFC(non-empty).mp4');
+  videoElem.setAttribute('src', './app/img/FD_HDFC(empty).mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
@@ -58,7 +58,6 @@ VideoPlayer.prototype.init = function() {
   var self = this;
   var video = self.video;
   this.fetchData('data.json', function callback() {
-    //$('#animate1').css({"background": "url("+ self.data.img1 +") center no-repeat","background-size": "contain"});
     $('#animate1-account1').text(self.data.account1);
     $('#animate1-amount1').text(self.data.amount1);
     $('#animate1-account2').text(self.data.account2);
@@ -70,22 +69,11 @@ VideoPlayer.prototype.init = function() {
     $('#animate1-account5').text(self.data.account5);
     $('#animate1-amount5').text(self.data.amount5);
 
-    //self.divideWordIntoLetters (self.data.text1,"#animate2",9.1);
-      // retargeting video element
-
 
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);
     return;
   });
-
-
-  // $ ('.charlie').on (self.animationStart, function (el) {
-  //   if (this.id === 'animate2') {
-  //     self.numberAnimation (self.data.text2, 0, 50, this);
-  //   }
-  // });
-
 
 
   $('#videoPlayerWrapper').append(video);
@@ -119,8 +107,6 @@ VideoPlayer.prototype.init = function() {
     }
   });
   self.myPlayer.on('ended', function() {
-    // $("#buttonLeft").addClass("endScreen");
-    // $("#buttonRight").addClass("endScreen");
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
     $(this.bigPlayButton.contentEl()).show();
@@ -228,34 +214,6 @@ VideoPlayer.prototype.handleFullScreen = function(event) {
 // var vPlayer = new VideoPlayer (),
 //   video = vPlayer.video,
 //   textAnimationBlock = document.getElementById ('textAnimationBlock');
-
-
-
-VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time) {
-  var word = month;
-  var str = word.split("");
-
-  var i = 0;
-  $.each (str, function (index) {
-    // идем по массиву
-    if(i === 5){
-      time += 0.1;
-      i=0;
-      time = +time.toFixed(2);
-    }
-    $(id).append (
-      '<span class="charlie" data-animations="fadeInUp" data-times=" '+ time + i*2 +
-      '">' +
-      (this == ' ' ? '&nbsp;' : this) +
-      '</span>' + '&nbsp;'
-    );
-    i++;
-  });
-};
-
-
-
-
 
 $(document).ready(function() {
 
