@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
-  videoElem.setAttribute('src', './app/img/RBL_non-empty.mp4');
+  videoElem.setAttribute('src', './app/img/RBL-fb(Empty).mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
@@ -60,9 +60,6 @@ VideoPlayer.prototype.init = function() {
   this.fetchData('data.json', function callback() {
     $('#animate1-text1').text(self.data.text1);
     $('#animate1-img1').css({"background": "url("+ self.data.img1 +") center no-repeat","background-size": "contain"});
-    //$('#animate1-img1').text(self.data.img1);
-
-
 
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);
