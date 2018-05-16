@@ -68,6 +68,7 @@ VideoPlayer.prototype.init = function() {
     $('#animate1-amount4').text(self.data.amount4);
     $('#animate1-account5').text(self.data.account5);
     $('#animate1-amount5').text(self.data.amount5);
+    $('#animate2').text(self.data.animate2);
 
 
     video = document.getElementsByClassName('vjs-tech')[0];
