@@ -296,34 +296,6 @@ h1 {
   animation: animate-start2 40s;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  10%,to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.fadeInUp {
-  animation: fadeInUp 12s;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50%,to {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-}
-.fadeInDown {
-  animation: fadeInDown 1s;
-}
-
 @keyframes animate-finish {
   from {
     opacity: 1; }

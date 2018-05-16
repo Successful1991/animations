@@ -328,54 +328,6 @@ h1 {
   -webkit-animation: animate-start2 40s;
           animation: animate-start2 40s; }
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%); }
-  10%, to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1; } }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%); }
-  10%, to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1; } }
-
-.fadeInUp {
-  -webkit-animation: fadeInUp 12s;
-          animation: fadeInUp 12s; }
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  50%, to {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0; } }
-
-@keyframes fadeInDown {
-  from {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  50%, to {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0; } }
-
-.fadeInDown {
-  -webkit-animation: fadeInDown 1s;
-          animation: fadeInDown 1s; }
-
 @-webkit-keyframes animate-finish {
   from {
     opacity: 1; }
