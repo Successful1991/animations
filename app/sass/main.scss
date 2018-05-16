@@ -1,0 +1,270 @@
+@font-face{
+  font-family: "Montserat-SemiBold";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+
+/* Sections
+       ========================================================================== */
+
+
+/**
+     * Remove the margin in all browsers (opinionated).
+     */
+
+body {
+  margin: 0;
+}
+
+
+/**
+     * Add the correct display in IE 9-.
+     */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+
+/**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+.b-video-player-wrapper {
+  position: relative;
+  //overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  max-width: 854px;
+}
+
+.b-text-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #ffffff;
+  z-index: 0;
+  overflow: hidden;
+  font-family: "Montserat-SemiBold";
+}
+
+
+.b-text-animation.is-ready {
+  z-index: 99;
+}
+
+.video-js .vjs-big-play-button {
+  z-index: 999999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.vjs-control-bar {
+  z-index: 100;
+}
+.video-js.vjs-fullscreen {
+  height: 0 !important;
+  padding-top: 56.25% !important;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.show {
+  -webkit-animation-name: show;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: show;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 5px;
+    height: 5px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.charlie {
+  opacity: 0;
+}
+.charlie.animated {
+  visibility: visible!important;
+  opacity: 1;
+}
+
+//----------------------------//
+#animate1-text1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: absolute;
+  top: 23%;
+  right: 62%;
+  width: 18%;
+  height: 5%;
+  font-size: 29px;
+  color: #ff000a;
+}
+.vjs-fullscreen #animate1-text1{
+  font-size: 3.3vw;
+}
+
+#animate1-img1{
+  position: absolute;
+  top:26%;
+  left: 53%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 44%;
+  border: 2px solid red;
+  visibility: hidden;
+}
+
+//media max-width: 854px //
+
+@media(max-width: 854px) {
+  #animate1-text1{
+    font-size: 3.3vw;
+  }
+}
+
+
+
+
+
+
+@keyframes animate-start {
+  from {
+    opacity: 0; }
+  3%,to {
+    opacity: 1;
+  }
+}
+.animate-start {
+  animation: animate-start 8s;
+}
+@keyframes animate-img-start {
+  from {
+    opacity: 0;
+    transform: scale(0.5)rotate(-25deg);
+  }
+  5%{
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1)rotate(0deg);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-img-start {
+  animation: animate-img-start 4s;
+}
+
+@keyframes animate-text-start {
+  from {
+    opacity: 0;
+    transform: scale(1.2)translate(-10%,-50%);
+  }
+  5%{
+    opacity: 1;
+  }
+  95%{
+    transform: scale(1)translate(0,0);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-text-start {
+  animation: animate-text-start 2.5s;
+}
+
+@keyframes animate-finish {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+  }
+}
+.animate-finish {
+  animation: animate-finish 1s;
+}
