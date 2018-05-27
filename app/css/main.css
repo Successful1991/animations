@@ -173,6 +173,26 @@ h1 {
 #animate1-img1 {
   position: absolute;
   top: 29.2%;
+  left: 61%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22.5%;
+  height: 24%;
+  visibility: hidden; }
+
+#animate1-img1fon {
+  position: absolute;
+  top: 29.2%;
   left: 60%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -186,9 +206,11 @@ h1 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 28.5%;
+  width: 24%;
   height: 24%;
-  visibility: hidden; }
+  visibility: hidden;
+  background: url("../img/fon.png") center no-repeat;
+  background-size: contain; }
 
 @media (max-width: 854px) {
   #animate1-text1 {

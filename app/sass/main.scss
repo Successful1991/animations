@@ -186,13 +186,26 @@ h1 {
 #animate1-img1{
   position: absolute;
   top: 29.2%;
+  left: 61%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.5%;
+  height: 24%;
+  visibility: hidden;
+}
+#animate1-img1fon{
+  position: absolute;
+  top: 29.2%;
   left: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28.5%;
+  width: 24%;
   height: 24%;
   visibility: hidden;
+  background: url("../img/fon.png") center no-repeat;
+  background-size: contain;
 }
 
 //media max-width: 854px //
