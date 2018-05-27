@@ -59,7 +59,8 @@ VideoPlayer.prototype.init = function() {
   var video = self.video;
   this.fetchData('data.json', function callback() {
     $('#animate1-text1').text(self.data.text1);
-    $('#animate1-img1').css({"background": "url("+ self.data.img1 +") center no-repeat","background-size": "contain"});
+    $('#animate1-img1').css({"background": "url("+ self.data.img1 +") center no-repeat","background-size": "cover"});
+    //$('#animate1-img1').css({"background": "url("+ self.data.img1 +") center no-repeat","background-size": "contain"});
 
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);
