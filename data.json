@@ -1,0 +1,12 @@
+{
+    "id": "hdfc_01",
+    "text1": "abhishek",
+    "RECO_TYPE":"BUY",
+    "SECURITY_NM":"CMI",
+    "CALL_DATE": "CALL DATE: 21 MAY 2018",
+    "POTENTIAL_UPSIDE":"22.33%",
+    "CMP": "295.1",
+    "STOP_LOSS": "STOP LOSS: $-",
+    "TARGET_PRICE": "361",
+    "HORIZN": "HORIZON:4 QUARTER(S)"
+}

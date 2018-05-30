@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video</title>
+	<link rel="stylesheet" href="app/css/reset.css">
+	<link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="app/css/main.css">
+</head>
+
+<body style="text-align: center">
+
+
+<div id="videoPlayerWrapper" class="b-video-player-wrapper">
+	<div id="textAnimationBlock" class="b-text-animation">
+		<div class="charlie" data-animations="animate-start, animate-finish" data-times="3,7.2" id="animate1">
+			<div class="animate1__line1">Hello &nbsp;<span class="animate1__line1__name"></span></div>
+			<div class="animate1__line2">Greetings from &nbsp;<span class="animate1__line2__name">HDFC Securites</span></div>
+		</div>
+		<div class="charlie" data-animations="fadeInDown, animate-finish" data-times="12,16.6" id="animate2__line1">
+			<span class="animate2__line1__text1"></span>
+			<span class="animate2__line1__text2"></span>
+			<span class="animate2__line1__data"></span>
+		</div>
+		<div class="charlie" data-animations="animate-zoom, animate-finish" data-times="11.5,16.6" id="animate2__line2">
+			<span>Potential Upside</span>
+			<span class="animate2__line2"></span>
+		</div>
+		<div class="charlie" data-animations="fadeInLeft, animate-finish" data-times="12,16.6" id="animate2__line3">
+			<span>CMP:</span>
+			<span class="animate2__line3__amount"></span>
+			<span class="animate2__line3__loss"></span>
+		</div>
+		<div class="charlie" data-animations="fadeInLeft, animate-finish" data-times="12,16.6" id="animate2__line4">
+			<span>TARGET:</span>
+			<span class="animate2__line4__amount"></span>
+			<span class="animate2__line4__loss"></span>
+		</div>
+		<div class="charlie" data-animations="animate-start, animate-finish" data-times="13,16.6" id="animate2__button">
+			<a href="https://deepors.hdfcsec.com/Trade/OrderManagement?asset=eq&transtype=B&isin=INE981B01011&cname=&iframe=false" target="_blank"></a>
+			<a href="https://www.hdfcsec.com/hsl.research.pdf/CMI%20Ltd%20-%20Pick%20of%20the%20Week%20-%20210518.pdf" target="_blank"></a>
+			<a href="https://www.hdfcsec.com/Research/ResearchDetails?ResearchID=7500&AssetId=3&SecurityId=2912&Instname=OPT&Symbol=CMI&ExpiryDate=null&OptType=CE&Strikeprice=null" target="_blank"></a>
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+<script src="app/js/charlie.js"></script>
+<script src="app/js/index.js"></script>
+</body>
+
+</html>
