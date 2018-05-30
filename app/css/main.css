@@ -203,11 +203,11 @@ h1 {
           align-items: flex-start;
   position: absolute;
   top: 14.5%;
-  left: 36%;
+  left: 47%;
   width: auto; }
 
 .animate2__line1__text1 {
-  color: #488856;
+  color: #ffffff;
   font-size: 32px;
   line-height: 1.2em; }
 
@@ -222,13 +222,12 @@ h1 {
 .vjs-fullscreen .animate2__line1__text2 {
   font-size: 5.5vw; }
 
-.animate2__line1__data {
-  color: #ffffff;
-  font-size: 29px;
-  line-height: 1.2em; }
+.animate2__line1__loss {
+  font-size: 22px;
+  line-height: 1.7em; }
 
-.vjs-fullscreen .animate2__line1__data {
-  font-size: 3.4vw; }
+.vjs-fullscreen .animate2__line1__loss {
+  font-size: 2.5vw; }
 
 #animate2__line2 {
   display: -webkit-box;
@@ -249,8 +248,8 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 37%;
-  left: 5%;
+  top: 31%;
+  left: 14%;
   width: 26%;
   height: 20%;
   font-size: 25px;
@@ -288,12 +287,12 @@ h1 {
       -ms-flex-align: start;
           align-items: flex-start;
   position: absolute;
-  top: 55%;
-  left: 38%;
-  width: 26%;
-  height: 20%;
+  top: 47%;
+  left: 48%;
+  width: 28%;
   font-size: 28px;
-  overflow: hidden; }
+  overflow: hidden;
+  white-space: pre; }
 
 .vjs-fullscreen #animate2__line3 {
   font-size: 3.3vw; }
@@ -305,12 +304,16 @@ h1 {
 .vjs-fullscreen .animate2__line3__amount {
   font-size: 4vw; }
 
-.animate2__line3__loss {
-  font-size: 21px;
-  line-height: 1.7em; }
+.animate2__data {
+  position: absolute;
+  top: 70%;
+  left: 47%;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.2em; }
 
-.vjs-fullscreen .animate2__line3__loss {
-  font-size: 2.5vw; }
+.vjs-fullscreen .animate2__data {
+  font-size: 3.4vw; }
 
 #animate2__line4 {
   display: -webkit-box;
@@ -331,10 +334,9 @@ h1 {
       -ms-flex-align: start;
           align-items: flex-start;
   position: absolute;
-  top: 55%;
-  left: 67%;
+  top: 47%;
+  left: 73%;
   width: 30%;
-  height: 20%;
   font-size: 28px;
   overflow: hidden; }
 
@@ -347,13 +349,6 @@ h1 {
 
 .vjs-fullscreen .animate2__line4__amount {
   font-size: 4vw; }
-
-.animate2__line4__loss {
-  font-size: 22px;
-  line-height: 1.7em; }
-
-.vjs-fullscreen .animate2__line4__loss {
-  font-size: 2.5vw; }
 
 #animate2__button {
   display: -webkit-box;
@@ -371,7 +366,8 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 20%; }
+  height: 20%;
+  visibility: hidden; }
   #animate2__button a {
     height: 68%;
     width: 15%; }
@@ -383,8 +379,6 @@ h1 {
     font-size: 3.3vw; }
   .animate2__line1__text2 {
     font-size: 5.5vw; }
-  .animate2__line1__data {
-    font-size: 3.4vw; }
   #animate2__line2 {
     font-size: 3vw; }
   .animate2__line2 {
@@ -393,13 +387,13 @@ h1 {
     font-size: 3.3vw; }
   .animate2__line3__amount {
     font-size: 4vw; }
-  .animate2__line3__loss {
-    font-size: 2.5vw; }
+  .animate2__line3__data {
+    font-size: 3.4vw; }
   #animate2__line4 {
     font-size: 3.3vw; }
   .animate2__line4__amount {
     font-size: 4vw; }
-  .animate2__line4__loss {
+  .animate2__line1__loss {
     font-size: 2.5vw; } }
 
 @-webkit-keyframes animate-start {

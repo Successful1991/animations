@@ -3,7 +3,7 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 function VideoPlayer() {
   var videoElem = document.createElement('VIDEO');
-  videoElem.setAttribute('src', './app/img/HDFC-Securities Empty.mp4');
+  videoElem.setAttribute('src', './app/img/EMPTY.HDFC(Without arrow).mp4');
   videoElem.setAttribute('class', 'video-js vjs-fluid');
   videoElem.setAttribute('webkit-playsinline', '');
   videoElem.setAttribute('playsinline', '');
@@ -61,12 +61,14 @@ VideoPlayer.prototype.init = function() {
     $('#animate1 .animate1__line1__name').text(self.data.text1);
     $('.animate2__line1__text1').text(self.data.RECO_TYPE);
     $('.animate2__line1__text2').text(self.data.SECURITY_NM);
-    $('.animate2__line1__data').text(self.data.CALL_DATE);
+
     $('.animate2__line2').text(self.data.POTENTIAL_UPSIDE);
     $('.animate2__line3__amount').text(self.data.CMP);
-    $('.animate2__line3__loss').text(self.data.STOP_LOSS);
+    $('.animate2__data').text(self.data.CALL_DATE);
+    //$('.animate2__line3__data').text(self.data.CALL_DATE);
+    //$('.animate2__line3__loss').text(self.data.STOP_LOSS);
     $('.animate2__line4__amount').text(self.data.TARGET_PRICE);
-    $('.animate2__line4__loss').text(self.data.HORIZN);
+    $('.animate2__line1__loss').text(self.data.HORIZN);
 
 
     video = document.getElementsByClassName('vjs-tech')[0];
