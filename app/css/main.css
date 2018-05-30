@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'roboto';
   src: url("../fonts/roboto-Regular.ttf"); }
@@ -369,8 +370,56 @@ h1 {
   height: 20%;
   visibility: hidden; }
   #animate2__button a {
-    height: 68%;
-    width: 15%; }
+    position: absolute;
+    top: 17%;
+    height: 70%;
+    width: 15%;
+    border-radius: 10px;
+    font-size: 32px;
+    color: #ffffff; }
+    #animate2__button a:nth-child(1) {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      left: 11%;
+      width: 13%;
+      text-decoration: none;
+      background: #2cb70f; }
+    #animate2__button a:nth-child(2) {
+      left: 43.4%;
+      width: 13.3%;
+      border-radius: 15%;
+      border: 1.5px solid #626262;
+      background: url("../img/Безымянный1.png") center no-repeat;
+      background-size: contain; }
+    #animate2__button a:nth-child(3) {
+      left: 75.5%;
+      width: 13.2%;
+      border-radius: 15%;
+      border: 1.5px solid #626262;
+      background: url("../img/Безымянный2.png") center no-repeat;
+      background-size: contain; }
+
+#animate__screen {
+  height: 100%;
+  width: 100%;
+  background: url("../img/HDFC_end.screen.jpg") center no-repeat;
+  background-size: contain;
+  opacity: 0;
+  visibility: hidden; }
+
+.endScreen {
+  visibility: visible !important;
+  opacity: 1 !important; }
 
 @media (max-width: 854px) {
   #animate1 {
@@ -416,7 +465,9 @@ h1 {
 
 @-webkit-keyframes animate-zoom {
   from {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0); }
   1% {
     opacity: 1;
     -webkit-transform: scale(0);
@@ -428,7 +479,9 @@ h1 {
 
 @keyframes animate-zoom {
   from {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0); }
   1% {
     opacity: 1;
     -webkit-transform: scale(0);

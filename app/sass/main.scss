@@ -331,9 +331,52 @@ h1 {
   height: 20%;
   visibility: hidden;
   a{
-    height: 68%;
+    position: absolute;
+    top:17%;
+    height: 70%;
     width: 15%;
+    border-radius: 10px;
+    font-size: 32px;
+    color: #ffffff;
+    &:nth-child(1){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left:11%;
+      width: 13%;
+      text-decoration: none;
+      background: #2cb70f;
+    }
+    &:nth-child(2){
+      left:43.4%;
+      width: 13.3%;
+      border-radius: 15%;
+      border: 1.5px solid #626262;
+      background: url("../img/Безымянный1.png") center no-repeat;
+      background-size: contain;
+    }
+    &:nth-child(3){
+      left:75.5%;
+      width: 13.2%;
+      border-radius: 15%;
+      border: 1.5px solid #626262;
+      background: url("../img/Безымянный2.png") center no-repeat;
+      background-size: contain;
+    }
   }
+}
+
+#animate__screen{
+  height: 100%;
+  width: 100%;
+  background: url("../img/HDFC_end.screen.jpg") center no-repeat;
+  background-size: contain;
+  opacity: 0;
+  visibility: hidden;
+}
+.endScreen{
+  visibility: visible!important;
+  opacity: 1!important;
 }
 //media max-width: 854px //
 
@@ -391,7 +434,9 @@ h1 {
 }
 @keyframes animate-zoom{
   from {
-    opacity: 0; }
+    opacity: 0;
+    transform: scale(0);
+  }
   1%{
     opacity: 1;
     transform: scale(0);

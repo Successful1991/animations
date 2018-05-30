@@ -108,6 +108,13 @@ VideoPlayer.prototype.init = function() {
   //   }
   // });
   self.myPlayer.on('ended', function() {
+    $('#animate2__line1').addClass("endScreen");
+    $('#animate2__line2').addClass("endScreen");
+    $('#animate2__line3').addClass("endScreen");
+    $('.animate2__data').addClass("endScreen");
+    $('#animate2__line4').addClass("endScreen");
+    $('#animate2__button').addClass("endScreen");
+    $('#animate__screen').addClass("endScreen");
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
     $(this.bigPlayButton.contentEl()).show();
@@ -118,6 +125,13 @@ VideoPlayer.prototype.init = function() {
 
   });
   self.myPlayer.on('play', function() {
+    $('#animate2__line1').removeClass("endScreen");
+    $('#animate2__line2').removeClass("endScreen");
+    $('#animate2__line3').removeClass("endScreen");
+    $('.animate2__data').removeClass("endScreen");
+    $('#animate2__line4').removeClass("endScreen");
+    $('#animate2__button').removeClass("endScreen");
+    $('#animate__screen').removeClass("endScreen");
     self.myPlayer.posterImage.hide();
     self.myPlayer.controlBar.show();
     self.myPlayer.bigPlayButton.hide();
