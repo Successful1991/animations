@@ -320,51 +320,97 @@ h1 {
 .vjs-fullscreen .animate2__line4__amount{
   font-size: 4vw;
 }
-#animate2__button{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+//#animate2__button{
+//  display: flex;
+//  justify-content: space-around;
+//  align-items: center;
+//  position: absolute;
+//  bottom: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 20%;
+//  visibility: hidden;
+//  a{
+//    position: absolute;
+//    top:17%;
+//    height: 70%;
+//    width: 15%;
+//    border-radius: 10px;
+//    font-size: 32px;
+//    color: #ffffff;
+//    &:nth-child(1){
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      left:11%;
+//      width: 13%;
+//      text-decoration: none;
+//      background: #2cb70f;
+//    }
+//    &:nth-child(2){
+//      left:43.4%;
+//      width: 13.3%;
+//      border-radius: 15%;
+//      border: 1.5px solid #626262;
+//      background: url("../img/Безымянный1.png") center no-repeat;
+//      background-size: contain;
+//    }
+//    &:nth-child(3){
+//      left:75.5%;
+//      width: 13.2%;
+//      border-radius: 15%;
+//      border: 1.5px solid #626262;
+//      background: url("../img/Безымянный2.png") center no-repeat;
+//      background-size: contain;
+//    }
+//  }
+//}
+.button{
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  visibility: hidden;
-  a{
+  top:83.5%;
+  width: 13%;
+  height: 13.6%;
+}
+#animate2__button{
+  &1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top:17%;
-    height: 70%;
-    width: 15%;
+    top:83.5%;
+    width: 13%;
+    height: 13.6%;
+    left:11%;
+    text-decoration: none;
+    background: #2cb70f;
     border-radius: 10px;
     font-size: 32px;
     color: #ffffff;
-    &:nth-child(1){
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      left:11%;
-      width: 13%;
-      text-decoration: none;
-      background: #2cb70f;
-    }
-    &:nth-child(2){
-      left:43.4%;
-      width: 13.3%;
-      border-radius: 15%;
-      border: 1.5px solid #626262;
-      background: url("../img/Безымянный1.png") center no-repeat;
-      background-size: contain;
-    }
-    &:nth-child(3){
-      left:75.5%;
-      width: 13.2%;
-      border-radius: 15%;
-      border: 1.5px solid #626262;
-      background: url("../img/Безымянный2.png") center no-repeat;
-      background-size: contain;
-    }
+  }
+  &2{
+    position: absolute;
+    top:83.5%;
+    left:43.4%;
+    width: 13.3%;
+    height: 13.6%;
+    border-radius: 15%;
+    border: 1.5px solid #626262;
+    background: url("../img/Безымянный1.png") center no-repeat;
+    background-size: contain;
+  }
+  &3{
+    position: absolute;
+    top:83.5%;
+    left:75.5%;
+    width: 13.2%;
+    height: 13.6%;
+    border-radius: 15%;
+    border: 1.5px solid #626262;
+    background: url("../img/Безымянный2.png") center no-repeat;
+    background-size: contain;
   }
 }
+
 
 #animate__screen{
   height: 100%;
