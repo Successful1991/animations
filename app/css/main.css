@@ -184,53 +184,39 @@ h1 {
 .vjs-fullscreen #animate1 {
   font-size: 5vw; }
 
-#animate2__line1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+#animate2__line1__text1 {
   position: absolute;
   top: 14.5%;
   left: 47%;
-  width: auto; }
-
-.animate2__line1__text1 {
   color: #ffffff;
   font-size: 32px;
   line-height: 1.2em; }
 
-.vjs-fullscreen .animate2__line1__text1 {
+.vjs-fullscreen #animate2__line1__text1 {
   font-size: 3.3vw; }
 
-.animate2__line1__text2 {
+#animate2__line1__text2 {
+  position: absolute;
+  top: 21.5%;
+  left: 47%;
   color: #03417d;
   font-size: 46px;
   line-height: 1.2em; }
 
-.vjs-fullscreen .animate2__line1__text2 {
+.vjs-fullscreen #animate2__line1__text2 {
   font-size: 5.5vw; }
 
-.animate2__line1__loss {
+#animate2__line1__loss {
+  position: absolute;
+  top: 31.5%;
+  left: 47%;
   font-size: 22px;
   line-height: 1.7em; }
 
-.vjs-fullscreen .animate2__line1__loss {
+.vjs-fullscreen #animate2__line1__loss {
   font-size: 2.5vw; }
 
-#animate2__line2 {
+#animate2__line2__text1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -252,45 +238,31 @@ h1 {
   top: 31%;
   left: 14%;
   width: 26%;
-  height: 20%;
+  height: 6%;
   font-size: 25px;
   font-weight: 700;
-  color: #000000;
-  overflow: hidden; }
+  color: #000000; }
 
-.animate2__line2 {
+#animate2__line2__text2 {
+  position: absolute;
+  top: 38%;
+  left: 14%;
+  width: 26%;
+  height: 12%;
   font-size: 54px;
-  line-height: 1.7em;
+  font-weight: 700;
   color: #3A7358; }
 
-.vjs-fullscreen #animate2__line2 {
+.vjs-fullscreen #animate2__line2__text1 {
   font-size: 3vw; }
 
-.vjs-fullscreen .animate2__line2 {
+.vjs-fullscreen #animate2__line2__text2 {
   font-size: 6.3vw; }
 
 #animate2__line3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: absolute;
   top: 47%;
   left: 48%;
-  width: 28%;
   font-size: 28px;
   overflow: hidden;
   white-space: pre; }
@@ -298,11 +270,14 @@ h1 {
 .vjs-fullscreen #animate2__line3 {
   font-size: 3.3vw; }
 
-.animate2__line3__amount {
+#animate2__line3__amount {
+  position: absolute;
+  top: 54%;
+  left: 48%;
   color: #0B4684;
   font-size: 36px; }
 
-.vjs-fullscreen .animate2__line3__amount {
+.vjs-fullscreen #animate2__line3__amount {
   font-size: 4vw; }
 
 .animate2__data {
@@ -317,38 +292,23 @@ h1 {
   font-size: 3.4vw; }
 
 #animate2__line4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: absolute;
   top: 47%;
   left: 73%;
-  width: 30%;
   font-size: 28px;
   overflow: hidden; }
 
 .vjs-fullscreen #animate2__line4 {
   font-size: 3.3vw; }
 
-.animate2__line4__amount {
+#animate2__line4__amount {
+  position: absolute;
+  top: 54%;
+  left: 73%;
   color: #0B4684;
   font-size: 36px; }
 
-.vjs-fullscreen .animate2__line4__amount {
+.vjs-fullscreen #animate2__line4__amount {
   font-size: 4vw; }
 
 .button {
@@ -460,52 +420,62 @@ h1 {
 @-webkit-keyframes animate-zoom {
   from {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: scale(0);
             transform: scale(0); }
   1% {
     opacity: 1;
+    visibility: visible !important;
     -webkit-transform: scale(0);
             transform: scale(0); }
   10%, to {
     opacity: 1;
+    visibility: visible !important;
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
 @keyframes animate-zoom {
   from {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: scale(0);
             transform: scale(0); }
   1% {
     opacity: 1;
+    visibility: visible !important;
     -webkit-transform: scale(0);
             transform: scale(0); }
   10%, to {
     opacity: 1;
+    visibility: visible !important;
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
 .animate-zoom {
-  -webkit-animation: animate-zoom 8s;
-          animation: animate-zoom 8s; }
+  -webkit-animation: animate-zoom 8s forwards;
+          animation: animate-zoom 8s forwards; }
 
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
   10%, to {
     opacity: 1;
+    visibility: visible !important;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
 @keyframes fadeInDown {
   from {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
   10%, to {
     opacity: 1;
+    visibility: visible !important;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
@@ -516,20 +486,24 @@ h1 {
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   10%, to {
     opacity: 1;
+    visibility: visible !important;
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 
 @keyframes fadeInLeft {
   from {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   10%, to {
     opacity: 1;
+    visibility: visible !important;
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
 

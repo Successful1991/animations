@@ -59,17 +59,28 @@ VideoPlayer.prototype.init = function() {
   var video = self.video;
   this.fetchData('data.json', function callback() {
     $('#animate1 .animate1__line1__name').text(self.data.text1);
-    $('.animate2__line1__text1').text(self.data.RECO_TYPE);
-    $('.animate2__line1__text2').text(self.data.SECURITY_NM);
 
-    $('.animate2__line2').text(self.data.POTENTIAL_UPSIDE);
-    $('.animate2__line3__amount').text(self.data.CMP);
-    $('.animate2__data').text(self.data.CALL_DATE);
-    //$('.animate2__line3__data').text(self.data.CALL_DATE);
-    //$('.animate2__line3__loss').text(self.data.STOP_LOSS);
-    $('.animate2__line4__amount').text(self.data.TARGET_PRICE);
-    $('.animate2__line1__loss').text(self.data.HORIZN);
+    // $('#animate2__line1__text1').text(self.data.RECO_TYPE);
+    // $('#animate2__line1__text2').text(self.data.SECURITY_NM);
+    // $('#animate2__line1__loss').text(self.data.HORIZN);
 
+    // $('#animate2__line2__text2').text(self.data.POTENTIAL_UPSIDE);
+    //$('#animate2__line3__amount').text(self.data.CMP);
+    //$('.animate2__data').text(self.data.CALL_DATE);
+
+    //$('#animate2__line4__amount').text(self.data.TARGET_PRICE);
+
+    self.divideWordIntoLetters (self.data.RECO_TYPE,"#animate2__line1__text1",12.1,"fadeInDown");
+    self.divideWordIntoLetters (self.data.SECURITY_NM,"#animate2__line1__text2",12.4,"fadeInDown");
+    self.divideWordIntoLetters (self.data.HORIZN,"#animate2__line1__loss",12.7,"fadeInDown");
+
+    // self.divideWordIntoLetters (animate2__line2__text1,"#animate2__line2__text1",13.3,"animate-zoom");
+    self.divideWordIntoLetters (self.data.POTENTIAL_UPSIDE,"#animate2__line2__text2",13.1,"animate-zoom");
+
+    self.divideWordIntoLetters (self.data.CMP,"#animate2__line3__amount",13.5,"fadeInLeft");
+    self.divideWordIntoLetters (self.data.CALL_DATE,".animate2__data",14.5,"fadeInLeft");
+
+    self.divideWordIntoLetters (self.data.TARGET_PRICE,"#animate2__line4__amount",14.1,"fadeInLeft");
 
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);
@@ -108,12 +119,19 @@ VideoPlayer.prototype.init = function() {
   //   }
   // });
   self.myPlayer.on('ended', function() {
-    $('#animate2__line1').addClass("endScreen");
-    $('#animate2__line2').addClass("endScreen");
+    $('#animate2__line1__text1').addClass("endScreen");
+    $('#animate2__line1__text2').addClass("endScreen");
+    $('#animate2__line1__loss').addClass("endScreen");
+    $('#animate2__line2__text1').addClass("endScreen");
+    $('#animate2__line2__text2').addClass("endScreen");
     $('#animate2__line3').addClass("endScreen");
+    $('#animate2__line3__amount').addClass("endScreen");
     $('.animate2__data').addClass("endScreen");
     $('#animate2__line4').addClass("endScreen");
-    $('#animate2__button').addClass("endScreen");
+    $('#animate2__line4__amount').addClass("endScreen");
+    $('#animate2__button1').addClass("endScreen");
+    $('#animate2__button2').addClass("endScreen");
+    $('#animate2__button3').addClass("endScreen");
     $('#animate__screen').addClass("endScreen");
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
@@ -125,12 +143,19 @@ VideoPlayer.prototype.init = function() {
 
   });
   self.myPlayer.on('play', function() {
-    $('#animate2__line1').removeClass("endScreen");
-    $('#animate2__line2').removeClass("endScreen");
+    $('#animate2__line1__text1').removeClass("endScreen");
+    $('#animate2__line1__text2').removeClass("endScreen");
+    $('#animate2__line1__loss').removeClass("endScreen");
+    $('#animate2__line2__text1').removeClass("endScreen");
+    $('#animate2__line2__text2').removeClass("endScreen");
     $('#animate2__line3').removeClass("endScreen");
+    $('#animate2__line3__amount').removeClass("endScreen");
     $('.animate2__data').removeClass("endScreen");
     $('#animate2__line4').removeClass("endScreen");
-    $('#animate2__button').removeClass("endScreen");
+    $('#animate2__line4__amount').removeClass("endScreen");
+    $('#animate2__button1').removeClass("endScreen");
+    $('#animate2__button2').removeClass("endScreen");
+    $('#animate2__button3').removeClass("endScreen");
     $('#animate__screen').removeClass("endScreen");
     self.myPlayer.posterImage.hide();
     self.myPlayer.controlBar.show();
@@ -141,7 +166,16 @@ VideoPlayer.prototype.init = function() {
   });
 };
 
-
+$('#bitt').click(function () {
+  $('#animate2__line1').addClass("fadeInDown");
+  $('#animate2__line2').addClass("animate-zoom");
+  $('#animate2__line3').addClass("fadeInLeft");
+  $('.animate2__data').addClass("fadeInLeft");
+  $('#animate2__line4').addClass("fadeInLeft");
+  $('#animate2__button1').addClass("animate-zoom");
+  $('#animate2__button2').addClass("animate-zoom");
+  $('#animate2__button3').addClass("animate-zoom");
+});
 var vPlayer = new VideoPlayer(),
   video = vPlayer.video,
   textAnimationBlock = document.getElementById('textAnimationBlock');
@@ -229,6 +263,37 @@ VideoPlayer.prototype.handleFullScreen = function(event) {
 // var vPlayer = new VideoPlayer (),
 //   video = vPlayer.video,
 //   textAnimationBlock = document.getElementById ('textAnimationBlock');
+
+VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time,animateClass) {
+  var word = month;
+  var str = word.split ('');
+  var i = 0;
+  $.each (str, function (index) {
+    // идем по массиву
+    if(i*2 >= 10){
+      var x =("" + time).split(".")[1];
+      if(+x === 9){
+        time += 0.1;
+        i=0;
+        time = +time.toFixed(2);
+      }else{
+        time += 0.1;
+        i=0;
+        time = +time.toFixed(2);
+      }
+    };
+
+    $(id).append (
+      '<span class="charlie" data-animations="'+ animateClass + '" data-times=" '+ time +
+      (i*2) +
+      '">' +
+      (this == ' ' ? '&nbsp;' : this) +
+      '</span>'
+    );
+    i++;
+  });
+};
+
 
 $(document).ready(function() {
 

@@ -194,41 +194,50 @@ h1 {
 .vjs-fullscreen #animate1{
   font-size: 5vw;
 }
-#animate2__line1{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+//#animate2__line1{
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: flex-start;
+//  align-items: flex-start;
+//  position: absolute;
+//  top: 14.5%;
+//  left: 47%;
+//  width: auto;
+//}
+#animate2__line1__text1{
   position: absolute;
   top: 14.5%;
   left: 47%;
-  width: auto;
-}
-.animate2__line1__text1{
   color: #ffffff;
   font-size: 32px;
   line-height: 1.2em;
 }
-.vjs-fullscreen .animate2__line1__text1{
+.vjs-fullscreen #animate2__line1__text1{
   font-size: 3.3vw;
 }
-.animate2__line1__text2{
+#animate2__line1__text2{
+  position: absolute;
+  top: 21.5%;
+  left: 47%;
   color: #03417d;
   font-size: 46px;
   line-height: 1.2em;
 }
-.vjs-fullscreen .animate2__line1__text2{
+.vjs-fullscreen #animate2__line1__text2{
   font-size: 5.5vw;
 }
-.animate2__line1__loss{
+#animate2__line1__loss{
+  position: absolute;
+  top: 31.5%;
+  left: 47%;
   font-size: 22px;
   line-height: 1.7em;
 }
-.vjs-fullscreen .animate2__line1__loss{
+.vjs-fullscreen #animate2__line1__loss{
   font-size: 2.5vw;
 }
 
-#animate2__line2{
+#animate2__line2__text1{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -237,32 +246,35 @@ h1 {
   top: 31%;
   left: 14%;
   width: 26%;
-  height: 20%;
+  height: 6%;
   font-size: 25px;
   font-weight: 700;
   color: #000000;
-  overflow: hidden;
 }
-.animate2__line2{
+#animate2__line2__text2{
+  position: absolute;
+  top: 38%;
+  left: 14%;
+  width: 26%;
+  height: 12%;
   font-size: 54px;
-  line-height: 1.7em;
+  font-weight: 700;
   color: #3A7358;
 }
-.vjs-fullscreen #animate2__line2{
+.vjs-fullscreen #animate2__line2__text1{
   font-size: 3vw;
-}.vjs-fullscreen .animate2__line2{
+}.vjs-fullscreen #animate2__line2__text2{
   font-size: 6.3vw;
 }
 #animate2__line3{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+  //align-items: flex-start;
   position: absolute;
   top: 47%;
   left: 48%;
-  width: 28%;
-  //height: 20%;
+  //width: 28%;
   font-size: 28px;
   overflow: hidden;
   white-space: pre;
@@ -270,11 +282,15 @@ h1 {
 .vjs-fullscreen #animate2__line3{
   font-size: 3.3vw;
 }
-.animate2__line3__amount{
+#animate2__line3__amount{
+  position: absolute;
+  top: 54%;
+  left: 48%;
+  //width: 28%;
   color: #0B4684;
   font-size: 36px;
 }
-.vjs-fullscreen .animate2__line3__amount{
+.vjs-fullscreen #animate2__line3__amount{
   font-size: 4vw;
 }
 .animate2__data{
@@ -288,83 +304,33 @@ h1 {
 .vjs-fullscreen .animate2__data{
   font-size: 3.4vw;
 }
-// .animate2__line3__data{
-//  position: absolute;
-//  color: #ffffff;
-//  font-size: 22px;
-//  line-height: 1.2em;
-//}
-//.vjs-fullscreen .animate2__line3__data{
-//  font-size: 3.4vw;
-//}
+
 #animate2__line4{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+  //align-items: flex-start;
   position: absolute;
   top: 47%;
   left: 73%;
-  width: 30%;
-  //height: 20%;
+  //width: 30%;
   font-size: 28px;
   overflow: hidden;
 }
 .vjs-fullscreen #animate2__line4{
   font-size: 3.3vw;
 }
-.animate2__line4__amount{
+#animate2__line4__amount{
+  position: absolute;
+  top: 54%;
+  left: 73%;
   color: #0B4684;
   font-size: 36px;
 }
-.vjs-fullscreen .animate2__line4__amount{
+.vjs-fullscreen #animate2__line4__amount{
   font-size: 4vw;
 }
-//#animate2__button{
-//  display: flex;
-//  justify-content: space-around;
-//  align-items: center;
-//  position: absolute;
-//  bottom: 0;
-//  left: 0;
-//  width: 100%;
-//  height: 20%;
-//  visibility: hidden;
-//  a{
-//    position: absolute;
-//    top:17%;
-//    height: 70%;
-//    width: 15%;
-//    border-radius: 10px;
-//    font-size: 32px;
-//    color: #ffffff;
-//    &:nth-child(1){
-//      display: flex;
-//      justify-content: center;
-//      align-items: center;
-//      left:11%;
-//      width: 13%;
-//      text-decoration: none;
-//      background: #2cb70f;
-//    }
-//    &:nth-child(2){
-//      left:43.4%;
-//      width: 13.3%;
-//      border-radius: 15%;
-//      border: 1.5px solid #626262;
-//      background: url("../img/Безымянный1.png") center no-repeat;
-//      background-size: contain;
-//    }
-//    &:nth-child(3){
-//      left:75.5%;
-//      width: 13.2%;
-//      border-radius: 15%;
-//      border: 1.5px solid #626262;
-//      background: url("../img/Безымянный2.png") center no-repeat;
-//      background-size: contain;
-//    }
-//  }
-//}
+
 .button{
   position: absolute;
   top:83.5%;
@@ -481,27 +447,32 @@ h1 {
 @keyframes animate-zoom{
   from {
     opacity: 0;
+    visibility: hidden;
     transform: scale(0);
   }
   1%{
     opacity: 1;
+    visibility: visible!important;
     transform: scale(0);
   }
   10%,to {
     opacity: 1;
+    visibility: visible!important;
     transform: scale(1);
   }
 }
 .animate-zoom{
-  animation: animate-zoom 8s;
+  animation: animate-zoom 8s forwards;
 }
 @keyframes fadeInDown{
   from {
     opacity: 0;
+    visibility: hidden;
     transform: translateY(-50%);
   }
   10%,to {
     opacity: 1;
+    visibility: visible!important;
     transform: translateY(0);
   }
 }
@@ -512,10 +483,12 @@ h1 {
 @keyframes fadeInLeft{
   from {
     opacity: 0;
+    visibility: hidden;
     transform: translateX(-50%);
   }
   10%,to {
     opacity: 1;
+    visibility: visible!important;
     transform: translateX(0);
   }
 }
