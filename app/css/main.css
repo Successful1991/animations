@@ -374,6 +374,9 @@ h1 {
 .endScreen {
   visibility: visible !important;
   opacity: 1 !important; }
+  .endScreen * {
+    visibility: visible !important;
+    opacity: 1 !important; }
 
 @media (max-width: 854px) {
   #animate1 {
