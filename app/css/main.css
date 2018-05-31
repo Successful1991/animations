@@ -361,6 +361,9 @@ h1 {
   background: url("../img/Безымянный2.png") center no-repeat;
   background-size: contain; }
 
+.vjs-fullscreen #animate2__button1 {
+  font-size: 3.5vw; }
+
 #animate__screen {
   height: 100%;
   width: 100%;
@@ -385,9 +388,9 @@ h1 {
     font-size: 5.5vw; }
   .animate2__data {
     font-size: 3.4vw; }
-  #animate2__line2 {
+  #animate2__line2__text1 {
     font-size: 3vw; }
-  #animate2__line2 {
+  #animate2__line2__text2 {
     font-size: 6.3vw; }
   #animate2__line3 {
     font-size: 3.3vw; }
@@ -400,7 +403,9 @@ h1 {
   #animate2__line4__amount {
     font-size: 4vw; }
   #animate2__line1__loss {
-    font-size: 2.5vw; } }
+    font-size: 2.5vw; }
+  #animate2__button1 {
+    font-size: 3.5vw; } }
 
 @-webkit-keyframes animate-start {
   from {
