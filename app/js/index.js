@@ -70,17 +70,17 @@ VideoPlayer.prototype.init = function() {
 
     //$('#animate2__line4__amount').text(self.data.TARGET_PRICE);
 
-    self.divideWordIntoLetters (self.data.RECO_TYPE,"#animate2__line1__text1",12.1,"fadeInDown");
-    self.divideWordIntoLetters (self.data.SECURITY_NM,"#animate2__line1__text2",12.4,"fadeInDown");
-    self.divideWordIntoLetters (self.data.HORIZN,"#animate2__line1__loss",12.7,"fadeInDown");
+    self.divideWordIntoLetters (self.data.RECO_TYPE,"#animate2__line1__text1",12.1,"fadeInUp");
+    self.divideWordIntoLetters (self.data.SECURITY_NM,"#animate2__line1__text2",12.4,"fadeInUp");
+    self.divideWordIntoLetters (self.data.HORIZN,"#animate2__line1__loss",12.7,"fadeInUp");
 
     // self.divideWordIntoLetters (animate2__line2__text1,"#animate2__line2__text1",13.3,"animate-zoom");
-    self.divideWordIntoLetters (self.data.POTENTIAL_UPSIDE,"#animate2__line2__text2",13.1,"animate-zoom");
+    self.divideWordIntoLetters (self.data.POTENTIAL_UPSIDE,"#animate2__line2__text2",13.1,"fadeInUp");
 
-    self.divideWordIntoLetters (self.data.CMP,"#animate2__line3__amount",13.5,"fadeInLeft");
-    self.divideWordIntoLetters (self.data.CALL_DATE,".animate2__data",14.5,"fadeInLeft");
+    self.divideWordIntoLetters (self.data.CMP,"#animate2__line3__amount",13.5,"fadeInUp");
+    self.divideWordIntoLetters (self.data.CALL_DATE,".animate2__data",14.5,"fadeInUp");
 
-    self.divideWordIntoLetters (self.data.TARGET_PRICE,"#animate2__line4__amount",14.1,"fadeInLeft");
+    self.divideWordIntoLetters (self.data.TARGET_PRICE,"#animate2__line4__amount",14.1,"fadeInUp");
 
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);

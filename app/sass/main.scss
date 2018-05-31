@@ -276,7 +276,6 @@ h1 {
   left: 48%;
   //width: 28%;
   font-size: 28px;
-  overflow: hidden;
   white-space: pre;
 }
 .vjs-fullscreen #animate2__line3{
@@ -315,7 +314,6 @@ h1 {
   left: 73%;
   //width: 30%;
   font-size: 28px;
-  overflow: hidden;
 }
 .vjs-fullscreen #animate2__line4{
   font-size: 3.3vw;
@@ -398,10 +396,10 @@ h1 {
   #animate1{
     font-size: 5vw;
   }
-  .animate2__line1__text1{
+  #animate2__line1__text1{
     font-size: 3.3vw;
   }
-  .animate2__line1__text2{
+  #animate2__line1__text2{
     font-size: 5.5vw;
   }
   .animate2__data{
@@ -410,22 +408,22 @@ h1 {
   #animate2__line2{
     font-size: 3vw;
   }
-  .animate2__line2{
+  #animate2__line2{
      font-size: 6.3vw;
    }
 
   #animate2__line3{
     font-size: 3.3vw; }
-  .animate2__line3__amount{
+  #animate2__line3__amount{
     font-size: 4vw;}
-  .animate2__line3__data{
+  #animate2__line3__data{
     font-size: 3.4vw;
   }
   #animate2__line4{
     font-size: 3.3vw; }
-  .animate2__line4__amount{
+  #animate2__line4__amount{
     font-size: 4vw;}
-  .animate2__line1__loss{
+  #animate2__line1__loss{
     font-size: 2.5vw;
   }
 
@@ -438,9 +436,11 @@ h1 {
 
 @keyframes animate-start {
   from {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden;}
   40%,to {
     opacity: 1;
+    visibility: visible!important;
   }
 }
 .animate-start {
@@ -481,6 +481,26 @@ h1 {
 .fadeInDown{
   animation: fadeInDown 8s;
 }
+@keyframes fadeInUp{
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50%);
+  }
+  1%{
+    opacity: 1;
+    visibility: visible!important;
+    transform: translateY(50%);
+  }
+  10%,to {
+    opacity: 1;
+    visibility: visible!important;
+    transform: translateY(0);
+  }
+}
+.fadeInUp{
+  animation: fadeInUp 8s;
+}
 
 @keyframes fadeInLeft{
   from {
@@ -488,7 +508,7 @@ h1 {
     visibility: hidden;
     transform: translateX(-50%);
   }
-  10%,to {
+  5%,to {
     opacity: 1;
     visibility: visible!important;
     transform: translateX(0);

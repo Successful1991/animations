@@ -264,7 +264,6 @@ h1 {
   top: 47%;
   left: 48%;
   font-size: 28px;
-  overflow: hidden;
   white-space: pre; }
 
 .vjs-fullscreen #animate2__line3 {
@@ -295,8 +294,7 @@ h1 {
   position: absolute;
   top: 47%;
   left: 73%;
-  font-size: 28px;
-  overflow: hidden; }
+  font-size: 28px; }
 
 .vjs-fullscreen #animate2__line4 {
   font-size: 3.3vw; }
@@ -381,40 +379,44 @@ h1 {
 @media (max-width: 854px) {
   #animate1 {
     font-size: 5vw; }
-  .animate2__line1__text1 {
+  #animate2__line1__text1 {
     font-size: 3.3vw; }
-  .animate2__line1__text2 {
+  #animate2__line1__text2 {
     font-size: 5.5vw; }
   .animate2__data {
     font-size: 3.4vw; }
   #animate2__line2 {
     font-size: 3vw; }
-  .animate2__line2 {
+  #animate2__line2 {
     font-size: 6.3vw; }
   #animate2__line3 {
     font-size: 3.3vw; }
-  .animate2__line3__amount {
+  #animate2__line3__amount {
     font-size: 4vw; }
-  .animate2__line3__data {
+  #animate2__line3__data {
     font-size: 3.4vw; }
   #animate2__line4 {
     font-size: 3.3vw; }
-  .animate2__line4__amount {
+  #animate2__line4__amount {
     font-size: 4vw; }
-  .animate2__line1__loss {
+  #animate2__line1__loss {
     font-size: 2.5vw; } }
 
 @-webkit-keyframes animate-start {
   from {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
   40%, to {
-    opacity: 1; } }
+    opacity: 1;
+    visibility: visible !important; } }
 
 @keyframes animate-start {
   from {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
   40%, to {
-    opacity: 1; } }
+    opacity: 1;
+    visibility: visible !important; } }
 
 .animate-start {
   -webkit-animation: animate-start 8s;
@@ -486,13 +488,51 @@ h1 {
   -webkit-animation: fadeInDown 8s;
           animation: fadeInDown 8s; }
 
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+  1% {
+    opacity: 1;
+    visibility: visible !important;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+  10%, to {
+    opacity: 1;
+    visibility: visible !important;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+  1% {
+    opacity: 1;
+    visibility: visible !important;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%); }
+  10%, to {
+    opacity: 1;
+    visibility: visible !important;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.fadeInUp {
+  -webkit-animation: fadeInUp 8s;
+          animation: fadeInUp 8s; }
+
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
     visibility: hidden;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-  10%, to {
+  5%, to {
     opacity: 1;
     visibility: visible !important;
     -webkit-transform: translateX(0);
@@ -504,7 +544,7 @@ h1 {
     visibility: hidden;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-  10%, to {
+  5%, to {
     opacity: 1;
     visibility: visible !important;
     -webkit-transform: translateX(0);
