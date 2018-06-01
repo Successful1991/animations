@@ -59,9 +59,10 @@ VideoPlayer.prototype.init = function() {
   var video = self.video;
   this.fetchData('data.json', function callback() {
     $('#animate1 .animate1__line1__name').text(self.data.text1);
+    // $('#animate2__line1__loss').text(self.data.Horizon);
     self.divideWordIntoLetters (self.data.RECO_TYPE,"#animate2__line1__text1",12.1,"fadeInUp");
     self.divideWordIntoLetters (self.data.SECURITY_NM,"#animate2__line1__text2",12.4,"fadeInUp");
-    self.divideWordIntoLetters (self.data.HORIZN,"#animate2__line1__loss",12.7,"fadeInUp");
+    self.divideWordIntoLetters (self.data.Horizon,"#animate2__line1__loss",12.7,"fadeInUp");
     self.divideWordIntoLetters (self.data.POTENTIAL_UPSIDE,"#animate2__line2__text2",13.1,"fadeInUp");
     self.divideWordIntoLetters (self.data.CMP,"#animate2__line3__amount",13.5,"fadeInUp");
     self.divideWordIntoLetters (self.data.CALL_DATE,".animate2__data",14.5,"fadeInUp");
@@ -290,6 +291,8 @@ VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time,animateCla
 };
 
 
+
+
 $(document).ready(function() {
 
   vPlayer.init();
@@ -302,6 +305,7 @@ $(document).ready(function() {
 
   if(iOS) {
     $('.vjs-fullscreen-control').hide();
+    $('.vjs-playing').hide();
   }
 
   var ua = navigator.userAgent.toLowerCase();

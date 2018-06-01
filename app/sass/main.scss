@@ -232,6 +232,10 @@ h1 {
   left: 47%;
   font-size: 22px;
   line-height: 1.7em;
+
+  width: 30%;
+  overflow: hidden;
+  white-space: pre;
 }
 .vjs-fullscreen #animate2__line1__loss{
   font-size: 2.5vw;
@@ -434,10 +438,6 @@ h1 {
 }
 
 
-
-
-
-
 @keyframes animate-start {
   from {
     opacity: 0;
@@ -485,6 +485,7 @@ h1 {
 .fadeInDown{
   animation: fadeInDown 8s;
 }
+
 @keyframes fadeInUp{
   from {
     opacity: 0;

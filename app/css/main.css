@@ -211,7 +211,10 @@ h1 {
   top: 31.5%;
   left: 47%;
   font-size: 22px;
-  line-height: 1.7em; }
+  line-height: 1.7em;
+  width: 30%;
+  overflow: hidden;
+  white-space: pre; }
 
 .vjs-fullscreen #animate2__line1__loss {
   font-size: 2.5vw; }
