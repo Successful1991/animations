@@ -168,6 +168,7 @@ $('#bitt').click(function () {
   $('#animate2__button1').addClass("animate-zoom");
   $('#animate2__button2').addClass("animate-zoom");
   $('#animate2__button3').addClass("animate-zoom");
+
 });
 
 var vPlayer = new VideoPlayer(),
@@ -306,9 +307,8 @@ $(document).ready(function() {
   if(iOS) {
     $('.vjs-fullscreen-control').hide();
 
-    self.myPlayer.on('play', function() {
-      $('.vjs-play-control').hide();
-    })
+    $('.vjs-play-control').hide();
+
   }
 
   var ua = navigator.userAgent.toLowerCase();
@@ -316,9 +316,7 @@ $(document).ready(function() {
   if (isAndroid) {
     $('.vjs-fullscreen-control').hide();
 
-    self.myPlayer.on('play', function() {
-      $('.vjs-play-control').hide();
-    })
+    $('.vjs-play-control').hide();
   }
 
   // iOS special treatment
@@ -342,4 +340,7 @@ $(document).ready(function() {
   controlbarAtBottom();
   window.addEventListener('resize', controlbarAtBottom);
   window.addEventListener('orientationchange', controlbarAtBottom);
+
+
+  console.log(self.myPlayer);
 });
