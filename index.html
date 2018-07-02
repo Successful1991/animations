@@ -19,11 +19,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 	<script src="app/js/compiled.js"></script>
 	<script>
-      $("#textAnimationBlock").vibrate({
-        duration: 1000,
-        trigger: "touchstart"
+
+      //$(".b-text-animation").vibrate(1000);
+      document.addEventListener('touchmove',function () {
+        navigator.vibrate(100);
       });
-      $("#button").vibrate();
 	</script>
 	<noscript>
 		<style type="text/css">

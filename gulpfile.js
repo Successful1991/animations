@@ -38,6 +38,7 @@ gulp.task('sass', function () {
 gulp.task('concat', function () {
   return gulp.src([
     'app/dev/js/jquery.min.js',
+    'app/dev/js/jquery.vibrate.min.js',
     'app/dev/js/vjs.js',
     'app/dev/js/charlie.js',
     'app/dev/js/promise.js', 
