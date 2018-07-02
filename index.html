@@ -15,6 +15,7 @@
 		<div id="textAnimationBlock" class="b-text-animation">
 		</div>
 	</div>
+	<button id="button" style="{height: 50px;width: 100px;background: green;}">кнопка</button>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 	<script src="app/js/compiled.js"></script>
 	<script>
@@ -22,6 +23,7 @@
         duration: 1000,
         trigger: "touchstart"
       });
+      $("#button").vibrate();
 	</script>
 	<noscript>
 		<style type="text/css">
