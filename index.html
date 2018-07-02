@@ -21,9 +21,11 @@
 	<script>
 
       //$(".b-text-animation").vibrate(1000);
-      document.addEventListener('touchmove',function () {
-        navigator.vibrate(100);
+      $('#button').click(function () {
+        navigator.vibrate([100,75,225]);
       });
+
+
 	</script>
 	<noscript>
 		<style type="text/css">
