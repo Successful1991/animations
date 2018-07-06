@@ -10,74 +10,6 @@
   animation: animate-start 10s linear;
 }
 
-//@keyframes animate1-text {
-//  from{
-//    opacity: 0;
-//    transform: rotateX(60deg);
-//    clip: rect(0px, 150px, 300.95px, 150px);
-//  }
-//  5%{
-//    transform:scale(1)rotateX(50deg);
-//  }
-//  15%{
-//    opacity: 1;
-//    clip: rect(0px, 300.95px, 300.95px, 0px);
-//  }
-//  20%{
-//    transform: rotateX(0deg);
-//  }
-//  36%,95%{
-//    transform:scale(0.8);
-//    opacity: 1;
-//  }
-//  to{
-//    opacity: 0;
-//    transform: scale(0.8)rotateX(0deg);
-//  }
-//}
-//.animate1-text{
-//  position: absolute;
-//  clip: rect(0, 300.95px, 300.95px, 0);
-//  animation: animate1-text 10s linear;
-//}
-
-
-
-//@keyframes animate3__card {
-//  from{
-//    opacity: 0;
-//    transform: translateX(118%)scale(0.65);
-//    filter: blur(25px);
-//  }
-//  3%{
-//    opacity: 1;
-//  }
-//  8%{
-//    transform: translateX(11.8%)scale(0.38);
-//  }
-//  9.7%,15.7%{
-//    filter: blur(0);
-//    transform: translateX(0)scale(0.35);
-//  }
-//  34%,36%{
-//    transform: translateX(0)scale(0.74);
-//  }
-//  39%{
-//    transform: translateX(0)scale(1);
-//  }
-//  75%{
-//    transform: translateX(0)scale(1)rotateX(0);
-//  }
-//  78%,to{
-//    opacity: 1;
-//    transform: translateX(0)scale(1)rotateX(-90deg);
-//  }
-//}
-//.animate3__card{
-//  animation: animate3__card 10s linear;
-//}
-
-
 @keyframes animate3__card1 {
   from{
     opacity: 0;
@@ -117,9 +49,6 @@
 .animate3__card2{
   animation: animate3__card2 8.5s linear;
 }
-
-
-
 
 
 @keyframes animate1-finish {
