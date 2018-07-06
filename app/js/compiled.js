@@ -3374,7 +3374,7 @@ var config = {
     {
       id: '#myElement',
       animations: 'animation1, animation2',
-      times: '12, 14',
+      times: '12.2, 14',
       target: 'nameFromJSON',
       class: 'charlie name',
       parent: '#parentElement',
