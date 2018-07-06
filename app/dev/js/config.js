@@ -24,10 +24,10 @@ var config = {
       tag: 'span',
       class: 'charlie',
       parent: '.animate1',
-      id: 'animate1',
       animations: 'animate1-text,animate1-finish',
       times: '0.4,5',
-      target: 'name'
+      target: 'name',
+      id: 'animate1'
     },{
       tag: 'div',
       class: 'animate2__text',

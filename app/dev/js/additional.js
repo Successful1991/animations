@@ -82,7 +82,11 @@ Pictor.prototype.animateText = function () {
     '  position: absolute;' +
     '  clip: rect(0, '+width+'px, '+width+'px, 0);' +
     '  animation: animate1-text 10s linear;' +
-    '}';
+    '}'+
+    '.animate1-finish{' +
+    '  animation: animate1-finish 0.1s linear;' +
+    '}'
+  ;
 
   var style = document.createElement("style");
   style.innerHTML = animate;
