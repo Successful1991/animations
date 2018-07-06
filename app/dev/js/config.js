@@ -6,7 +6,7 @@ var config = {
     {
       id: '#myElement',
       animations: 'animation1, animation2',
-      times: '12.2, 14',
+      times: '12.5, 14',
       target: 'nameFromJSON',
       class: 'charlie name',
       parent: '#parentElement',
@@ -24,6 +24,7 @@ var config = {
       tag: 'span',
       class: 'charlie',
       parent: '.animate1',
+      id: 'animate1',
       animations: 'animate1-text,animate1-finish',
       times: '0.4,5',
       target: 'name'

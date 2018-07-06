@@ -75,6 +75,7 @@ Pictor.prototype.init = function () {
         self._handleRules(config.rules);
         resolve('done');
       }).then(function () {
+        Pictor.prototype.animateText();
         // retargeting video element
         var v = document.getElementsByClassName('vjs-tech')[0];
         CHARLIE.setup(v);

@@ -48,3 +48,43 @@ Pictor.prototype.numberAnimation = function (amount, parent) {
     }
   });
 };
+
+Pictor.prototype.animateText = function () {
+  var width = document.querySelector('#animate1').offsetWidth;
+  var animate = '@keyframes animate1-text {' +
+    '  from{' +
+    '    opacity: 0;' +
+    '    transform: rotateX(60deg);' +
+    '    clip: rect(0px, '+width/2+'px, '+width+'px, '+width/2+'px);' +
+    '  }' +
+    '  5%{' +
+    '    transform:scale(1)rotateX(50deg);' +
+    '  }' +
+    '  8.5%{' +
+    '    clip: rect(0px, '+width+'px, '+width+'px, 0px);' +
+    '}'+
+    '  15%{' +
+    '    opacity: 1;' +
+    '  }' +
+    '  20%{' +
+    '    transform: rotateX(0deg);' +
+    '  }' +
+    '  36%,95%{' +
+    '    transform:scale(0.8);' +
+    '    opacity: 1;' +
+    '  }' +
+    '  to{' +
+    '    opacity: 0;' +
+    '    transform: scale(0.8)rotateX(0deg);' +
+    '  }' +
+    '}' +
+    '.animate1-text{' +
+    '  position: absolute;' +
+    '  clip: rect(0, '+width+'px, '+width+'px, 0);' +
+    '  animation: animate1-text 10s linear;' +
+    '}';
+
+  var style = document.createElement("style");
+  style.innerHTML = animate;
+  $('head').append(style);
+};
