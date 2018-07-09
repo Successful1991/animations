@@ -3515,10 +3515,10 @@ var config = {
       parent: '.card__info',
       target: 'card__mail'
     },{
-      tag: 'div',
-      class: 'card__photo',
-      parent: '#animate3__card',
-      bgImg:'user__photo'
+      // tag: 'div',
+      // class: 'card__photo',
+      // parent: '#animate3__card',
+      // bgImg:'user__photo'
     },{
       tag: 'div',
       class: 'animate4',
@@ -3532,13 +3532,13 @@ var config = {
       times: '18.7,22.1',
       target:'animate4__name'
     },{
-      tag: 'div',
-      id: 'animate4__position',
-      class: 'charlie',
-      parent: '.animate4',
-      animations: 'animate-start,animate-finish',
-      times: '19,22.1',
-      target:'animate4__position'
+      // tag: 'div',
+      // id: 'animate4__position',
+      // class: 'charlie',
+      // parent: '.animate4',
+      // animations: 'animate-start,animate-finish',
+      // times: '19,22.1',
+      // target:'animate4__position'
     },{
       tag: 'div',
       id: 'animate4__number',
