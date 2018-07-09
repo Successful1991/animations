@@ -29,7 +29,7 @@
   animation: animate3__card1 1.5s cubic-bezier(0.1,0,0.6,1);
 }
 @keyframes animate3__card2 {
-  from,2%{
+  from,1.2%{
       filter: blur(0);
       transform: translateX(0)scale(0.35);
     }
@@ -48,7 +48,7 @@
     }
 }
 .animate3__card2{
-  animation: animate3__card2 8.5s linear;
+  animation: animate3__card2 8.5s cubic-bezier(0.1,0,1,1);
 }
 
 
