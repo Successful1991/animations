@@ -13,7 +13,8 @@
 @keyframes animate3__card1 {
   from{
     opacity: 0;
-    transform: translateX(118%)scale(0.65);
+    transform: translateX(130%)scale(0.65);
+    //transform: translateX(118%)scale(0.65);
     filter: blur(25px);
   }
   10% {
@@ -25,7 +26,7 @@
   }
 }
 .animate3__card1{
-  animation: animate3__card1 1.5s cubic-bezier(0.1,0,0.75,1);
+  animation: animate3__card1 1.5s cubic-bezier(0.1,0.05,0.7,1);
 }
 @keyframes animate3__card2 {
   from,2%{
@@ -35,7 +36,7 @@
     24%,25.5%{
       transform: translateX(0)scale(0.74);
     }
-    28%{
+    28.8%{
       transform: translateX(0)scale(1);
     }
     73%{

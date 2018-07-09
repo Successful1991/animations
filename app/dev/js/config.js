@@ -76,7 +76,7 @@ var config = {
       parent: '.animate3',
       animations: 'animate3__card1,animate3__card2 ,animate3-finish',
       id: 'animate3__card',
-      times: '9.6,11,17.5'
+      times: '9.643,11,17.5'
     },{
       tag: 'div',
       class: 'card__info',
