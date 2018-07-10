@@ -2975,16 +2975,8 @@ Pictor.prototype.init = function () {
         resolve('done');
       }).then(function () {
         Pictor.prototype.animateText();
-        if(self.data.card__mail.length > 25){
-          var search = $('.info__mail').text().replace("@"," @");
-          $('.info__mail').text(search);
-          $('.info__mail').css({"fontSize":"14px"});
-        }
-        if(self.data.card__name.length > 21){
-          $('.info__name').css({"fontSize":"15px"});
-        }else if(self.data.card__name.length > 21){
-          $('.info__name').css({"fontSize":"18px"});
-        }
+        Pictor.prototype.fontSize();
+
         // retargeting video element
         var v = document.getElementsByClassName('vjs-tech')[0];
         CHARLIE.setup(v);
@@ -3419,6 +3411,41 @@ Pictor.prototype.animateText = function () {
 
   var style = document.createElement("style");
   style.innerHTML = animate;
+  $('head').append(style);
+};
+
+Pictor.prototype.fontSize = function () {
+  var widthWideo = document.querySelector("#textAnimationBlock").offsetWidth;
+  if(widthWideo >= 854){
+    Pictor.prototype.fontSizeTest('14px','18px','16px');
+  }else{
+    Pictor.prototype.fontSizeTest('1.9vw','3vw','2vw');
+  }
+  var fontSizeFullScreen = '.vjs-fullscreen .info__mail{font-size:1.9vw;}'+
+    '.vjs-fullscreen .info__name{font-size:3vw;}';
+  var style = document.createElement("style");
+  style.innerHTML = fontSizeFullScreen;
+  $('head').append(style);
+};
+Pictor.prototype.fontSizeTest = function (mail,nameBig,nameLittle) {
+  var fontSize = '';
+  if(pictor.data.card__mail.length > 25){
+    var search = $('.info__mail').text().replace("@"," @");
+    $('.info__mail').text(search);
+    fontSize += '.card__info{font-size:'+mail+';}';
+  }
+  if(pictor.data.card__name.length > 26){
+    var name = $('.info__name').text();
+    var nameReplace = name.split(' ');
+    var newName = nameReplace[0]+" "+nameReplace[2];
+    $('.info__name').text(newName);
+    fontSize += '.info__name{ font-size:'+nameBig+';}';
+  }else if(pictor.data.card__name.length > 16){
+    fontSize += '.info__name{font-size:'+nameLittle+';}';
+  }
+  fontSize += '.vjs-fullscreen .info__mail{font-size:1.9vw;} .vjs-fullscreen .info__name{font-size:3vw;}';
+  var style = document.createElement("style");
+  style.innerHTML = fontSize;
   $('head').append(style);
 };
 var config = {
