@@ -1,5 +1,115 @@
+#videoPlayerWrapper {
+      width: 60%;
+    }
+
+#button4 {
+       visibility: hidden;
+       position: absolute;
+       top: 94.5%;
+       left: 0;
+       width: 100%;
+       height: 5.5%;
+       z-index: 9999;
+       outline: none;
+     }
+
+#button4:hover {
+       cursor: pointer;
+     }
+@font-face {
+      font-family: 'Alright Sans';
+      src: url("../fonts/MyriadPro-Regular.otf");
+    }
+@font-face {
+      font-family: 'Montserrat-SemiBold';
+      src: url("../fonts/Montserrat-SemiBold.otf");
+    }
+
+.b-text-animation {
+       font-family: 'Alright Sans', sans-serif !important;
+     }
+
+.text-white {
+       color: #fff;
+     }
+
+#animate2 {
+       position: absolute;
+       left: 25.5%;
+       top: 35%;
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: center;
+       -webkit-justify-content: center;
+       -ms-flex-pack: center;
+       justify-content: center;
+       -webkit-box-align: center;
+       -webkit-align-items: center;
+       -ms-flex-align: center;
+       align-items: center;
+       text-decoration: none;
+       font-size: 24px;
+       color: #ffffff;
+       width: 49%;
+       height: 23%;
+       visibility: hidden;
+     }
+
+.vjs-fullscreen #animate2 {
+       font-size: 2.5vw;
+     }
+
+#button {
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-align: center;
+       -webkit-align-items: center;
+       -ms-flex-align: center;
+       align-items: center;
+       -webkit-box-pack: center;
+       -webkit-justify-content: center;
+       -ms-flex-pack: center;
+       justify-content: center;
+       visibility: hidden;
+       position: absolute;
+       top: 73.5%;
+       left: 40%;
+       height: 12%;
+       width: 20%;
+     }
+@media (max-width: 854px) {
+      #animate2 {
+        font-size: 2.5vw;
+      }
+    }
+
+.show {
+       opacity: 1 !important;
+       visibility: visible !important;
+     }
+
 body {
     text-align: center;
+}
+#animate__line{
+    //justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 7%;
+    left: 18%;
+    height: 8%;
+    width: 64%;
+    color: #FFF;
+    font-size: 29px;
+    font-weight: 200;
+}
+.vjs-fullscreen #animate__line{
+        font-size: 3.25vw;
 }
 .animate1{
     position: absolute;
@@ -126,6 +236,9 @@ body {
 @media (max-width:854px) {
     .animate1{
         font-size: 5.8vw;
+    }
+    #animate__line{
+        font-size: 3.25vw;
     }
     .animate2__text{
         font-size: 3vw;
