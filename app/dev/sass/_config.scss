@@ -168,7 +168,8 @@ body {
     padding: 10px 15px 10px 10px;
 }
 .info__name{
-    font-size: 40px;
+    font-size: 32px;
+  text-align: end;
 }
 .info__number{
     font-size: 1.3em;
@@ -178,6 +179,7 @@ body {
   width: 100%;
   word-wrap: break-word;
   line-height: 1em;
+  text-align: end;
 }
 .card__photo{
     height: 80%;
