@@ -3399,7 +3399,7 @@ Pictor.prototype.animateText = function () {
     '}' +
     '.animate1-text{' +
     '  position: absolute;' +
-    '  left: calc( 50% - '+width/2+'px)'+
+    '  left: calc( 50% - '+width/2+'px);'+
     '  clip: rect(0, '+width+'px, '+width+'px, 0);' +
     '  animation: animate1-text 10s linear;' +
     '}'+
