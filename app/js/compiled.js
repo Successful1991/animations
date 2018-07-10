@@ -2975,6 +2975,16 @@ Pictor.prototype.init = function () {
         resolve('done');
       }).then(function () {
         Pictor.prototype.animateText();
+        if(self.data.card__mail.length > 25){
+          var search = $('.info__mail').text().replace("@"," @");
+          $('.info__mail').text(search);
+          $('.info__mail').css({"fontSize":"14px"});
+        }
+        if(self.data.card__name.length > 21){
+          $('.info__name').css({"fontSize":"15px"});
+        }else if(self.data.card__name.length > 21){
+          $('.info__name').css({"fontSize":"18px"});
+        }
         // retargeting video element
         var v = document.getElementsByClassName('vjs-tech')[0];
         CHARLIE.setup(v);
