@@ -94,35 +94,41 @@ Pictor.prototype.animateText = function () {
 };
 
 Pictor.prototype.fontSize = function () {
-  var widthWideo = document.querySelector("#textAnimationBlock").offsetWidth;
-  if(widthWideo >= 854){
+  var widthWideo = document.querySelector("#textAnimationBlock").clientWidth;
+  console.log(widthWideo);
+  if(widthWideo >= 800){
     Pictor.prototype.fontSizeTest('14px','18px','16px');
   }else{
-    Pictor.prototype.fontSizeTest('1.9vw','3vw','2vw');
+    Pictor.prototype.fontSizeTest('1.7vw','2.3vw','2vw');
   }
-  var fontSizeFullScreen = '.vjs-fullscreen .info__mail{font-size:1.9vw;}'+
-    '.vjs-fullscreen .info__name{font-size:3vw;}';
-  var style = document.createElement("style");
-  style.innerHTML = fontSizeFullScreen;
-  $('head').append(style);
 };
 Pictor.prototype.fontSizeTest = function (mail,nameBig,nameLittle) {
+
   var fontSize = '';
   if(pictor.data.card__mail.length > 25){
     var search = $('.info__mail').text().replace("@"," @");
     $('.info__mail').text(search);
-    fontSize += '.card__info{font-size:'+mail+';}';
+    fontSize += '.info__mail{font-size:'+mail+';}';
   }
+
   if(pictor.data.card__name.length > 26){
     var name = $('.info__name').text();
     var nameReplace = name.split(' ');
-    var newName = nameReplace[0]+" "+nameReplace[2];
+    var newName = '';
+    if( nameReplace.length > 2){
+      newName = nameReplace[0]+" "+nameReplace[2];
+      fontSize += '.info__name{ font-size:'+nameBig+';}';
+    }else{
+      newName = name;
+      fontSize += '.info__name{ font-size:14px;}';
+    }
     $('.info__name').text(newName);
-    fontSize += '.info__name{ font-size:'+nameBig+';}';
   }else if(pictor.data.card__name.length > 16){
     fontSize += '.info__name{font-size:'+nameLittle+';}';
-  }
-  fontSize += '.vjs-fullscreen .info__mail{font-size:1.9vw;} .vjs-fullscreen .info__name{font-size:3vw;}';
+  }else{fontSize += '.info__name{font-size:32px;}';}
+  fontSize += '.vjs-fullscreen .info__mail{font-size:1.7vw;} .vjs-fullscreen .info__name{font-size:3vw;}'+
+  '@media (max-width:854px) { .info__mail{font-size:1.7vw;} .info__name{font-size:3vw;} }';
+
   var style = document.createElement("style");
   style.innerHTML = fontSize;
   $('head').append(style);
