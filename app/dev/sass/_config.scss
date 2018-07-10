@@ -234,6 +234,9 @@ body {
 }
 
 @media (max-width:854px) {
+    #videoPlayerWrapper {
+          width: 100%;
+    }
     .animate1{
         font-size: 5.8vw;
     }
