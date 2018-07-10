@@ -60,7 +60,7 @@ Pictor.prototype.animateText = function () {
     '  5%{' +
     '    transform:scale(1)rotateX(50deg);' +
     '  }' +
-    '  8.7%{' +
+    '  13.3%{' +
     '    clip: rect(0px, '+width+'px, '+width+'px, 0px);' +
     '}'+
     '  15%{' +
