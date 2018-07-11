@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Also";
-  src: url('../fonts/Also.ttf');
+  font-family: "OpenSans-Regular";
+  src: url('../fonts/OpenSans-Regular.ttf');
 }
 #animate1__line1{
     position: absolute;
@@ -11,7 +11,7 @@
     font-size: 35px;
   font-weight: 700;
     color: #038e85;
-    font-family: "Also";
+    font-family: "OpenSans-Regular";
   transform: scaleY(0)translate(-10%,50px);
 }
 #animate1__line2{
@@ -23,7 +23,7 @@
     font-size: 26px;
   font-weight: 700;
     color: #038e85;
-    font-family: "Also";
+    font-family: "OpenSans-Regular";
   transform: scaleY(0)translate(10%,-50px);
 }
 

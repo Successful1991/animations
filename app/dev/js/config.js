@@ -1,7 +1,6 @@
 var config = {
   // config here
-  videoUrl: 'app/img/CROMA__MAIN.mp4',
-  //videoUrl: 'app/img/Croma_Fb1_v2.mp4',
+  videoUrl: 'app/img/CROMA.1(comp).mp4',
   textUrl: 'data.json',
   rules: [
     {
