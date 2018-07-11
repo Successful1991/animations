@@ -56,29 +56,29 @@
   animation: animate1__line2 10s linear;
 }
 
-@keyframes animate2 {
-  from{
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  5%{
-    opacity: 1;
-
-  }
-  10%{
-    transform: translateY(50%);
-  }
-  20%{
-    transform: translateY(0);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.animate2{
-  animation: animate2 10s linear;
-}
+//@keyframes animate2 {
+//  from{
+//    opacity: 0;
+//    transform: translateY(100%);
+//  }
+//  5%{
+//    opacity: 1;
+//
+//  }
+//  10%{
+//    transform: translateY(50%);
+//  }
+//  20%{
+//    transform: translateY(0);
+//  }
+//  to{
+//    opacity: 1;
+//    transform: translateY(0);
+//  }
+//}
+//.animate2{
+//  animation: animate2 10s linear;
+//}
 
 @keyframes animate-image {
   from,2%{

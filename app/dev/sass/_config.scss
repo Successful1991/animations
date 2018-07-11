@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Also";
+  src: url('../fonts/Also.ttf');
+}
 #animate1__line1{
     position: absolute;
     left:9%;
@@ -7,7 +11,7 @@
     font-size: 35px;
   font-weight: 700;
     color: #038e85;
-    font-family: "Helvetica Neue";
+    font-family: "Also";
   transform: scaleY(0)translate(-10%,50px);
 }
 #animate1__line2{
@@ -19,7 +23,7 @@
     font-size: 26px;
   font-weight: 700;
     color: #038e85;
-    font-family: "Helvetica Neue";
+    font-family: "Also";
   transform: scaleY(0)translate(10%,-50px);
 }
 
@@ -32,43 +36,43 @@
   width: 23.5%;
 }
 
-#animate2__line1{
-  position: absolute;
-  left:20%;
-  top:38%;
-  display: flex;
-  justify-content: center;
-  width: 60%;
-  font-size: 40px;
-  font-weight: 700;
-  color: #038e85;
-  font-family: "Helvetica Neue";
-  //transform: scaleY(0)translate(-10%,50px);
-}
-#animate2__line2{
-  position: absolute;
-  left:20%;
-  top:49%;
-  display: flex;
-  justify-content: center;
-  width: 60%;
-  font-size: 39px;
-  color: #038e85;
-  font-weight: 700;
-  font-family: "Helvetica Neue";
-  //transform: scaleY(0)translate(10%,-50px);
-}
+//#animate2__line1{
+//  position: absolute;
+//  left:20%;
+//  top:38%;
+//  display: flex;
+//  justify-content: center;
+//  width: 60%;
+//  font-size: 40px;
+//  font-weight: 700;
+//  color: #038e85;
+//  font-family: "Helvetica Neue";
+//  //transform: scaleY(0)translate(-10%,50px);
+//}
+//#animate2__line2{
+//  position: absolute;
+//  left:20%;
+//  top:49%;
+//  display: flex;
+//  justify-content: center;
+//  width: 60%;
+//  font-size: 39px;
+//  color: #038e85;
+//  font-weight: 700;
+//  font-family: "Helvetica Neue";
+//  //transform: scaleY(0)translate(10%,-50px);
+//}
 .vjs-fullscreen #animate1__line1{
   font-size: 4.4vw;
 }.vjs-fullscreen #animate1__line2{
    font-size: 3vw;
  }
-.vjs-fullscreen #animate2__line1{
-  font-size: 4.7vw;
-}
-.vjs-fullscreen #animate2__line2{
-   font-size: 4.6vw;
- }
+//.vjs-fullscreen #animate2__line1{
+//  font-size: 4.7vw;
+//}
+//.vjs-fullscreen #animate2__line2{
+//   font-size: 4.6vw;
+// }
 
 @media (max-width:854px) {
     #animate1__line1{
@@ -76,9 +80,9 @@
     }#animate1__line2{
         font-size: 3vw;
     }
-    #animate2__line1{
-        font-size: 4.7vw;
-    }#animate2__line2{
-        font-size: 4.6vw;
-    }
+    //#animate2__line1{
+    //    font-size: 4.7vw;
+    //}#animate2__line2{
+    //    font-size: 4.6vw;
+    //}
 }

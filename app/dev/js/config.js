@@ -25,22 +25,23 @@ var config = {
       times: '0,4.2',
       bgImg: 'image',
       id: 'animate__image'
-    },
-    {
-      id: 'animate2__line1',
-      animations: 'animate2__line1, animate-finish',
-      times: '4.4, 7.2',
-      target: 'animate2-line1',
-      class: 'charlie',
-      tag: 'div'
-    },{
-      id: 'animate2__line2',
-      animations: 'animate2__line2, animate-finish',
-      times: '4.4, 7.2',
-      target: 'animate2-line2',
-      class: 'charlie',
-      tag: 'div'
     }
+    // ,
+    // {
+    //   id: 'animate2__line1',
+    //   animations: 'animate2__line1, animate-finish',
+    //   times: '4.4, 7.2',
+    //   target: 'animate2-line1',
+    //   class: 'charlie',
+    //   tag: 'div'
+    // },{
+    //   id: 'animate2__line2',
+    //   animations: 'animate2__line2, animate-finish',
+    //   times: '4.4, 7.2',
+    //   target: 'animate2-line2',
+    //   class: 'charlie',
+    //   tag: 'div'
+    // }
     // ,{
     //   tag: 'div',
     //   class: 'photo',
