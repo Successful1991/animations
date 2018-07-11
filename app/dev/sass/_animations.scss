@@ -1,0 +1,74 @@
+@keyframes animate-start {
+  from{
+    opacity: 0;
+  }
+  5%,to{
+    opacity: 1;
+  }
+}
+.animate-start{
+  animation: animate-start 10s linear;
+}
+
+
+@keyframes animate1__line1 {
+  from{
+    opacity: 0;
+    transform: scaleY(0)translateX(-10%);
+  }
+  5%{
+    opacity: 1;
+    transform: scaleY(1)translate(0,0);
+  }
+  to{
+    opacity: 1;
+  }
+}
+.animate1__line1{
+  animation: animate1__line1 10s linear;
+}
+
+@keyframes animate1__line2 {
+  from{
+    opacity: 0;
+    transform: scaleY(0)translateX(10%);
+  }
+  5%{
+    opacity: 1;
+    transform: scaleY(1)translate(0,0);
+  }
+  to{
+    opacity: 1;
+  }
+}
+.animate1__line2{
+  animation: animate1__line2 10s linear;
+}
+
+
+
+@keyframes animate-image {
+  from,2%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  6%,to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-image{
+  animation: animate-image 10s linear;
+}
+
+@keyframes animate-finish {
+  from{
+    opacity: 1;
+  }
+ 5%,to{
+    opacity: 0;
+  }
+}
+.animate-finish{
+  animation: animate-finish 0.5s linear;
+}
