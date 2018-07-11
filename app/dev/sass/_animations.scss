@@ -15,17 +15,17 @@
   from{
     opacity: 0;
     //transform: scale(0.3)translate(-10%,50%);
-    transform: scale(0.3)translate(-50px,60px);
+    transform: scaleY(0.3)translate(-80px,100px);
   }
-  2%{transform: scale(1)translate(0,0);}
-  4%{transform: scale(0.85)translate(-5px,5px);}
+  2%{transform: scaleY(1)translate(0,0);}
+  4%{transform: scaleY(0.85)translate(-5px,5px);}
   6%{
     opacity: 1;
-    transform: scale(1)translate(0,0);
+    transform: scaleY(1)translate(0,0);
   }
   to{
     opacity: 1;
-    transform: scale(1)translate(0,0);
+    transform: scaleY(1)translate(0,0);
   }
 }
 .animate1__line1{
@@ -35,21 +35,21 @@
 @keyframes animate1__line2 {
   from{
     opacity: 0;
-    transform: scale(0.3)translate(50px,-60px);
+    transform: scaleY(0.3)translate(80px,-100px);
     //transform: scale(1)translate(10%,-50%);
   }
-  2%{transform: scale(1)translate(0,0);}
+  2%{transform: scaleY(1)translate(0,0);}
   4%{
     //transform: scale(1)translate(2%,-10%);
-    transform: scale(0.85)translate(5px,-5px);
+    transform: scaleY(0.85)translate(5px,-5px);
   }
   6%{
     opacity: 1;
-    transform: scale(1)translate(0,0);
+    transform: scaleY(1)translate(0,0);
   }
   to{
     opacity: 1;
-    transform: scale(1)translate(0,0);
+    transform: scaleY(1)translate(0,0);
   }
 }
 .animate1__line2{
