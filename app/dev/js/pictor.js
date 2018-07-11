@@ -75,7 +75,7 @@ Pictor.prototype.init = function () {
         self._handleRules(config.rules);
         resolve('done');
       }).then(function () {
-
+        Pictor.prototype.animateText();
         // retargeting video element
         var v = document.getElementsByClassName('vjs-tech')[0];
         CHARLIE.setup(v);
@@ -229,6 +229,7 @@ var video,
   textAnimationBlock = document.getElementById('textAnimationBlock');
 
 Pictor.prototype.handleFullScreen = function (event) {
+  Pictor.prototype.animateText();
   var self = this;
   // console.log('handleFullScreen', event);
   /* Fullscreen */

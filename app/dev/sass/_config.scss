@@ -1,20 +1,24 @@
 #animate1__line1{
     position: absolute;
     left:9%;
-    top:38%;
+    top:37%;
     display: flex;
-    font-size: 34px;
-    color: #51a6a4;
+    font-size: 35px;
+  font-weight: 700;
+    color: #038e85;
     font-family: "Helvetica Neue";
+  transform: scaleY(0)translate(-10%,50px);
 }
 #animate1__line2{
     position: absolute;
     left:9%;
-    top:47%;
+    top:48%;
     display: flex;
-    font-size: 27px;
-    color: #51a6a4;
+    font-size: 26px;
+  font-weight: 700;
+    color: #038e85;
     font-family: "Helvetica Neue";
+  transform: scaleY(0)translate(10%,-50px);
 }
 
 #animate__image{
@@ -26,15 +30,53 @@
   width: 23.5%;
 }
 
-
-.vjs-fullscreen .animate1{
-    font-size: 5.8vw;
+#animate2__line1{
+  position: absolute;
+  left:20%;
+  top:38%;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  font-size: 40px;
+  font-weight: 700;
+  color: #038e85;
+  font-family: "Helvetica Neue";
+  //transform: scaleY(0)translate(-10%,50px);
 }
+#animate2__line2{
+  position: absolute;
+  left:20%;
+  top:49%;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  font-size: 39px;
+  color: #038e85;
+  font-weight: 700;
+  font-family: "Helvetica Neue";
+  //transform: scaleY(0)translate(10%,-50px);
+}
+.vjs-fullscreen #animate1__line1{
+  font-size: 4.4vw;
+}.vjs-fullscreen #animate1__line2{
+   font-size: 3vw;
+ }
+.vjs-fullscreen #animate2__line1{
+  font-size: 4.7vw;
+}
+.vjs-fullscreen #animate2__line2{
+   font-size: 4.6vw;
+ }
 
 @media (max-width:854px) {
     #animate1__line1{
-        font-size: 3.8vw;
+        font-size: 4.4vw;
     }#animate1__line2{
-        font-size: 3.2vw;
+        font-size: 3vw;
+    }
+    #animate2__line1{
+        font-size: 4.7vw;
+    }#animate2__line2{
+        font-size: 4.6vw;
     }
 }

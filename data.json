@@ -1,6 +1,8 @@
 {
-    "text-line1": "Hi Abhishek Sharma",
-    "text-line2":"Looking for a new laptop?",
+    "animate1-line1": "Hi Abhishek Sharma",
+    "animate1-line2":"Looking for a new laptop?",
+    "animate2-line1":"Choose from a wide range",
+    "animate2-line2":"of laptops at Croma!",
     "image": "app/img/photo.png"
 
 }
