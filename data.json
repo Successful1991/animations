@@ -1,0 +1,17 @@
+{
+    "id": "hdfc_01",
+    "text1": "Abhishek",
+    "text2_line1":"Aeonian Investments",
+    "text2_line2":"Company Ltd.",
+    "RECO_TYPE":"BUY",
+    "SECURITY_NM":"CMI",
+    "CALL_DATE1": "Call Date: ",
+    "CALL_DATE2": " 21-04-2018",
+    "POTENTIAL_UPSIDE":"22.33%",
+    "CMP": "₹295.1",
+    "STOP_LOSS": "STOP LOSS: $-",
+    "TARGET_PRICE": "₹361",
+    "Horizon1": "HORIZON: ",
+    "Horizon2": "4 QUARTERS"
+
+}

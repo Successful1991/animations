@@ -1,0 +1,360 @@
+'use strict';
+window.HELP_IMPROVE_VIDEOJS = false;
+
+function VideoPlayer() {
+  var videoElem = document.createElement('VIDEO');
+  videoElem.setAttribute('src', './app/img/11t_render(empty).mp4');
+  //videoElem.setAttribute('src', './app/img/10t_render.mp4');
+  videoElem.setAttribute('class', 'video-js vjs-fluid');
+  videoElem.setAttribute('webkit-playsinline', '');
+  videoElem.setAttribute('playsinline', '');
+  videoElem.setAttribute('id', 'js--video-player');
+  this.video = videoElem;
+}
+
+VideoPlayer.prototype.animationStart = (function(el) {
+  var animations = {
+    animation: 'animationstart',
+    OAnimation: 'oAnimationStart',
+    MozAnimation: 'mozAnimationStart',
+    WebkitAnimation: 'webkitAnimationStart',
+  };
+
+  for (var t in animations) {
+    if (el.style[t] !== undefined) {
+      return animations[t];
+    }
+  }
+})(document.createElement('div'));
+
+VideoPlayer.prototype.animationEnd = (function(el) {
+  var animations = {
+    animation: 'animationend',
+    OAnimation: 'oAnimationEnd',
+    MozAnimation: 'mozAnimationEnd',
+    WebkitAnimation: 'webkitAnimationEnd',
+  };
+  for (var t in animations) {
+    if (el.style[t] !== undefined) {
+      return animations[t];
+    }
+  }
+  animateFinish();
+})(document.createElement('div'));
+
+VideoPlayer.prototype.fetchData = function(uri, callback) {
+  var self = this;
+  fetch(uri)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      self.data = myJson;
+      callback();
+    });
+};
+
+
+VideoPlayer.prototype.init = function() {
+  var self = this;
+  var video = self.video;
+  this.fetchData('data.json', function callback() {
+
+    var animate1__line1 = $('.animate1__line1').html();
+    $('.animate1__line1').html("");
+    self.divideWordIntoLetters (animate1__line1,".animate1__line1",0.6,3.01,"animate__start__Up","animate-finish");
+    self.divideWordIntoLetters (self.data.text1,".animate1__line1__name",0.7,3.01,"animate__start__Up","animate-finish");
+
+    self.divideWordIntoLetters (self.data.text2_line1,"#animate2__line1",4.5,6.9,"animate__start__Up","animate-finish");
+    self.divideWordIntoLetters (self.data.text2_line2,"#animate2__line2",4.6,6.9,"animate__start__Up","animate-finish");
+
+
+
+    $("#animate3__text__line1").html(self.data.text2_line1);
+    $("#animate3__text__line2").html(self.data.text2_line2);
+
+    $("#animate3__line3__amount").html(self.data.CMP);
+    $("#animate3__line2__text2").html(self.data.POTENTIAL_UPSIDE);
+    $(".animate3__horizon__line1").html(self.data.Horizon1);
+    $(".animate3__horizon__line2").html(self.data.Horizon2);
+    $(".animate3__data__line1").html(self.data.CALL_DATE1);
+    $(".animate3__data__line2").html(self.data.CALL_DATE2);
+    $("#animate3__line4__amount").html(self.data.TARGET_PRICE);
+    // retargeting video element
+    video = document.getElementsByClassName('vjs-tech')[0];
+    CHARLIE.setup(video);
+    return;
+  });
+
+
+  $('#videoPlayerWrapper').append(video);
+  self.myPlayer = videojs('js--video-player', {
+    controls: true,
+    autoplay: false,
+    preload: false,
+  });
+
+  self.myPlayer.el_.addEventListener(
+    'webkitfullscreenchange',
+    function() {
+      self.handleFullScreen.call(this, event)
+    }
+  );
+  var currentTime = 0;
+
+  //This example allows users to seek backwards but not forwards.
+  //To disable all seeking replace the if statements from the next
+  //two functions with myPlayer.currentTime(currentTime);
+
+  self.myPlayer.on('seeking', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
+
+  self.myPlayer.on('seeked', function(event) {
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
+  self.myPlayer.on('ended', function() {
+    $('#animate3__text').addClass("endScreen");
+    $('#animate3__horizon').addClass("endScreen");
+    $('#animate3__line2__text1').addClass("endScreen");
+    $('#animate3__line2__text2').addClass("endScreen");
+    $('#animate3__line3').addClass("endScreen");
+    $('#animate3__line3__amount').addClass("endScreen");
+    $('.animate3__data').addClass("endScreen");
+    $('#animate3__line4').addClass("endScreen");
+    $('#animate3__line4__amount').addClass("endScreen");
+    $('#animate3__button1').addClass("endScreen");
+    $('#animate3__button2').addClass("endScreen");
+    $('#animate3__button3').addClass("endScreen");
+    $('#animate__screen').addClass("endScreen");
+
+    self.myPlayer.posterImage.show();
+    $(this.posterImage.contentEl()).show();
+    $(this.bigPlayButton.contentEl()).show();
+    self.myPlayer.currentTime(0);
+    self.myPlayer.controlBar.hide();
+    self.myPlayer.bigPlayButton.show();
+    self.myPlayer.cancelFullScreen();
+
+  });
+  self.myPlayer.on('play', function() {
+    $('#animate3__text').removeClass("endScreen");
+    $('#animate3__horizon').removeClass("endScreen");
+    $('#animate3__line2__text1').removeClass("endScreen");
+    $('#animate3__line2__text2').removeClass("endScreen");
+    $('#animate3__line3').removeClass("endScreen");
+    $('#animate3__line3__amount').removeClass("endScreen");
+    $('.animate3__data').removeClass("endScreen");
+    $('#animate3__line4').removeClass("endScreen");
+    $('#animate3__line4__amount').removeClass("endScreen");
+    $('#animate3__button1').removeClass("endScreen");
+    $('#animate3__button2').removeClass("endScreen");
+    $('#animate3__button3').removeClass("endScreen");
+    $('#animate__screen').removeClass("endScreen");
+
+    self.myPlayer.posterImage.hide();
+    self.myPlayer.controlBar.show();
+    self.myPlayer.bigPlayButton.hide();
+  });
+  $("#textAnimationBlock a").on('click',function () {
+    self.myPlayer.pause();
+  });
+};
+
+$('#bitt').click(function () {
+  $('#animate3__line1__text1').addClass("fadeInDown");
+  $('#animate3__line1__text2').addClass("fadeInDown");
+  $('#animate3__horizon').addClass("fadeInDown");
+  $('#animate3__line2__text1').addClass("animate-zoom");
+  $('#animate3__line2__text2').addClass("animate-zoom");
+  $('#animate3__line3').addClass("fadeInLeft");
+  $('#animate3__line3__amount').addClass("fadeInLeft");
+  $('.animate3__data').addClass("fadeInLeft");
+  $('#animate3__line4').addClass("fadeInLeft");
+  $('#animate3__line4__amount').addClass("fadeInLeft");
+  $('#animate3__button1').addClass("animate-zoom");
+  $('#animate3__button2').addClass("animate-zoom");
+  $('#animate3__button3').addClass("animate-zoom");
+
+});
+
+var vPlayer = new VideoPlayer(),
+  video = vPlayer.video,
+  textAnimationBlock = document.getElementById('textAnimationBlock');
+
+VideoPlayer.prototype.handleFullScreen = function(event) {
+  var self = this;
+  console.log('handleFullScreen', event);
+  /* Fullscreen */
+  lockScreenInLandscape();
+
+  function requestFullscreenVideo() {
+    if (videoPlayerWrapper.requestFullscreen) {
+      videoPlayerWrapper.requestFullscreen();
+    } else {
+      video.webkitEnterFullscreen();
+    }
+  }
+
+  if ('orientation' in screen) {
+    screen.orientation.addEventListener('change', function() {
+      // Let's automatically request fullscreen if user switches device in landscape mode.
+      if (screen.orientation.type.startsWith('landscape')) {
+        // Note: It may silently fail in browsers that don't allow requesting
+        // fullscreen from the orientation change event.
+        // https://github.com/whatwg/fullscreen/commit/e5e96a9da944babf0e246980559cd80a46a300ca
+        requestFullscreenVideo();
+      } else if (document.fullscreenElement) {
+        document.exitFullscreen();
+      }
+    });
+  }
+
+  function lockScreenInLandscape() {
+    if (!('orientation' in screen)) {
+      return;
+    }
+
+    // Let's force landscape mode only if device is in portrait mode and can be held in one hand.
+    if (
+      matchMedia('(orientation: portrait) and (max-device-width: 768px)')
+        .matches
+    ) {
+      screen.orientation.lock('landscape').then(function() {
+        // When screen is locked in landscape while user holds device in
+        // portrait, let's use the Device Orientation API to unlock screen only
+        // when it is appropriate to create a perfect and seamless experience.
+        listenToDeviceOrientationChanges();
+      });
+    }
+  }
+
+  function listenToDeviceOrientationChanges() {
+    if (!('DeviceOrientationEvent' in window)) {
+      return;
+    }
+
+    var previousDeviceOrientation, currentDeviceOrientation;
+    window.addEventListener(
+      'deviceorientation',
+      function onDeviceOrientationChange(event) {
+        // event.beta represents a front to back motion of the device and
+        // event.gamma a left to right motion.
+        if (Math.abs(event.gamma) > 10 || Math.abs(event.beta) < 10) {
+          previousDeviceOrientation = currentDeviceOrientation;
+          currentDeviceOrientation = 'landscape';
+          return;
+        }
+        if (Math.abs(event.gamma) < 10 || Math.abs(event.beta) > 10) {
+          previousDeviceOrientation = currentDeviceOrientation;
+          // When device is rotated back to portrait, let's unlock screen orientation.
+          if (previousDeviceOrientation == 'landscape') {
+            screen.orientation.unlock();
+            window.removeEventListener(
+              'deviceorientation',
+              onDeviceOrientationChange
+            );
+          }
+        }
+      }
+    );
+  }
+};
+
+
+
+// };
+// var vPlayer = new VideoPlayer (),
+//   video = vPlayer.video,
+//   textAnimationBlock = document.getElementById ('textAnimationBlock');
+
+VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time,time2,animateClass,animateClass2) {
+  var word = month;
+  var str = word.split ('');
+  var i = 0;
+  $.each (str, function (index) {
+    // идем по массиву
+    if(i*5 >= 10){
+      var x =("" + time).split(".")[1];
+      if(+x === 9){
+        time += 0.1;
+        i=0;
+        time = +time.toFixed(2);
+      }else{
+        time += 0.1;
+        i=0;
+        time = +time.toFixed(2);
+      }
+    };
+    if( Number.isInteger(time) === true){
+      time+=0.05;
+    }
+
+    $(id).append (
+      '<span class="charlie" data-animations="'+ animateClass +','+ animateClass2 +'" data-times=" '+ time +','+ time2 +
+      (i*5) +
+      '">' +
+      (this == ' ' ? '&nbsp;' : this) +
+      '</span>'
+    );
+    i++;
+  });
+};
+
+
+
+
+$(document).ready(function() {
+
+  vPlayer.init();
+  $('.vjs-fluid').append(textAnimationBlock);
+  textAnimationBlock.classList.add('is-ready');
+
+
+  // detect iOS full screen
+  var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+  if(iOS) {
+    $('.vjs-fullscreen-control').hide();
+
+    $('.vjs-play-control').hide();
+
+  }
+
+  var ua = navigator.userAgent.toLowerCase();
+  var isAndroid = ua.indexOf("android") > -1;
+  if (isAndroid) {
+    $('.vjs-fullscreen-control').hide();
+
+    $('.vjs-play-control').hide();
+  }
+
+  // iOS special treatment
+  var vidEl = document.getElementsByClassName('vjs-tech')[0];
+  vidEl.addEventListener('pause', function() {
+
+    if(iOS) {
+      $('.charlie').each(function(){
+        if ($(this).hasClass('animated')) {
+          $(this).css('-webkit-transform', $(this).css('-webkit-transform'))
+        }
+      })
+    }
+  })
+
+  //controlbar at bottom
+  function controlbarAtBottom() {
+    var height = $('.vjs-control-bar').height();
+    $('.vjs-control-bar').css('bottom', '-' + height + 'px');
+  }
+  controlbarAtBottom();
+  window.addEventListener('resize', controlbarAtBottom);
+  window.addEventListener('orientationchange', controlbarAtBottom);
+
+
+  console.log(self.myPlayer);
+});

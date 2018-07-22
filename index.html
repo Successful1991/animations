@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video</title>
+	<link rel="stylesheet" href="app/css/reset.css">
+	<link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="app/css/main.css">
+</head>
+
+<body style="text-align: center">
+<div id="videoPlayerWrapper" class="b-video-player-wrapper">
+	<div id="textAnimationBlock" class="b-text-animation">
+		<div id="animate1">
+			<div class="animate1__line1">Hi</div>
+			<div class="animate1__line1__name"></div>
+		</div>
+
+		<div id="animate2">
+			<div id="animate2__line1"></div>
+			<div id="animate2__line2"></div>
+		</div>
+
+		<div id="animate3__horizon">
+			<div class="animate3__horizon__line1 charlie"  data-animations="fadeInLeft, animate-finish" data-times="9.5,18.6"></div>
+			<div class="animate3__horizon__line2 charlie"  data-animations="fadeInLeft, animate-finish" data-times="9.5,18.6"></div>
+		</div>
+
+		<div class="charlie" data-animations="animate-zoom, animate-finish" data-times="7.5,18.6" id="animate3__line2__text1">Potential Upside</div>
+		<div class="charlie" data-animations="animate-zoom, animate-finish" data-times="7.5,18.6" id="animate3__line2__text2"></div>
+
+		<div class="charlie" data-animations="fadeInDown, animate-finish" data-times="7.4,18.6" id="animate3__text">
+			<div id="animate3__text__line1"></div>
+			<div id="animate3__text__line2"></div>
+		</div>
+
+		<div class="charlie" data-animations="fadeInLeft, animate-finish" data-times="8.5,18.6" id="animate3__line3">CMP:</div>
+		<div class="charlie" data-animations="fadeInLeft, animate-finish" data-times="8.5,18.6" id="animate3__line3__amount"></div>
+
+		<div class="animate3__data">
+			<div class="animate3__data__line1 charlie" data-animations="fadeInLeft, animate-finish" data-times="9.9,18.6"></div>
+			<div class="animate3__data__line2 charlie" data-animations="fadeInLeft, animate-finish" data-times="9.9,18.6"></div>
+		</div>
+
+		<div class="charlie" data-animations="fadeInLeft, animate-finish" data-times="9,18.6" id="animate3__line4">Target:</div>
+		<div class="charlie" data-animations="fadeInLeft, animate-finish" data-times="9,18.6" id="animate3__line4__amount"></div>
+			<a href="https://deepors.hdfcsec.com/Trade/OrderManagement?asset=eq&transtype=B&isin=INE981B01011&cname=&iframe=false" target="_blank" class="charlie" data-animations="animate-zoom, animate-finish" data-times="9.5,18.6" id="animate3__button1"></a>
+			<a href="https://www.hdfcsec.com/hsl.research.pdf/CMI%20Ltd%20-%20Pick%20of%20the%20Week%20-%20210518.pdf" target="_blank" class="charlie" data-animations="animate-zoom, animate-finish" data-times="9.5,18.6" id="animate3__button2"></a>
+			<a href="https://www.hdfcsec.com/Research/ResearchDetails?ResearchID=7500&AssetId=3&SecurityId=2912&Instname=OPT&Symbol=CMI&ExpiryDate=null&OptType=CE&Strikeprice=null" target="_blank" class="charlie" data-animations="animate-zoom, animate-finish" data-times="9.5,18.6" id="animate3__button3"></a>
+		<div id="animate__screen"></div>
+
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+<script src="app/js/charlie.js"></script>
+<script src="app/js/index.js"></script>
+</body>
+
+</html>
