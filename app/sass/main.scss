@@ -184,6 +184,12 @@ h1 {
   line-height: 1.2em;
   color: #ffffff;
 }
+#animate1 > div {
+  display: flex;
+}
+.animate1__line1,.animate1__line2{
+  margin-right:10px;
+}
 .animate1__line1__name{
   color: #ec0000;
   text-transform: capitalize;
@@ -194,6 +200,7 @@ h1 {
 .vjs-fullscreen #animate1{
   font-size: 5vw;
 }
+
 #animate2__line1__text1{
   position: absolute;
   top: 14.5%;
@@ -232,10 +239,6 @@ h1 {
 }
 
 #animate2__line2__text1{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   top: 31%;
   left: 14%;

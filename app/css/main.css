@@ -174,6 +174,15 @@ h1 {
   line-height: 1.2em;
   color: #ffffff; }
 
+#animate1 > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.animate1__line1, .animate1__line2 {
+  margin-right: 10px; }
+
 .animate1__line1__name {
   color: #ec0000;
   text-transform: capitalize; }
@@ -220,23 +229,6 @@ h1 {
   font-size: 2.5vw; }
 
 #animate2__line2__text1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: absolute;
   top: 31%;
   left: 14%;

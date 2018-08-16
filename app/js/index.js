@@ -58,15 +58,29 @@ VideoPlayer.prototype.init = function() {
   var self = this;
   var video = self.video;
   this.fetchData('data.json', function callback() {
-    $('#animate1 .animate1__line1__name').text(self.data.text1);
-    // $('#animate2__line1__loss').text(self.data.Horizon);
-    self.divideWordIntoLetters (self.data.RECO_TYPE,"#animate2__line1__text1",12.1,"fadeInUp");
-    self.divideWordIntoLetters (self.data.SECURITY_NM,"#animate2__line1__text2",12.4,"fadeInUp");
-    self.divideWordIntoLetters (self.data.Horizon,"#animate2__line1__loss",12.7,"fadeInUp");
-    self.divideWordIntoLetters (self.data.POTENTIAL_UPSIDE,"#animate2__line2__text2",13.1,"fadeInUp");
-    self.divideWordIntoLetters (self.data.CMP,"#animate2__line3__amount",13.5,"fadeInUp");
-    self.divideWordIntoLetters (self.data.CALL_DATE,".animate2__data",14.5,"fadeInUp");
-    self.divideWordIntoLetters (self.data.TARGET_PRICE,"#animate2__line4__amount",14.1,"fadeInUp");
+
+    var animate1__line1 = $('.animate1__line1').html();
+    $('.animate1__line1').html("");
+    self.divideWordIntoLetters (animate1__line1,".animate1__line1",2.6,7.2,"animate-start","animate-finish");
+    self.divideWordIntoLetters (self.data.text1,".animate1__line1__name",2.9,7.2,"animate-start","animate-finish");
+    var animate1__line2 = $('.animate1__line2').html();
+    $('.animate1__line2').html("");
+    self.divideWordIntoLetters (animate1__line2,".animate1__line2",3.1,7.2,"animate-start","animate-finish");
+    var animate1__line2__name = $('.animate1__line2__name').html();
+    $('.animate1__line2__name').html("");
+    self.divideWordIntoLetters (animate1__line2__name,".animate1__line2__name",3.6,7.2,"animate-start","animate-finish");
+
+    var animate2__line2__text1 = $('#animate2__line2__text1').html();
+    $('#animate2__line2__text1').html("");
+    self.divideWordIntoLetters (animate2__line2__text1,"#animate2__line2__text1",13,18.6,"animate-start","animate-finish");
+
+    self.divideWordIntoLetters (self.data.RECO_TYPE,"#animate2__line1__text1",12.1,18.6,"fadeInUp","animate-finish");
+    self.divideWordIntoLetters (self.data.SECURITY_NM,"#animate2__line1__text2",12.4,18.6,"fadeInUp","animate-finish");
+    self.divideWordIntoLetters (self.data.Horizon,"#animate2__line1__loss",12.7,18.6,"fadeInUp","animate-finish");
+    self.divideWordIntoLetters (self.data.POTENTIAL_UPSIDE,"#animate2__line2__text2",13.1,18.6,"fadeInUp","animate-finish");
+    self.divideWordIntoLetters (self.data.CMP,"#animate2__line3__amount",13.5,18.6,"fadeInUp","animate-finish");
+    self.divideWordIntoLetters (self.data.CALL_DATE,".animate2__data",14.5,18.6,"fadeInUp","animate-finish");
+    self.divideWordIntoLetters (self.data.TARGET_PRICE,"#animate2__line4__amount",14.1,18.6,"fadeInUp","animate-finish");
     // retargeting video element
     video = document.getElementsByClassName('vjs-tech')[0];
     CHARLIE.setup(video);
@@ -261,13 +275,13 @@ VideoPlayer.prototype.handleFullScreen = function(event) {
 //   video = vPlayer.video,
 //   textAnimationBlock = document.getElementById ('textAnimationBlock');
 
-VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time,animateClass) {
+VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time,time2,animateClass,animateClass2) {
   var word = month;
   var str = word.split ('');
   var i = 0;
   $.each (str, function (index) {
     // идем по массиву
-    if(i*2 >= 10){
+    if(i*5 >= 10){
       var x =("" + time).split(".")[1];
       if(+x === 9){
         time += 0.1;
@@ -279,10 +293,13 @@ VideoPlayer.prototype.divideWordIntoLetters = function (month,id,time,animateCla
         time = +time.toFixed(2);
       }
     };
+    if( Number.isInteger(time) === true){
+      time+=0.05;
+    }
 
     $(id).append (
-      '<span class="charlie" data-animations="'+ animateClass + '" data-times=" '+ time +
-      (i*2) +
+      '<span class="charlie" data-animations="'+ animateClass +','+ animateClass2 +'" data-times=" '+ time +','+ time2 +
+      (i*5) +
       '">' +
       (this == ' ' ? '&nbsp;' : this) +
       '</span>'
