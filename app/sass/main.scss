@@ -200,34 +200,6 @@ h1 {
 }
 
 
-//#animate1-text1{
-//  position: absolute;
-//  top: 35%;
-//  left: auto;
-//  font-size: 46px;
-//  font-family: "Montserat-Bold";
-//}
-//.vjs-fullscreen #animate1-text1{
-//  font-size: 5.5vw;
-//}
-//
-//#animate1-text2{
-//  width: 100%;
-//  height: 20%;
-//  display: flex;
-//  justify-content: center;
-//  flex-wrap: wrap;
-//  position: absolute;
-//  top: 52%;
-//  left: 0;
-//  font-size: 32px;
-//  line-height: 1.2em;
-//  font-family: "Montserat-Bold";
-//}
-//.vjs-fullscreen #animate1-text2{
-//  font-size: 3.8vw;
-//}
-
 @mixin animate2{
   display: flex;
   flex-direction: column;
