@@ -95,7 +95,6 @@ Pictor.prototype.animateText = function () {
 
 Pictor.prototype.fontSize = function () {
   var widthWideo = document.querySelector("#textAnimationBlock").clientWidth;
-  console.log(widthWideo);
   if(widthWideo >= 800){
     Pictor.prototype.fontSizeTest('14px','18px','16px');
   }else{
