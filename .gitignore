@@ -1,2 +1,5 @@
 /.idea/
-node_modules/
+/node_modules/
+/.bowerrc
+/bower.json
+/package-lock.json
